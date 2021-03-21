@@ -1,5 +1,12 @@
 // Mixin for styles that will be reused in all stylesheets
 
+@mixin flex ($direction, $justifyContent) {
+        display: flex;
+        flex-direction: $direction;
+        justify-content: $justifyContent;
+        align-items: center;
+} 
+
 @mixin sm-breakpoint {
     @media screen and (min-width: $layout-breakpoint-sm){
         @content;

@@ -1,25 +1,31 @@
 // Default: Mobile
 
+body {
+    background: url("/assets/mobile/bg-image-daytime.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .app {
     height: 66.7rem;
     min-width: 37.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    @include flex (column, center);
     padding: 3.3rem 1.9rem;
 }
 
 
 
 
-/* Footer */
+/* Footer-- Description */
     
 .footer {
     min-width: 37.5rem;
+    height: 25.6rem;
     bottom: 0px;
-    background: $black;
-    color: $color-white;
+    /* background: $black;
+    color: $white; */
     text-align: center;
+    /* visibility: hidden; */
 }
 
 /* Attribution */
