@@ -61,7 +61,7 @@ li {
   list-style-type: none;
 }
 
-body {
+.text--body {
   font-family: "Inter", sans-serif;
   font-size: 18px;
   font-weight: 400;
