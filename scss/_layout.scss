@@ -8,3 +8,28 @@
     justify-content: space-between;
     padding: 3.3rem 1.9rem;
 }
+
+
+
+
+/* Footer */
+    
+.footer {
+    min-width: 37.5rem;
+    bottom: 0px;
+    background: $black;
+    color: $color-white;
+    text-align: center;
+}
+
+/* Attribution */
+.attribution {
+    background-color: $black;
+    font-size: 11px;
+    text-align: center;
+    color: white;
+}
+
+.attribution a {
+    color: white;
+}
