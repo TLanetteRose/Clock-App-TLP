@@ -126,10 +126,12 @@ body {
 /* Footer-- Description */
 .footer {
   min-width: 37.5rem;
+  height: 25.6rem;
   bottom: 0px;
-  background: black;
-  color: white;
+  /* background: $black;
+    color: $white; */
   text-align: center;
+  /* visibility: hidden; */
 }
 
 /* Attribution */
