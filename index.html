@@ -13,7 +13,7 @@
 
   <section class="app" id="app">
     <div class="quote__container">
-      <div class="quote text--xs">
+      <div class="quote text--body">
         <p id="quote">Lorem ipsum dolor sit amet.</p>
         <p class="quote__author" id="author">Author</p>
         <div>
@@ -26,26 +26,28 @@
 
     <main>
       <div class="clock__container">
-        <div class="good" id="morning">
+        <div class="good text--md" id="morning">
           <img src="./assets/desktop/icon-sun.svg" alt="sun"/>
-          <p>Good Morning, it's currently</p>
+          <p>Good Morning</p>
+          <p id="currently"> ,it's currently</p>
         </div><!-- .good -->
 
-        <div class="good" id="evening">
+        <div class="good text--md" id="evening">
           <img src="./assets/desktop/icon-moon.svg" alt="moon"/>
-          <p>Good Evening, it's currently</p>
+          <p>Good Evening</p>
+          <p id="currently"> ,it's currently</p>
         </div><!-- .good -->
         <div class="clock">
           <h4 id="clock" class="text--xl">11:37</h4>
-          <span>BST</span>
+          <span class="text--sm">BST</span>
         </div><!-- .clock -->
 
-        <div class="city">
+        <div class="city text--md">
           <p>In London, UK</p>
         </div><!-- .city -->
       </div><!-- .clock__container -->
       
-      <button class="more" id="btn__more">
+      <button class="more text--xs" id="btn__more">
         <p id="more">More</p>
         <p id="less">Less</p>
         <img src="./assets/desktop/icon-arrow-up.svg" alt="down">
