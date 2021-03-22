@@ -88,8 +88,8 @@ li {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  letter-spacing: -4.8px;
-  text-transform: uppercase;
+  letter-spacing: -1.8px;
+  /* text-transform: uppercase; */
 }
 
 .text--md {
@@ -141,8 +141,8 @@ body {
 }
 
 .quote__container {
-  min-width: 32.9rem;
-  min-height: 9.7rem;
+  min-width: 33.7rem;
+  min-height: 9rem;
 }
 
 .clock__container {
