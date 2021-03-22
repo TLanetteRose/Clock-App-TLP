@@ -32,11 +32,21 @@ body {
 .footer {
     min-width: 37.5rem;
     min-height: 25.6rem;
-    bottom: 0px;
+    margin-bottom: 0px;
+    @include flex (column, space-between);
     /* background: $black;
     color: $white; */
     text-align: center;
     /* visibility: hidden; */
+}
+
+.desc__container {
+    width: 100%;
+}
+
+.desc {
+    width: 32.5rem;
+    @include flex (row, space-between);
 }
 
 /* Attribution */

@@ -61,9 +61,16 @@ li {
   list-style-type: none;
 }
 
-.text--body {
+.text--body-reg {
   font-family: "Inter", sans-serif;
   font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.text--body-bold {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
   font-weight: 400;
   line-height: 28px;
 }
@@ -154,11 +161,45 @@ body {
 .footer {
   min-width: 37.5rem;
   min-height: 25.6rem;
-  bottom: 0px;
+  margin-bottom: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /* background: $black;
     color: $white; */
   text-align: center;
   /* visibility: hidden; */
+}
+
+.desc__container {
+  width: 100%;
+}
+
+.desc {
+  width: 32.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Attribution */
