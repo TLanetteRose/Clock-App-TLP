@@ -1,53 +1,6 @@
 // Default: Mobile
 
-body {
-    background: url("/assets/mobile/bg-image-daytime.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.app {
-    height: 66.7rem;
-    min-width: 37.5rem;
-    padding: 3.3rem 1.9rem;
-    @include flex (column, space-between);
-    
-}
-
-.quote__container {
-    min-width: 33.7rem;
-    min-height: 9rem;
-}
-
-.clock__container {
-    min-width: 32.9rem;
-    height: 31rem;
-}
-
-
-
-
-/* Footer-- Description */
-    
-.footer {
-    min-width: 37.5rem;
-    min-height: 25.6rem;
-    margin-bottom: 0px;
-    @include flex (column, space-between);
-    /* background: $black;
-    color: $white; */
-    text-align: center;
-    /* visibility: hidden; */
-}
-
-.desc__container {
-    width: 100%;
-}
-
-.desc {
-    width: 32.5rem;
-    @include flex (row, space-between);
-}
 
 /* Attribution */
 .attribution {
