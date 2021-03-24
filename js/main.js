@@ -14,3 +14,5 @@ let greeting = document.getElementsByClassName("clock-greeting");
 
 // Image for background changes in app
 let backgroundImg = document.getElementById("app");
+let dayIcon = document.getElementsByClassName("day-icon");
+let nightIcon = document.getElementsByClassName("night-icon");
