@@ -7,3 +7,5 @@ let quote = document.getElementsByClassName("quote");
 let quoteCaption = document.getElementsByClassName("quote__caption");
 let refreshIcon = document.getElementsByClassName("refresh-icon");
 let quoteContainer = document.getElementsByClassName("quote__container");
+
+// Change time of day
