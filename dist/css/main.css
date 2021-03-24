@@ -122,6 +122,10 @@ li {
   letter-spacing: 3px;
 }
 
+body {
+  background-color: #303030;
+}
+
 blockquote p:before {
   content: '\201C';
 }
