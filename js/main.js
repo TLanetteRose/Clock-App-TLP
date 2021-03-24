@@ -9,3 +9,8 @@ let refreshIcon = document.getElementsByClassName("refresh-icon");
 let quoteContainer = document.getElementsByClassName("quote__container");
 
 // Change time of day
+let clockGreeting = document.getElementsByClassName("clock__greeting-container");
+let greeting = document.getElementsByClassName("clock-greeting");
+
+// Image for background changes in app
+let backgroundImg = document.getElementById("app");
