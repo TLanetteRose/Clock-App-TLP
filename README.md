@@ -106,3 +106,20 @@ The more specific you are with your questions the more likely it is that another
 We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
 
 **Have fun building!** 🚀
+
+
+What do I need to do:
+
+1. get elements to change displays/click btn
+2. time of day change
+3. display clock time
+4. display location
+5. default time incase API cannot retrieve user's ip or error with api; remove decimals from day and week calculation and rounded up using ceiling to always round to largest integer
+6. display clock info
+7. display footer info
+8. display and hide elements when btn is clicked
+9. let getuse = setInterval(function())
+10. display clock info after success
+11. display footer info after success
+12. get user location
+13. get quote
