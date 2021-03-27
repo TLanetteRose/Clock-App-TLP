@@ -1,48 +1,43 @@
-// Elements change displays/click btn
-let appContainer = document.getElementsByClassName("app__container");
-let footerContainer = document. getElementsByClassName("footer__container");
-let displayBtn = document.getElementById("btn-click");
-let btnLabel = document.getElementsByClassName("btn-label");
-let quote = document.getElementsByClassName("quote");
-let quoteCaption = document.getElementsByClassName("quote__caption");
-let refreshIcon = document.getElementsByClassName("refresh-icon");
-let quoteContainer = document.getElementsByClassName("quote__container");
 
-// Change greeting
-let clockGreeting = document.getElementsByClassName("clock__greeting-container");
-let greeting = document.getElementsByClassName("clock-greeting");
+const background = document.getElementsByClassName('.background');
+const author = document.getElementsByClassName('.author');
+const icon = document.getElementsByClassName('.icon');
+const details = document.getElementsByClassName('.description'); 
+const period = document.getElementsByClassName('.period'); 
+const expand = document.getElementsByClassName('.expand');
 
-// Image for background changes in app
-let backgroundImg = document.getElementById("app");
 
-// Change clock icon
-let dayIcon = document.getElementsByClassName("day-icon");
-let nightIcon = document.getElementsByClassName("night-icon");
 
-// Display time
-let clock = document.getElementById("clock");
-let timeZoneAbrv = document.getElementsByClassName("time-zone");
+// Get current day and time
+function getTime() {
+let currentTime = new Date();
+let hour = currentTime.getHours();
+let minute = currentTime.getMinutes();
 
-// Display location
-let location = document.getElementsByClassName("time-location");
+// Setting greeting and time of day
+let greeting = '';
+if (hour >= 5 && hour <= 11){
+    greeting = 'morning';
+} else if (hour >= 12 && hour <= 17) {
+    greeting = 'afternoon';
+} else {
+    greeting = 'evening';
+}
+    document.querySelector('current__greeting').textContent = `good ${greeting}`
 
-let descContent = document.getElementsByClassName("desc-content");
-let descInfo = document.getElementsByClassName(desc-info);
-let timeZone = descInfo[0];
-let yearDay= descInfo[1];
-let weekDay= descInfo[2];
-let weekNumber= descInfo[3];
-let dayNames= ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    // Background and icon
+    if (hour >= 5 && hour <= 17) {
+        background.classList.add('day');
+        icon.src = '../assets/desktop/icon-sun.svg';
+        icon.setAttribute("alt", "sun icon");
+    } else {
+        background.classList.add('night');
+        icon.src = '../assets/desktop/icon-moon.svg';
+        icon.setAttribute("alt", "moon night");
+        details.style.color = '#fff';
+        details.style.background = 'rgba(0,0,0, 0.75)';
+    }
 
-// Default time in case API not retrieved
-// Remove decimals from day and week and rounded up using ceiling
-let date = new Date();
-let currentHour = ('0' + date.getHours()).slice(-2);
-let currentMinute = ('0' + date.getMinutes()).slice(-2);
-let yearTimeStart = new Date("January 01, 2021 0:00:00").getTime();
-let yearTimeEnd = new Date("January 01, 2022 0:00:00");
-let year = yearTimeEnd - yearTimeStart;
-let dayOfYear = Math.ceil((date.getTime()- yearTimeStart) / (1000* 60 * 60 * 24));
-let currentWeek = Math.ceil((date.getTime() - yearTimeStart) / (1000 * 60 * 60 * 168)); //168 for hours in a week
-let currentDay = date.getDay() + 1;
 
+
+}
