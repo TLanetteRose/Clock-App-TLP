@@ -33,7 +33,7 @@
     padding: 3.17rem 2.6rem 4rem;
     
     @include flex (column, space-between);
-    
+    max-width: 111rem;
 }
 
 
