@@ -22,6 +22,7 @@ function getQuote() {
     }).catch((err) => console.error(err))
 }
 
+
 // Get current day and time
 function getTime() {
 let currentTime = new Date();
@@ -104,12 +105,50 @@ function getLocation() {
     .catch(err => console.error(err));
 }
 
+Promise 
+.all([
+    axios.get('https://api.quotable.io/random'),
+    axios.get('https://worldtimeapi.org/api/ip'),
+    axios.get('https://freegeoip.app/json/')
+]).catch(() => null)
+.then(
+    axios.spread((quotes, time, location) => {
+        //Display quotes
+        const quotesArray = quotes.data;
+        getQuote(quotesArray);
+
+        //Time now - user location
+        const current = time.data;
+        getTimeZone(current)
+        getTime(current);
+
+        // Location
+        const ipLocation = location.data;
+        getLocation(ipLocation);
+    })
+)
+.catch((err) => console.error(err));
 
 getQuote();
 getTime();
 getTimeZone();
 getLocation();
 
+// Event listeners
+function showDetails() {
+    document.querySelector('.app__widgets').classList.toggle('transform');
+    details.classList.toggle('transform');
 
+    if (expand.firstChild.nodeValue === 'More') {
+        expand.firstChild.nodeValue = 'Less'
+    }else {
+        expand.firstChild.nodeValue = 'More'
+    }
 
+    const arrow = document.querySelector('.arrow');
+    arrow.classList.toggle('rotate');
+}
+expand.addEventListener('click', showDetails);
 
+// Random quote
+document.getElementById('refresh').addEventListener('click', getQuote)
