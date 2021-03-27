@@ -65,7 +65,7 @@ li {
   font-family: "Inter", sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
-  line-height: 2.8rem;
+  line-height: 2.2rem;
 }
 
 .text--body-sm {
@@ -206,8 +206,7 @@ li {
 
 .quote__container {
   text-transform: initial;
-  font-size: 1.2rem;
-  line-height: 2.2rem;
+  color: white;
   max-width: 57.3rem;
   display: -ms-grid;
   display: grid;
@@ -222,6 +221,10 @@ li {
     font-size: 1.8rem;
     line-height: 2.8rem;
   }
+}
+
+.quote__container .author {
+  color: white;
 }
 
 /* Attribution */

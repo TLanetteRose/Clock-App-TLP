@@ -54,8 +54,7 @@
 
 .quote__container {
     text-transform: initial;
-    font-size: 1.2rem;
-    line-height: 2.2rem;
+    color: $white;
     max-width: 57.3rem; //based on desktop
 
     display: grid;
@@ -68,7 +67,7 @@
     }
 
     .author {
-        
+        color: $white;
     }
 }
 
