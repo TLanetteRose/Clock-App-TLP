@@ -8,7 +8,18 @@ const expand = document.querySelector('.expand');
 
 // Get Quotes 
 function getQuote() {
+    axios.get('https://api.quotable.io/random')
+    .then((quotesRes) => {
+        const chosenQuote = quotesRes.data
 
+        document.getElementById('quote').textContent = chosenQuote.content;
+
+        if (chosenQuote.author == null) {
+            author.textContent = 'Unknown author'
+        }else {
+            author.textContent = chosenQuote.author;
+        }
+    }).catch((err) => console.error(err))
 }
 
 // Get current day and time
@@ -94,7 +105,7 @@ function getLocation() {
 }
 
 
-
+getQuote();
 getTime();
 getTimeZone();
 getLocation();
