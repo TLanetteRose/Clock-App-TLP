@@ -21,6 +21,28 @@ let nightIcon = document.getElementsByClassName("night-icon");
 
 // Display time
 let clock = document.getElementById("clock");
-let timeZone = document.getElementsByClassName("time-zone");
+let timeZoneAbrv = document.getElementsByClassName("time-zone");
 
 // Display location
+let location = document.getElementsByClassName("time-location");
+
+let descContent = document.getElementsByClassName("desc-content");
+let descInfo = document.getElementsByClassName(desc-info);
+let timeZone = descInfo[0];
+let yearDay= descInfo[1];
+let weekDay= descInfo[2];
+let weekNumber= descInfo[3];
+let dayNames= ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+// Default time in case API not retrieved
+// Remove decimals from day and week and rounded up using ceiling
+let date = new Date();
+let currentHour = ('0' + date.getHours()).slice(-2);
+let currentMinute = ('0' + date.getMinutes()).slice(-2);
+let yearTimeStart = new Date("January 01, 2021 0:00:00").getTime();
+let yearTimeEnd = new Date("January 01, 2022 0:00:00");
+let year = yearTimeEnd - yearTimeStart;
+let dayOfYear = Math.ceil((date.getTime()- yearTimeStart) / (1000* 60 * 60 * 24));
+let currentWeek = Math.ceil((date.getTime() - yearTimeStart) / (1000 * 60 * 60 * 168)); //168 for hours in a week
+let currentDay = date.getDay() + 1;
+
