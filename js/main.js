@@ -6,7 +6,10 @@ const details = document.querySelector('.description');
 const period = document.querySelector('.period'); 
 const expand = document.querySelector('.expand');
 
+// Get Quotes 
+function getQuote() {
 
+}
 
 // Get current day and time
 function getTime() {
@@ -62,12 +65,39 @@ if (hour >= 5 && hour <= 11){
 
 }
 
+// Get time zone
 function getTimeZone(){
-    
+    axios.get('https://worldtimeapi.org/api/ip')
+    .then((regionRes) => {
+        const region = regionRes.data;
+        // Local timezone
+        document.querySelector('.region').textContent = region.abbreviation
+        // Details
+        document.getElementById('timezone').textContent = region.timezone;
+        document.getElementById('year-day').textContent = region.day_of_year;
+        document.getElementById('week-day').textContent = region.day_of_week;
+        document.getElementById('week-number').textContent = region.week_number;
+    })
+    .catch(err => console.error(err));
 }
 
-getTime();
+// Get location
+function getLocation() {
+    axios.get('https://freegeoip.app/json/')
+    .then((locationRes) => {
+        const ipLocation = locationRes.data;
+        const regionName = ipLocation.region_name;
+        const countryCode = ipLocation.country_code;
+        document.querySelector('.current__location').textContent = `in ${regionName}, ${countryCode}`;
+    })
+    .catch(err => console.error(err));
+}
 
+
+
+getTime();
+getTimeZone();
+getLocation();
 
 
 
