@@ -34,6 +34,14 @@
     
     @include flex (column, space-between);
     max-width: 111rem;
+
+    @include md-breakpoint {
+        padding: 15.3rem 16.8rem 6.4rem 6.4rem;
+    }
+
+    @include lg-breakpoint {
+        margin: 0 auto;
+    }
 }
 
 

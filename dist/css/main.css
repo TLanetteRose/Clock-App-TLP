@@ -170,6 +170,18 @@ li {
   max-width: 111rem;
 }
 
+@media screen and (min-width: 768px) {
+  .app__widgets {
+    padding: 15.3rem 16.8rem 6.4rem 6.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .app__widgets {
+    margin: 0 auto;
+  }
+}
+
 /* Attribution */
 .attribution {
   /* background-color: $black; */
