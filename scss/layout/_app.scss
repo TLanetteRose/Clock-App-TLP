@@ -33,7 +33,7 @@
     padding: 3.17rem 2.6rem 4rem;
     
     @include flex (column, space-between);
-    max-width: 111rem;
+    max-width: 111rem; //based on desktop
 
     @include md-breakpoint {
         padding: 15.3rem 16.8rem 6.4rem 6.4rem;
@@ -46,6 +46,17 @@
     @include xl-breakpoint {
         padding: 5.6rem 0 9.8rem;
     }
+
+    &__contents {
+        @include flex (column, space-between);
+    }
+}
+
+.quote__container {
+    text-transform: initial;
+    font-size: 1.2rem;
+    line-height: 2.2rem;
+    max-width: 57.3rem; //based on desktop
 }
 
 
