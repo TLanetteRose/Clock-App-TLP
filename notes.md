@@ -1,2 +1,3 @@
 03/21/2021-- learned that I need to have the main.scss separate from the other files. I needed to put the other files in folders. 
 03/23/2021-- After reading, I realized that I needed more semantic element tags in my html. I also realized from reading that I could enter a lot of my information using JS. I decided to focus on the JS side of the app first before the CSS. 
+03/26/2021-- Learning about how to use JS to add information and style to html. 
