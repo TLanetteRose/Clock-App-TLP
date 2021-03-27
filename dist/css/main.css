@@ -209,6 +209,19 @@ li {
   font-size: 1.2rem;
   line-height: 2.2rem;
   max-width: 57.3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.67rem;
+      grid-template-columns: 1fr 1.67rem;
+  -webkit-column-gap: 1.6rem;
+          column-gap: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .quote__container {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
 }
 
 /* Attribution */

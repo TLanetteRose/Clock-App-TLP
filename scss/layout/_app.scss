@@ -57,6 +57,19 @@
     font-size: 1.2rem;
     line-height: 2.2rem;
     max-width: 57.3rem; //based on desktop
+
+    display: grid;
+    grid-template-columns: 1fr 1.67rem;
+    column-gap: 1.6rem;
+
+    @include md-breakpoint {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+
+    .author {
+        
+    }
 }
 
 
