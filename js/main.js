@@ -30,6 +30,12 @@ if (hour >= 5 && hour <= 11){
         background.classList.add('day');
         icon.src = '../assets/desktop/icon-sun.svg';
         icon.setAttribute("alt", "sun icon");
+    } else {
+        background.classList.add('night');
+        icon.src = '../assets/desktop/icon-moon.svg';
+        icon.setAttribute("alt", "moon night");
+        details.style.color = '#fff';
+        details.style.background = 'rgba(0,0,0, 0.75)';
     }
 
 
