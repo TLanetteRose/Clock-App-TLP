@@ -1,10 +1,10 @@
 
-const background = document.getElementsByClassName('.background');
-const author = document.getElementsByClassName('.author');
-const icon = document.getElementsByClassName('.icon');
-const details = document.getElementsByClassName('.description'); 
-const period = document.getElementsByClassName('.period'); 
-const expand = document.getElementsByClassName('.expand');
+const background = document.querySelector('.background');
+const author = document.querySelector('.author');
+const icon = document.querySelector('.icon');
+const details = document.querySelector('.description'); 
+const period = document.querySelector('.period'); 
+const expand = document.querySelector('.expand');
 
 
 
@@ -60,6 +60,10 @@ if (hour >= 5 && hour <= 11){
     let interval = (60 - (new Date()).getSeconds()) * 1000 + 5;
     setTimeout(getTime,interval)
 
+}
+
+function getTimeZone(){
+    
 }
 
 getTime();
