@@ -37,7 +37,7 @@
             <h2 class="time"></h2>
             <div class="standard-time">
               <p class="period"></p>
-              <p class="time-zone"></p>
+              <p class="region"></p>
             </div><!-- .standard-time -->
           </div><!-- .time__container -->
 
@@ -48,13 +48,14 @@
         <img src="./assets/desktop/icon-arrow-up.svg" alt="arrow icon" aria-hidden="true" class="arrow">
       </button>
     </article><!-- .current -->
+  </main><!-- .app__widgets -->
 
-    <footer class="footer__container">
-      <section class="desc-content" id="description">
-        <article class="desc-item timezone">
-          <h4 class="desc-heading text--xs">Current timezone</h4>
-          <p class="desc-info text--lg"></p>
-        </article><!-- .timezone -->
+  <article class="description">
+    <ul class="desc-content">
+        <li class="desc-region info">
+          <h4 class="text--xs">Current timezone</h4>
+          <p id="timezone" class="text--lg"></p>
+        </li><!-- .timezone -->
 
         <article class="desc-item year-day">
           <h4 class="desc-heading text--xs">Day of the year</h4>
@@ -70,9 +71,9 @@
           <h4 class="desc-heading text--xs">Week number</h4>
           <p class="desc-info text--lg"></p>
         </article><!-- .week-number --> 
-      </section><!-- .description -->
-    </footer>
-  </main><!-- .app -->
+      </ul><!-- .desc__content -->
+  </article><!-- .description -->
+  
 
   <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
