@@ -105,11 +105,34 @@ function getLocation() {
     .catch(err => console.error(err));
 }
 
+Promise 
+.all([
+    axios.get('https://api.quotable.io/random'),
+    axios.get('https://worldtimeapi.org/api/ip'),
+    axios.get('https://freegeoip.app/json/')
+]).catch(() => null)
+.then(
+    axios.spread((quotes, time, location) => {
+        //Display quotes
+        const quotesArray = quotes.data;
+        getQuote(quotesArray);
+
+        //Time now - user location
+        const current = time.data;
+        getTimeZone(current)
+        getTime(current);
+
+        // Location
+        const ipLocation = location.data;
+        getLocation(ipLocation);
+    })
+)
+.catch((err) => console.error(err));
 
 getQuote();
 getTime();
 getTimeZone();
-getLocation()
+getLocation();
 
 // Event listeners
 function showDetails() {
