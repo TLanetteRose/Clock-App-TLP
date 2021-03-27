@@ -26,7 +26,14 @@
 }
 
 .app__widgets {
-    padding: 
+    /*padding: 3.2rem 0 4rem;*/
+    position: relative;
+    height: 100%;
+    transition: tranform 0.5s ease;
+    padding: 3.17rem 2.6rem 4rem;
+    
+    @include flex (column, space-between);
+    
 }
 
 
