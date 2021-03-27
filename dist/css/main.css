@@ -61,65 +61,65 @@ li {
   list-style-type: none;
 }
 
-.text--body-sm {
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 28px;
-}
-
 .text--body-xs {
   font-family: "Inter", sans-serif;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 2.8rem;
 }
 
-.text--xxl {
+.text--body-sm {
   font-family: "Inter", sans-serif;
-  font-size: 200px;
-  font-weight: 700;
-  line-height: 200px;
-  letter-spacing: -5px;
-}
-
-.text--xl {
-  font-family: "Inter", sans-serif;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 68px;
-}
-
-.text--lg {
-  font-family: "Inter", sans-serif;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: -1.8px;
-  /* text-transform: uppercase; */
-}
-
-.text--md {
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 4px;
-}
-
-.text--sm {
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 28px;
+  line-height: 2.8rem;
 }
 
 .text--xs {
   font-family: "Inter", sans-serif;
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 28px;
-  letter-spacing: 3px;
+  line-height: 2.8rem;
+  letter-spacing: 0.3rem;
+}
+
+.text--sm {
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+}
+
+.text--md {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 0.4rem;
+}
+
+.text--lg {
+  font-family: "Inter", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+  letter-spacing: -.18rem;
+  /* text-transform: uppercase; */
+}
+
+.text--xl {
+  font-family: "Inter", sans-serif;
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 6.8rem;
+}
+
+.text--xxl {
+  font-family: "Inter", sans-serif;
+  font-size: 20rem;
+  font-weight: 700;
+  line-height: 20rem;
+  letter-spacing: -0.5rem;
 }
 
 .background {
