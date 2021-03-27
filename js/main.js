@@ -23,7 +23,7 @@ if (hour >= 5 && hour <= 11){
 } else {
     greeting = 'evening';
 }
-    document.querySelector('current__greeting').textContent = `good ${greeting}`
+    document.querySelector('.current__greeting').textContent = `good ${greeting}`
 
     // Background and icon
     if (hour >= 5 && hour <= 17) {
@@ -48,11 +48,23 @@ if (hour >= 5 && hour <= 11){
         period.textContent = 'am';
     } else if (hour === 12) {
         period.textContent = 'pm';
-    } else if (hour >  12) {
+    } else if (hour > 12) {
         hour -= 12;
         period.textContent = 'pm';
     } else {
         period.textContent = 'am';
     }
+    document.querySelector('.time').textContent = `${hour}:${minute}`;
+
+    //Update time
+    let interval = (60 - (new Date()).getSeconds()) * 1000 + 5;
+    setTimeout(getTime,interval)
 
 }
+
+getTime();
+
+
+
+
+
