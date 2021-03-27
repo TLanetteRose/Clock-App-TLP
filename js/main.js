@@ -22,6 +22,7 @@ function getQuote() {
     }).catch((err) => console.error(err))
 }
 
+
 // Get current day and time
 function getTime() {
 let currentTime = new Date();
@@ -108,8 +109,23 @@ function getLocation() {
 getQuote();
 getTime();
 getTimeZone();
-getLocation();
+getLocation()
 
+// Event listeners
+function showDetails() {
+    document.querySelector('.app__widgets').classList.toggle('transform');
+    details.classList.toggle('transform');
 
+    if (expand.firstChild.nodeValue === 'More') {
+        expand.firstChild.nodeValue = 'Less'
+    }else {
+        expand.firstChild.nodeValue = 'More'
+    }
 
+    const arrow = document.querySelector('.arrow');
+    arrow.classList.toggle('rotate');
+}
+expand.addEventListener('click', showDetails);
 
+// Random quote
+document.getElementById('refresh').addEventListener('click', getQuote)

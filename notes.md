@@ -7,3 +7,4 @@ I learned how to add a background picture in a js function and add the alt infor
 Needed to use querySelector instead of getClassName
 Referring to using Axios with JS: https://www.digitalocean.com/community/tutorials/js-axios-vanilla-js -- Axios allows me to make requests like get, post, and delete; can use to make js applications; used a get/catch err for world clock api based on ip address. 
 Used Free IP Geolocation and axios; 
+https://github.com/lukePeavey/quotable for random quotes
