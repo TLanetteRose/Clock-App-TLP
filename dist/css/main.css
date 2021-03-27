@@ -182,6 +182,12 @@ li {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .app__widgets {
+    padding: 5.6rem 0 9.8rem;
+  }
+}
+
 /* Attribution */
 .attribution {
   /* background-color: $black; */
