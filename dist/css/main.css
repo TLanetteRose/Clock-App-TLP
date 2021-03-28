@@ -250,6 +250,7 @@ button::-moz-focus-inner {
 
 .app__widgets .current__time {
   position: relative;
+  top: -10px;
 }
 
 .app__widgets .current__time .time__container {
@@ -308,7 +309,7 @@ button::-moz-focus-inner {
       -ms-flex-align: center;
           align-items: center;
   width: 11.7rem;
-  height: 4rem;
+  height: 3.7rem;
   padding: 1px 0.5rem 0 1.5rem;
   border-radius: 2.8rem;
   text-transform: uppercase;
@@ -320,6 +321,13 @@ button::-moz-focus-inner {
   letter-spacing: 3.75px;
   border: none;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .app__widgets .current .expand {
+    width: 14.6rem;
+    height: 5.7rem;
+  }
 }
 
 .app__widgets .current .expand .arrow {

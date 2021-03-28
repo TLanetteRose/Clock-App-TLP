@@ -52,6 +52,7 @@
 
         &__time {
             position: relative;
+            top: -10px;
 
             .time__container {
                 @include flex (row, start);
@@ -74,7 +75,7 @@
         .expand {
             @include flex(row, space-evenly);
             width: 11.7rem;
-            height: 4rem;
+            height: 3.7rem;
             padding: 1px 0.5rem 0 1.5rem;
             border-radius: 2.8rem;
             text-transform: uppercase;
@@ -86,6 +87,11 @@
             letter-spacing: 3.75px;
             border: none;
             cursor: pointer;
+
+            @include md-breakpoint {
+                width: 14.6rem;
+                height: 5.7rem;
+            }
 
 
             .arrow {
