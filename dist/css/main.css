@@ -112,65 +112,38 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-.text--body-xs {
+.text-body-regular,
+.text-xs,
+.text-sm,
+.text-md,
+.text-lg,
+.text-xl {
   font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
+}
+
+.text-body-regular {
+  font-size: 18px;
+  line-height: 28px;
   font-weight: 400;
-  line-height: 2.2rem;
 }
 
-.text--body-sm {
-  font-family: "Inter", sans-serif;
-  font-size: 1.8rem;
+.text-xs {
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: +3;
+}
+
+.text-sm {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.text-md {
+  font-size: 20px;
   font-weight: 400;
-  line-height: 2.8rem;
-}
-
-.text--xs {
-  font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 2.8rem;
-  letter-spacing: 0.3rem;
-}
-
-.text--sm {
-  font-family: "Inter", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 700;
-  line-height: 2.8rem;
-}
-
-.text--md {
-  font-family: "Inter", sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 2.8rem;
-  letter-spacing: 0.4rem;
-}
-
-.text--lg {
-  font-family: "Inter", sans-serif;
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 2.8rem;
-  letter-spacing: -.18rem;
-  /* text-transform: uppercase; */
-}
-
-.text--xl {
-  font-family: "Inter", sans-serif;
-  font-size: 5.6rem;
-  font-weight: 700;
-  line-height: 6.8rem;
-}
-
-.text--xxl {
-  font-family: "Inter", sans-serif;
-  font-size: 20rem;
-  font-weight: 700;
-  line-height: 20rem;
-  letter-spacing: -0.5rem;
+  line-height: 28px;
+  letter-spacing: +4;
 }
 
 .background {
