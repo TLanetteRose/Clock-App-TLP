@@ -298,6 +298,12 @@ li {
   display: flex;
 }
 
+.current .icon {
+  padding-right: 1.6rem;
+  -webkit-animation: rotation 6s infinite linear;
+          animation: rotation 6s infinite linear;
+}
+
 /* Attribution */
 .attribution {
   /* background-color: $black; */
