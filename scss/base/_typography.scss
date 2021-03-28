@@ -6,7 +6,8 @@
 .text-sm,
 .text-md,
 .text-lg,
-.text-xl {
+.text-xl,
+.text-xxl {
     font-family: $font-family;
 }
 
@@ -20,6 +21,7 @@
 // Additional Text
 .text-xs {
     font-size: 15px;
+    font-weight: $weight-regular;
     line-height: 28px;
     letter-spacing: +3;
 }
@@ -35,6 +37,28 @@
     font-weight: $weight-regular;
     line-height: 28px;
     letter-spacing: +4;
+}
+
+.text-lg {
+    font-size: 24px;
+    font-weight: $weight-bold;
+    line-height: 28px;
+    letter-spacing: -4.8;
+    text-transform: uppercase;
+}
+
+.text-xl {
+    font-size: 56px;
+    font-weight: $weight-bold;
+    line-height: 64px;
+}
+
+.text-xxl {
+    font-size: 200px;
+    font-weight: $weight-bold;
+    line-height: 200px;
+    letter-spacing: -5;
+
 }
 
 
