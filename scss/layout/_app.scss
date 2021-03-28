@@ -36,6 +36,18 @@
     @include flex (column, space-between);
     max-width: 111rem;
 
+    @include md-breakpoint {
+        padding: 8rem 11.7rem 6.4rem 6.4rem;
+    }
+
+    @include lg-breakpoint {
+        margin: 0 auto;
+    }
+
+    @include xl-breakpoint {
+        padding: 5.6rem 0 9.8rem;
+    }
+
     .quote__container {
         @include flex (row, space-evenly);
 

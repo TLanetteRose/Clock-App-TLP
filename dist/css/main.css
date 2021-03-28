@@ -221,6 +221,24 @@ button::-moz-focus-inner {
   max-width: 111rem;
 }
 
+@media screen and (min-width: 768px) {
+  .app__widgets {
+    padding: 8rem 11.7rem 6.4rem 6.4rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .app__widgets {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .app__widgets {
+    padding: 5.6rem 0 9.8rem;
+  }
+}
+
 .app__widgets .quote__container {
   display: -webkit-box;
   display: -ms-flexbox;
