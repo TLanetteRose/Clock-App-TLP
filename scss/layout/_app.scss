@@ -28,9 +28,25 @@
 .app__widgets {
     height: 100vh;
     text-align: left;
-    padding: 4rem 1.9rem;
+    padding: 3.8rem 1.9rem;
     color: $white; 
     position: relative;
+    transition: transform 0.5s ease;
+
+    @include flex (column, space-between);
+    max-width: 111rem;
+
+    @include md-breakpoint {
+        padding: 8rem 11.7rem 6.4rem 6.4rem;
+    }
+
+    @include lg-breakpoint {
+        margin: 0 auto;
+    }
+
+    @include xl-breakpoint {
+        padding: 5.6rem 0 9.8rem;
+    }
 
     .quote__container {
         @include flex (row, space-evenly);
@@ -41,14 +57,88 @@
         }
     }
     .current {
-        margin-top: 20.4rem;
+        margin-top: 17.4rem;
         
         &__container {
-            
+            position: relative;
             header {
-                @include flex (row, start);
+               @include flex (row, start);
             }
         }
+
+        &__time {
+            position: relative;
+            top: -10px;
+
+            .time__container {
+                @include flex (row, start);
+
+                .time {
+                    padding-left: 10px;
+                }
+
+                .standard-time {
+                    @include flex(row, start);
+                }
+            }
+        }
+
+        &__location {
+            position: absolute;
+            bottom: 5px;
+        }
+
+        .expand {
+            @include flex(row, space-evenly);
+            width: 11.7rem;
+            height: 3.7rem;
+            padding: 1px 0.5rem 0 1.5rem;
+            border-radius: 2.8rem;
+            text-transform: uppercase;
+            color: rgba(0,0,0,0.5);
+            background: $white;
+            font-size: 1.2rem;
+            font-weight: $weight-bold;
+            line-height: 1.4rem;
+            letter-spacing: 3.75px;
+            border: none;
+            cursor: pointer;
+
+            @include md-breakpoint {
+                width: 14.6rem;
+                height: 5.7rem;
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+                letter-spacing: 0.5rem;
+                padding: 0.8rem 0.9rem 0.8rem 2.1rem;
+            }
+
+            @include lg-breakpoint {
+                align-self: flex-end;
+                margin-left: auto;
+            }
+
+            .arrow {
+                width: 3rem;
+                height: 3rem;
+                transform: rotate(180deg);
+                transition: transform 0.5s, filter 02s;
+
+                &:hover{
+                    filter: brightness(330%);
+                }
+
+                @include md-breakpoint {
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
+
+            .rotate {
+                transform: rotate(0deg);
+            }
+        }
+        
     }
     
 }
