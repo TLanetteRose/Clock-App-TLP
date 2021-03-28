@@ -219,6 +219,14 @@ select {
           align-items: center;
 }
 
+.description {
+  color: white;
+}
+
+.description .info {
+  list-style-type: none;
+}
+
 /* Attribution */
 .attribution {
   /* background-color: $black; */
