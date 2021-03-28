@@ -304,6 +304,12 @@ li {
           animation: rotation 6s infinite linear;
 }
 
+@media screen and (min-width: 768px) {
+  .current .icon {
+    height: 2.4rem;
+  }
+}
+
 /* Attribution */
 .attribution {
   /* background-color: $black; */

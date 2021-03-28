@@ -126,6 +126,10 @@
     .icon {
         padding-right: 1.6rem;
         animation: rotation 6s infinite linear;
+
+        @include md-breakpoint {
+            height: 2.4rem;
+        }
     }
 }
 
