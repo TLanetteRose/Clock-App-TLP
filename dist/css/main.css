@@ -273,6 +273,10 @@ li {
   opacity: 0.5;
 }
 
+#refresh .svg:hover {
+  opacity: 1;
+}
+
 /* Attribution */
 .attribution {
   /* background-color: $black; */

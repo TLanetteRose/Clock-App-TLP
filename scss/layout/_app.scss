@@ -103,6 +103,10 @@
         outline: none;
         transition: transform 0.15s linear;
         opacity: 0.5;
+
+        &:hover {
+            opacity: 1;
+        }
     }
 }
 
