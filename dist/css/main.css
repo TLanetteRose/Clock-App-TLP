@@ -7,6 +7,10 @@
   color-scheme: light dark;
 }
 
+* {
+  outline: 1px solid black;
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -169,6 +173,10 @@ select {
 
 .app__widgets {
   height: 100vh;
+  text-align: left;
+  padding: 4rem 1.9rem;
+  color: white;
+  position: relative;
 }
 
 .app__widgets .quote__container {
@@ -179,20 +187,36 @@ select {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.app__widgets .quote__container-random {
-  text-align: left;
+.app__widgets .quote__container #refresh {
+  margin-top: -5.7rem;
 }
 
-.app__widgets #refresh {
-  margin-top: -4.7rem;
+.app__widgets .current {
+  margin-top: 20.4rem;
+}
+
+.app__widgets .current__container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Attribution */
