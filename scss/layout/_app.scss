@@ -113,7 +113,19 @@
 .current {
     text-transform: uppercase;
     color: $white;
+
+    @include lg-breakpoint {
+        display: grid;
+        grid-template-columns: 1fr max-content;
+    }
+    
+    header {
+        display: flex;
+    }
 }
+
+
+
 /* Attribution */
 .attribution {
     /* background-color: $black; */
