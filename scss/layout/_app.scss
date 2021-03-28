@@ -68,6 +68,16 @@
 
     .author {
         color: $white;
+        padding-top: 0.8rem;
+
+        @include md-breakpoint {
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+        }
+
+        @include lg-breakpoint {
+            padding: 1.3rem 0 9.8rem;
+        }
     }
 }
 

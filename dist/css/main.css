@@ -225,6 +225,20 @@ li {
 
 .quote__container .author {
   color: white;
+  padding-top: 0.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .quote__container .author {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .quote__container .author {
+    padding: 1.3rem 0 9.8rem;
+  }
 }
 
 /* Attribution */
