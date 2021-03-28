@@ -23,7 +23,7 @@
     font-size: 15px;
     font-weight: $weight-regular;
     line-height: 28px;
-    letter-spacing: +3;
+    letter-spacing: +3px;
 }
 
 .text-sm {
@@ -36,19 +36,20 @@
     font-size: 20px;
     font-weight: $weight-regular;
     line-height: 28px;
-    letter-spacing: +4;
+    letter-spacing: +4px;
+    text-transform: uppercase;
 }
 
 .text-lg {
     font-size: 24px;
     font-weight: $weight-bold;
     line-height: 28px;
-    letter-spacing: -4.8;
+    letter-spacing: -4.8px;
     text-transform: uppercase;
 }
 
 .text-xl {
-    font-size: 56px;
+    font-size: 100px;
     font-weight: $weight-bold;
     line-height: 64px;
 }
@@ -57,7 +58,7 @@
     font-size: 200px;
     font-weight: $weight-bold;
     line-height: 200px;
-    letter-spacing: -5;
+    letter-spacing: -5px;
 
 }
 
