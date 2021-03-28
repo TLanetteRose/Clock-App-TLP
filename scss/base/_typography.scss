@@ -1,62 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-.text--body-sm {
-    font-family: $font-family;
-    font-size: 18px;
-    font-weight: $weight-regular;
-    line-height: 28px;
-}
+//Body Text
 
 .text--body-xs{
     font-family: $font-family;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: $weight-regular;
-    line-height: 28px;
+    line-height: 2.2rem;
 }
 
-.text--xxl {
+.text--body-sm {
     font-family: $font-family;
-    font-size: 200px;
-    font-weight: $weight-bold;
-    line-height: 200px;
-    letter-spacing: -5px;
-}
-
-.text--xl  {
-    font-family: $font-family;
-    font-size: 56px;
-    font-weight: $weight-bold;
-    line-height: 68px;
-}
-
-.text--lg {
-    font-family: $font-family;
-    font-size: 24px;
-    font-weight: $weight-bold;
-    line-height: 28px;
-    letter-spacing: -1.8px;
-    /* text-transform: uppercase; */
-}
-
-.text--md {
-    font-family: $font-family;
-    font-size: 20px;
+    font-size: 1.8rem;
     font-weight: $weight-regular;
-    line-height: 28px;
-    letter-spacing: 4px;
+    line-height: 2.8rem;
+}
+
+// Other Text
+.text--xs {
+    font-family: $font-family;
+    font-size: 1.5rem;
+    font-weight: $weight-bold;
+    line-height: 2.8rem;
+    letter-spacing: 0.3rem;
 }
 
 .text--sm {
     font-family: $font-family;
-    font-size: 18px;
+    font-size: 1.8rem;
     font-weight: $weight-bold;
-    line-height: 28px;
+    line-height: 2.8rem;
 }
 
-.text--xs {
+.text--md {
     font-family: $font-family;
-    font-size: 15px;
-    font-weight: $weight-bold;
-    line-height: 28px;
-    letter-spacing: 3px;
+    font-size: 2rem;
+    font-weight: $weight-regular;
+    line-height: 2.8rem;
+    letter-spacing: 0.4rem;
 }
+
+.text--lg {
+    font-family: $font-family;
+    font-size: 2.4rem;
+    font-weight: $weight-bold;
+    line-height: 2.8rem;
+    letter-spacing: -.18rem;
+    /* text-transform: uppercase; */
+}
+
+.text--xl {
+    font-family: $font-family;
+    font-size: 5.6rem;
+    font-weight: $weight-bold;
+    line-height: 6.8rem;
+}
+
+.text--xxl {
+    font-family: $font-family;
+    font-size: 20rem;
+    font-weight: $weight-bold;
+    line-height: 20rem;
+    letter-spacing: -0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
