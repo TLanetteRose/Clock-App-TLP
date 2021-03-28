@@ -147,169 +147,114 @@ li {
   background: rgba(0, 0, 0, 0.4);
 }
 
+/*
 .app__widgets {
-  /*padding: 3.2rem 0 4rem;*/
-  position: relative;
-  height: 100%;
-  -webkit-transition: tranform 0.5s ease;
-  transition: tranform 0.5s ease;
-  padding: 3.17rem 2.6rem 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 111rem;
-}
+    position: relative;
+    height: 100%;
+    transition: tranform 0.5s ease;
+    padding: 3.17rem 2.6rem 4rem;
+    
+    @include flex (column, space-between);
+    max-width: 111rem; //based on desktop
 
-@media screen and (min-width: 768px) {
-  .app__widgets {
-    padding: 15.3rem 16.8rem 6.4rem 6.4rem;
-  }
-}
+    @include md-breakpoint {
+        padding: 15.3rem 16.8rem 6.4rem 6.4rem;
+    }
 
-@media screen and (min-width: 992px) {
-  .app__widgets {
-    margin: 0 auto;
-  }
-}
+    @include lg-breakpoint {
+        margin: 0 auto;
+    }
 
-@media screen and (min-width: 1200px) {
-  .app__widgets {
-    padding: 5.6rem 0 9.8rem;
-  }
-}
+    @include xl-breakpoint {
+        padding: 5.6rem 0 9.8rem;
+    }
 
-.app__widgets__contents {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    &__contents {
+        @include flex (column, space-between);
+    }
 }
 
 .quote__container {
-  text-transform: initial;
-  color: white;
-  font-size: 1.5rem;
-  line-height: 2.2rem;
-  max-width: 57.3rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1.67rem;
-      grid-template-columns: 1fr 1.67rem;
-  -webkit-column-gap: 1.6rem;
-          column-gap: 1.6rem;
-}
+    text-transform: initial;
+    color: $white;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    max-width: 57.3rem; //based on desktop
 
-@media screen and (min-width: 768px) {
-  .quote__container {
-    font-size: 1.8rem;
-    line-height: 2.8rem;
-  }
-}
+    display: grid;
+    grid-template-columns: 1fr 1.67rem;
+    column-gap: 1.6rem;
 
-.quote__container .author {
-  font-weight: 700;
-  color: white;
-  padding-top: 0.8rem;
-}
+    @include md-breakpoint {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
 
-@media screen and (min-width: 768px) {
-  .quote__container .author {
-    font-size: 1.8rem;
-    line-height: 2.8rem;
-  }
-}
+    .author {
+        font-weight: $weight-bold;
+        color: $white;
+        padding-top: 0.8rem;
 
-@media screen and (min-width: 992px) {
-  .quote__container .author {
-    padding: 1.3rem 0 9.8rem;
-  }
+       @include md-breakpoint {
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+        }
+
+        @include lg-breakpoint {
+            padding: 1.3rem 0 9.8rem;
+        }
+    }
 }
 
 #refresh {
-  height: 1.8rem;
-  border: none;
-  cursor: pointer;
-  background: none;
-}
+    height: 1.8rem;
+    border: none;
+    cursor: pointer;
+    background: none;
 
-@media screen and (min-width: 768px) {
-  #refresh {
-    margin-top: 0.3rem;
-  }
-}
+    @include md-breakpoint {
+        margin-top: 0.3rem;
+    }
 
-@media screen and (min-width: 992px) {
-  #refresh {
-    margin-top: 1rem;
-  }
-}
+    @include lg-breakpoint {
+        margin-top: 1rem;
+    }
 
-#refresh svg {
-  fill: white;
-  outline: none;
-  -webkit-transition: -webkit-transform 0.15s linear;
-  transition: -webkit-transform 0.15s linear;
-  transition: transform 0.15s linear;
-  transition: transform 0.15s linear, -webkit-transform 0.15s linear;
-  opacity: 0.5;
-}
+    svg {
+        fill: $white;
+        outline: none;
+        transition: transform 0.15s linear;
+        opacity: 0.5;
 
-#refresh svg:hover {
-  opacity: 1;
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
 
 .current {
-  text-transform: uppercase;
-  color: white;
-}
+    text-transform: uppercase;
+    color: $white;
 
-@media screen and (min-width: 992px) {
-  .current {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr max-content;
-        grid-template-columns: 1fr -webkit-max-content;
+    @include lg-breakpoint {
+        display: grid;
         grid-template-columns: 1fr max-content;
-  }
-}
+    }
+    
+    header {
+        display: flex;
+    }
 
-.current header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
+    .icon {
+        padding-right: 1.6rem;
+        animation: rotation 6s infinite linear;
 
-.current .icon {
-  padding-right: 1.6rem;
-  -webkit-animation: rotation 6s infinite linear;
-          animation: rotation 6s infinite linear;
+        @include md-breakpoint {
+            height: 2.4rem;
+        }
+    }
 }
-
-@media screen and (min-width: 768px) {
-  .current .icon {
-    height: 2.4rem;
-  }
-}
-
+*/
 /* Attribution */
 .attribution {
   /* background-color: $black; */
