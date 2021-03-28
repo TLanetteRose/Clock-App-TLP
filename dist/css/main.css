@@ -1,64 +1,84 @@
 /* Variables */
 /* Colors */
 /* Font */
-/* Condensed Universal Reset */
+/* Reset */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-* {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-  vertical-align: baseline;
-  font-weight: inherit;
-  font-family: inherit;
-  font-size: 100%;
-  border: 0 none;
-  padding: 0;
-  margin: 0;
-  outline: 1px solid black;
+:root {
+  color-scheme: light dark;
 }
 
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}
-
-/* Additional Reset */
 html {
-  position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+}
+
+html:focus-within {
   scroll-behavior: smooth;
 }
 
-html,
-body {
-  height: 100vh;
-  width: 100%;
-  margin: 0 auto;
-  outline: 1px solid black;
-  overflow: hidden;
+body,
+#root,
+#root *,
+#root ::before,
+#root ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  position: relative;
+  overflow-wrap: break-word;
+  min-width: 0;
 }
 
-h1,
-h2,
-h3,
-p {
+body,
+#root {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+body {
   margin: 0;
+  font-family: system-ui;
+  text-rendering: optimizeSpeed;
+  line-height: 1.2;
 }
 
 a {
-  cursor: pointer;
-  text-decoration: none;
+  text-decoration-skip-ink: auto;
 }
 
-picture,
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
 img {
-  display: inline-block;
+  max-width: 100%;
+  display: block;
 }
 
-li {
-  list-style-type: none;
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 .text--body-xs {
@@ -147,114 +167,34 @@ li {
   background: rgba(0, 0, 0, 0.4);
 }
 
-/*
 .app__widgets {
-    position: relative;
-    height: 100%;
-    transition: tranform 0.5s ease;
-    padding: 3.17rem 2.6rem 4rem;
-    
-    @include flex (column, space-between);
-    max-width: 111rem; //based on desktop
-
-    @include md-breakpoint {
-        padding: 15.3rem 16.8rem 6.4rem 6.4rem;
-    }
-
-    @include lg-breakpoint {
-        margin: 0 auto;
-    }
-
-    @include xl-breakpoint {
-        padding: 5.6rem 0 9.8rem;
-    }
-
-    &__contents {
-        @include flex (column, space-between);
-    }
+  height: 100vh;
 }
 
-.quote__container {
-    text-transform: initial;
-    color: $white;
-    font-size: 1.5rem;
-    line-height: 2.2rem;
-    max-width: 57.3rem; //based on desktop
-
-    display: grid;
-    grid-template-columns: 1fr 1.67rem;
-    column-gap: 1.6rem;
-
-    @include md-breakpoint {
-        font-size: 1.8rem;
-        line-height: 2.8rem;
-    }
-
-    .author {
-        font-weight: $weight-bold;
-        color: $white;
-        padding-top: 0.8rem;
-
-       @include md-breakpoint {
-            font-size: 1.8rem;
-            line-height: 2.8rem;
-        }
-
-        @include lg-breakpoint {
-            padding: 1.3rem 0 9.8rem;
-        }
-    }
+.app__widgets .quote__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#refresh {
-    height: 1.8rem;
-    border: none;
-    cursor: pointer;
-    background: none;
-
-    @include md-breakpoint {
-        margin-top: 0.3rem;
-    }
-
-    @include lg-breakpoint {
-        margin-top: 1rem;
-    }
-
-    svg {
-        fill: $white;
-        outline: none;
-        transition: transform 0.15s linear;
-        opacity: 0.5;
-
-        &:hover {
-            opacity: 1;
-        }
-    }
+.app__widgets .quote__container-random {
+  text-align: left;
 }
 
-.current {
-    text-transform: uppercase;
-    color: $white;
-
-    @include lg-breakpoint {
-        display: grid;
-        grid-template-columns: 1fr max-content;
-    }
-    
-    header {
-        display: flex;
-    }
-
-    .icon {
-        padding-right: 1.6rem;
-        animation: rotation 6s infinite linear;
-
-        @include md-breakpoint {
-            height: 2.4rem;
-        }
-    }
+.app__widgets #refresh {
+  margin-top: -4.7rem;
 }
-*/
+
 /* Attribution */
 .attribution {
   /* background-color: $black; */
