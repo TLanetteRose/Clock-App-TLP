@@ -309,6 +309,7 @@ button::-moz-focus-inner {
           align-items: center;
   width: 11.7rem;
   height: 4rem;
+  padding: 1px 0.5rem 0 1.5rem;
   border-radius: 2.8rem;
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.5);
