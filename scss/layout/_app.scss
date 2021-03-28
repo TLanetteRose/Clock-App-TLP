@@ -27,17 +27,37 @@
 
 .app__widgets {
     height: 100vh;
+    text-align: left;
+    padding: 4rem 1.9rem;
+    color: $white; 
+    position: relative;
 
     .quote__container {
-        @include flex (row, space-between);
-    }
+        @include flex (row, space-evenly);
 
-    .quote__container-random {
-        text-align: left;
+        #refresh {
+            margin-top: -5.7rem;
+            background: none;
+        }
+    }
+    .current {
+        margin-top: 20.4rem;
+        
+        &__container {
+            
+            header {
+                @include flex (row, start);
+            }
+        }
     }
     
-    #refresh {
-        margin-top: -4.7rem;
+}
+
+.description {
+    color: $white;
+    
+    .info {
+        list-style-type: none;
     }
 }
 
