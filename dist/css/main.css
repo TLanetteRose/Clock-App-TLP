@@ -263,7 +263,7 @@ li {
   }
 }
 
-#refresh .svg {
+#refresh svg {
   fill: white;
   outline: none;
   -webkit-transition: -webkit-transform 0.15s linear;
@@ -273,8 +273,13 @@ li {
   opacity: 0.5;
 }
 
-#refresh .svg:hover {
+#refresh svg:hover {
   opacity: 1;
+}
+
+.current {
+  text-transform: uppercase;
+  color: white;
 }
 
 /* Attribution */

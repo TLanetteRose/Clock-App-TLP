@@ -98,7 +98,7 @@
         margin-top: 1rem;
     }
 
-    .svg {
+    svg {
         fill: $white;
         outline: none;
         transition: transform 0.15s linear;
@@ -110,7 +110,10 @@
     }
 }
 
-
+.current {
+    text-transform: uppercase;
+    color: $white;
+}
 /* Attribution */
 .attribution {
     /* background-color: $black; */
