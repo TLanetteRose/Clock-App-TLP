@@ -91,11 +91,35 @@
             @include md-breakpoint {
                 width: 14.6rem;
                 height: 5.7rem;
+                font-size: 1.6rem;
+                line-height: 2.8rem;
+                letter-spacing: 0.5rem;
+                padding: 0.8rem 0.9rem 0.8rem 2.1rem;
             }
 
+            @include lg-breakpoint {
+                align-self: flex-end;
+                margin-left: auto;
+            }
 
             .arrow {
-                width: 30px;
+                width: 3rem;
+                height: 3rem;
+                transform: rotate(180deg);
+                transition: transform 0.5s, filter 02s;
+
+                &:hover{
+                    filter: brightness(330%);
+                }
+
+                @include md-breakpoint {
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
+
+            .rotate {
+                transform: rotate(0deg);
             }
         }
         

@@ -327,11 +327,47 @@ button::-moz-focus-inner {
   .app__widgets .current .expand {
     width: 14.6rem;
     height: 5.7rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.5rem;
+    padding: 0.8rem 0.9rem 0.8rem 2.1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .app__widgets .current .expand {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-left: auto;
   }
 }
 
 .app__widgets .current .expand .arrow {
-  width: 30px;
+  width: 3rem;
+  height: 3rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.5s, -webkit-filter 02s;
+  transition: -webkit-transform 0.5s, -webkit-filter 02s;
+  transition: transform 0.5s, filter 02s;
+  transition: transform 0.5s, filter 02s, -webkit-transform 0.5s, -webkit-filter 02s;
+}
+
+.app__widgets .current .expand .arrow:hover {
+  -webkit-filter: brightness(330%);
+          filter: brightness(330%);
+}
+
+@media screen and (min-width: 768px) {
+  .app__widgets .current .expand .arrow {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+
+.app__widgets .current .expand .rotate {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 .description {
