@@ -41,14 +41,57 @@
         }
     }
     .current {
-        margin-top: 20.4rem;
+        margin-top: 17.4rem;
         
         &__container {
-            
+            position: relative;
             header {
-                @include flex (row, start);
+               @include flex (row, start);
             }
         }
+
+        &__time {
+            position: relative;
+
+            .time__container {
+                @include flex (row, start);
+
+                .time {
+                    padding-left: 10px;
+                }
+
+                .standard-time {
+                    @include flex(row, start);
+                }
+            }
+        }
+
+        &__location {
+            position: absolute;
+            bottom: 5px;
+        }
+
+        .expand {
+            @include flex(row, space-evenly);
+            width: 11.7rem;
+            height: 4rem;
+            border-radius: 2.8rem;
+            text-transform: uppercase;
+            color: rgba(0,0,0,0.5);
+            background: $white;
+            font-size: 1.2rem;
+            font-weight: $weight-bold;
+            line-height: 1.4rem;
+            letter-spacing: 3.75px;
+            border: none;
+            cursor: pointer;
+
+
+            .arrow {
+                width: 30px;
+            }
+        }
+        
     }
     
 }

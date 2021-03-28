@@ -225,7 +225,11 @@ button::-moz-focus-inner {
 }
 
 .app__widgets .current {
-  margin-top: 20.4rem;
+  margin-top: 17.4rem;
+}
+
+.app__widgets .current__container {
+  position: relative;
 }
 
 .app__widgets .current__container header {
@@ -242,6 +246,83 @@ button::-moz-focus-inner {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.app__widgets .current__time {
+  position: relative;
+}
+
+.app__widgets .current__time .time__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app__widgets .current__time .time__container .time {
+  padding-left: 10px;
+}
+
+.app__widgets .current__time .time__container .standard-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.app__widgets .current__location {
+  position: absolute;
+  bottom: 5px;
+}
+
+.app__widgets .current .expand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 11.7rem;
+  height: 4rem;
+  border-radius: 2.8rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  background: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.4rem;
+  letter-spacing: 3.75px;
+  border: none;
+  cursor: pointer;
+}
+
+.app__widgets .current .expand .arrow {
+  width: 30px;
 }
 
 .description {
