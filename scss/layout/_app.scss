@@ -97,6 +97,13 @@
     @include lg-breakpoint {
         margin-top: 1rem;
     }
+
+    .svg {
+        fill: $white;
+        outline: none;
+        transition: transform 0.15s linear;
+        opacity: 0.5;
+    }
 }
 
 

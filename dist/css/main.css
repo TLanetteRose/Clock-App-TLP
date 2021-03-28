@@ -263,6 +263,16 @@ li {
   }
 }
 
+#refresh .svg {
+  fill: white;
+  outline: none;
+  -webkit-transition: -webkit-transform 0.15s linear;
+  transition: -webkit-transform 0.15s linear;
+  transition: transform 0.15s linear;
+  transition: transform 0.15s linear, -webkit-transform 0.15s linear;
+  opacity: 0.5;
+}
+
 /* Attribution */
 .attribution {
   /* background-color: $black; */
