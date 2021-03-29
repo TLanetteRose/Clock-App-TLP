@@ -281,9 +281,30 @@ button::-moz-focus-inner {
   background: none;
 }
 
+@media screen and (min-width: 768px) {
+  .app__widgets .quote__container #refresh {
+    margin-top: 0.3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .app__widgets .quote__container #refresh {
+    margin-top: 0.5rem;
+  }
+}
+
 .app__widgets .quote__container #refresh svg {
   fill: white;
   outline: none;
+  -webkit-transition: -webkit-transform 0.15s linear;
+  transition: -webkit-transform 0.15s linear;
+  transition: transform 0.15s linear;
+  transition: transform 0.15s linear, -webkit-transform 0.15s linear;
+  opacity: 0.5;
+}
+
+.app__widgets .quote__container #refresh svg:hover {
+  opacity: 1;
 }
 
 .app__widgets .current {
