@@ -129,20 +129,20 @@ button::-moz-focus-inner {
 }
 
 .text-xs {
-  font-size: 15px;
+  font-size: 0.938rem;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.75rem;
   letter-spacing: +3px;
 }
 
 .text-sm {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 1.75rem;
 }
 
 .text-md {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: +4px;
@@ -240,19 +240,26 @@ button::-moz-focus-inner {
 }
 
 .app__widgets .quote__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-transform: initial;
+  max-width: 57.6rem;
+  /*@include flex (row, space-evenly);*/
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.67rem;
+      grid-template-columns: 1fr 1.67rem;
+  -webkit-column-gap: 1.6rem;
+          column-gap: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .app__widgets .quote__container {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+}
+
+.app__widgets .quote__container .author {
+  font-weight: 700 !important;
 }
 
 .app__widgets .quote__container #refresh {

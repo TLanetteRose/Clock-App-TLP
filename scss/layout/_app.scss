@@ -48,8 +48,24 @@
         padding: 5.6rem 0 9.8rem;
     }
 
+
+
     .quote__container {
-        @include flex (row, space-evenly);
+        text-transform: initial;
+        max-width: 57.6rem;
+        /*@include flex (row, space-evenly);*/
+        display: grid;
+        grid-template-columns: 1fr 1.67rem;
+        column-gap: 1.6rem;
+
+        @include md-breakpoint {
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+        }
+
+        .author {
+            font-weight: $weight-bold !important;
+        }
 
         #refresh {
             margin-top: -5.7rem;
