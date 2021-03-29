@@ -8,7 +8,8 @@ const period = document.querySelector('.period');
 const expand = document.querySelector('.expand');
 
 const URL_QUOTE = 'https://api.quotable.io/random';
-
+const URL_TIMEZONE = 'https://worldtimeapi.org/api/ip';
+const URL_LOCATION = 'https://freegeoip.app/json/';
 
 
 function generateQuote(){
@@ -18,7 +19,7 @@ function generateQuote(){
     })
     .then(function(quoteRes) {
         document.getElementById('quote').innerHTML = quoteRes.content; 
-        document.querySelector('.author').innerHTML = '- ' + quoteRes.author;
+        document.querySelector('.author').innerHTML = quoteRes.author;
     })
     .catch(function(err) {
         console.log(err);
