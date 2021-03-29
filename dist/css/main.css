@@ -170,7 +170,7 @@ button::-moz-focus-inner {
   letter-spacing: -5px;
 }
 
-.background {
+#background {
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -184,7 +184,7 @@ button::-moz-focus-inner {
   z-index: -1;
 }
 
-.background::before {
+#background::before {
   content: '';
   position: absolute;
   top: 0;
@@ -389,7 +389,7 @@ button::-moz-focus-inner {
   bottom: 5px;
 }
 
-.app__widgets .current .expand {
+.app__widgets .current #expand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,7 +419,7 @@ button::-moz-focus-inner {
 }
 
 @media screen and (min-width: 768px) {
-  .app__widgets .current .expand {
+  .app__widgets .current #expand {
     /*  width: 14.6rem;
                 height: 5.7rem; */
     font-size: 1.6rem;
@@ -430,14 +430,14 @@ button::-moz-focus-inner {
 }
 
 @media screen and (min-width: 992px) {
-  .app__widgets .current .expand {
+  .app__widgets .current #expand {
     -ms-flex-item-align: end;
         align-self: flex-end;
     margin-left: auto;
   }
 }
 
-.app__widgets .current .expand .arrow {
+.app__widgets .current #expand .arrow {
   width: 3rem;
   height: 3rem;
   -webkit-transform: rotate(180deg);
@@ -448,19 +448,19 @@ button::-moz-focus-inner {
   transition: transform 0.5s, filter 02s, -webkit-transform 0.5s, -webkit-filter 02s;
 }
 
-.app__widgets .current .expand .arrow:hover {
+.app__widgets .current #expand .arrow:hover {
   -webkit-filter: brightness(330%);
           filter: brightness(330%);
 }
 
 @media screen and (min-width: 768px) {
-  .app__widgets .current .expand .arrow {
+  .app__widgets .current #expand .arrow {
     width: 4rem;
     height: 4rem;
   }
 }
 
-.app__widgets .current .expand .rotate {
+.app__widgets .current #expand .rotate {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }

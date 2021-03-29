@@ -11,7 +11,7 @@
 </head>
 <body>
   <h1 class="sr-only">Clock app</h1> 
-  <div class="background"></div>
+  <div id="background"></div>
 
   <main class="app__widgets" id="app">
     <article class="quote__container">
@@ -27,7 +27,7 @@
     <article class="current">
       <div class="current__container">
         <header>
-          <img class="current__icon icon">
+          <img id="icon" class="current__icon">
           <h2 class="current__greeting text-sm"></h2>
           <span class="currently text-sm">, it's currently</span>
         </header>
@@ -36,21 +36,21 @@
           <div class="time__container">
             <h2 id="time" class="text-xl"></h2>
             <div class="standard-time">
-              <p class="period text-md"></p>
-              <p class="region"></p>
+              <p id="period" class="text-md"></p>
+              <p id="region"></p>
             </div><!-- .standard-time -->
           </div><!-- .time__container -->
 
-          <h3 class="current__location">in</h3>
+          <h3 id="location" class="current__location">in</h3>
         </section><!-- .current__time --> 
       </div><!-- .current__container -->
-      <button class="expand">More
+      <button id="expand">More
         <img src="./assets/desktop/icon-arrow-up.svg" alt="arrow icon" aria-hidden="true" class="arrow">
       </button>
     </article><!-- .current -->
   </main><!-- .app__widgets -->
 
-  <article class="description">
+  <article id="description">
     <ul class="desc-content">
         <li class="desc-region info">
           <h4 class="text--xs">Current timezone</h4>
@@ -82,7 +82,10 @@
   
 </body>
 
+<!--
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/main.js"></script> -->
+
+<script src="js/main2.js"></script>
 
 </html>

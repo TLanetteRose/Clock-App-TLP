@@ -1,6 +1,6 @@
 // Default: Mobile
 
-.background {
+#background {
     height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -148,7 +148,7 @@
             bottom: 5px;
         }
 
-        .expand {
+        #expand {
             @include flex(row, space-evenly);
             width: 11.7rem;
             height: 2.7rem;
