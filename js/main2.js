@@ -1,8 +1,8 @@
 
 const URL_QUOTES = 'https://api.quotable.io/random';
 const URL_TIME = 'http://worldclockapi.com/api/json/cet/now';
-const URL_TIMEZONE = 'https://freegeoip.app/json/';
-const URL_LOCATION = 'https://freegeoip.app/json/';
+//const URL_TIMEZONE = 'https://freegeoip.app/json/';
+//const URL_LOCATION = 'https://freegeoip.app/json/';
 
 const refresh = document.getElementById('refresh');
 const quote = document.getElementById('quote');
@@ -15,13 +15,13 @@ const app = document.getElementById('app');
 const background = document.getElementById('background');
 const icon = document.getElementById('icon');
 const period = document.getElementById('period');
-const region = document.getElementById('region');
-const location = document.getElementById('location');
+//const region = document.getElementById('region');
+//const location = document.getElementById('location');
 
 getQuote();
 getTime();
-getTimeZone();
-getLocation();
+//getTimeZone();
+//getLocation();
 
 const interval = setInterval(getTime, 1000);
 clearInterval(interval);
@@ -104,16 +104,7 @@ function displayTime(h, m) {
 }
 
 
-async function getTimeZone() {
-    const res = await fetch(URL_TIMEZONE);
-    const data = await res.json();
-    const region = data.content;
-    displayTimeZone(region);
-}
 
-function displayTimeZone (region) {
-    
-}
 
 
 
