@@ -123,8 +123,8 @@ button::-moz-focus-inner {
 }
 
 .text-body-regular {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   font-weight: 400;
 }
 
@@ -136,7 +136,7 @@ button::-moz-focus-inner {
 }
 
 .text-sm {
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.75rem;
 }
@@ -144,29 +144,29 @@ button::-moz-focus-inner {
 .text-md {
   font-size: 1.25rem;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.75rem;
   letter-spacing: +4px;
   text-transform: uppercase;
 }
 
 .text-lg {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 1.75rem;
   letter-spacing: -4.8px;
   text-transform: uppercase;
 }
 
 .text-xl {
-  font-size: 100px;
+  font-size: 6.25rem;
   font-weight: 700;
-  line-height: 64px;
+  line-height: 4rem;
 }
 
 .text-xxl {
-  font-size: 200px;
+  font-size: 12.5rem;
   font-weight: 700;
-  line-height: 200px;
+  line-height: 12.5rem;
   letter-spacing: -5px;
 }
 

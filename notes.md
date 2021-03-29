@@ -9,7 +9,9 @@ Referring to using Axios with JS: https://www.digitalocean.com/community/tutoria
 Used Free IP Geolocation and axios; 
 https://github.com/lukePeavey/quotable for random quotes
 Used display: grid for the quote container
-03/28/2021-- Trying a new CSS Reset and styling page according to my details. 
+03/28/2021-- Trying a new CSS Reset and styling page according to my details. Used a px to rem converter 
+https://nekocalc.com/px-to-rem-converter
+
 
 
 
