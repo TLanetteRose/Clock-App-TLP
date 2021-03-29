@@ -257,19 +257,19 @@ button::-moz-focus-inner {
   }
 }
 
-.app__widgets .quote__container .author {
+.app__widgets .quote__container #author {
   font-weight: 700 !important;
   padding-top: .18rem;
 }
 
 @media screen and (min-width: 768px) {
-  .app__widgets .quote__container .author {
+  .app__widgets .quote__container #author {
     font-size: 1.25rem;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .app__widgets .quote__container .author {
+  .app__widgets .quote__container #author {
     padding: 1.8rem 0 9.8rem;
   }
 }
@@ -364,7 +364,7 @@ button::-moz-focus-inner {
           align-items: center;
 }
 
-.app__widgets .current__time .time__container .time {
+.app__widgets .current__time .time__container #time {
   padding-left: 10px;
 }
 

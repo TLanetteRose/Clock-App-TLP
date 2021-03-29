@@ -64,7 +64,7 @@
             }
         }
 
-        .author {
+        #author {
             font-weight: $weight-bold !important;
             padding-top: .18rem;
 
@@ -133,7 +133,7 @@
             .time__container {
                 @include flex (row, start);
 
-                .time {
+                #time {
                     padding-left: 10px;
                 }
 
