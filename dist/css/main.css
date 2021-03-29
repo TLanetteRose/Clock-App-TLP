@@ -287,12 +287,6 @@ button::-moz-focus-inner {
   }
 }
 
-@media screen and (min-width: 992px) {
-  .app__widgets .quote__container #refresh {
-    margin-top: 0.5rem;
-  }
-}
-
 .app__widgets .quote__container #refresh svg {
   fill: white;
   outline: none;
@@ -308,7 +302,8 @@ button::-moz-focus-inner {
 }
 
 .app__widgets .current {
-  margin-top: 17.4rem;
+  top: -5rem;
+  position: relative;
 }
 
 .app__widgets .current__container {
@@ -329,6 +324,23 @@ button::-moz-focus-inner {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.app__widgets .current__greeting {
+  font-weight: 400 !important;
+  text-transform: uppercase;
+}
+
+.app__widgets .current .currently {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .app__widgets .current .currently {
+    visibility: visible;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+  }
 }
 
 .app__widgets .current__time {

@@ -101,12 +101,28 @@
 
     }
     .current {
-        margin-top: 17.4rem;
-        
+        top: -5rem;
+        position: relative;
+
         &__container {
             position: relative;
             header {
                @include flex (row, start);
+            }
+        }
+
+        &__greeting {
+            font-weight: $weight-regular !important;
+            text-transform: uppercase;
+        }
+
+        .currently {
+            visibility: hidden;
+
+            @include md-breakpoint {
+                visibility: visible;
+                font-weight: $weight-regular !important;
+                text-transform: uppercase;
             }
         }
 
