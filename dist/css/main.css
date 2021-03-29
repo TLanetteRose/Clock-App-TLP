@@ -275,8 +275,15 @@ button::-moz-focus-inner {
 }
 
 .app__widgets .quote__container #refresh {
-  margin-top: -5.7rem;
+  height: 1.8rem;
+  border: none;
+  cursor: pointer;
   background: none;
+}
+
+.app__widgets .quote__container #refresh svg {
+  fill: white;
+  outline: none;
 }
 
 .app__widgets .current {

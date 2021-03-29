@@ -78,9 +78,18 @@
         }
 
         #refresh {
-            margin-top: -5.7rem;
+            height: 1.8rem;
+            border: none;
+            cursor: pointer;
             background: none;
+
+            svg {
+                fill: $white;
+                outline: none;
+
+            }
         }
+
     }
     .current {
         margin-top: 17.4rem;
