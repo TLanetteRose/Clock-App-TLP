@@ -48,21 +48,81 @@
         padding: 5.6rem 0 9.8rem;
     }
 
+
+
     .quote__container {
-        @include flex (row, space-evenly);
+        text-transform: initial;
+        max-width: 57.6rem;
+        /*@include flex (row, space-evenly);*/
+        display: grid;
+        grid-template-columns: 1fr 1.67rem;
+        column-gap: 1.6rem;
+
+        #quote {
+            @include md-breakpoint {
+                font-size: 1.25rem;
+            }
+        }
+
+        .author {
+            font-weight: $weight-bold !important;
+            padding-top: .18rem;
+
+            @include md-breakpoint {
+                font-size: 1.25rem;
+            }
+
+            @include lg-breakpoint {
+                padding: 1.8rem 0 9.8rem;
+            }
+        }
 
         #refresh {
-            margin-top: -5.7rem;
+            height: 1.8rem;
+            border: none;
+            cursor: pointer;
             background: none;
+
+            @include md-breakpoint {
+                margin-top: 0.3rem;
+            }
+
+            svg {
+                fill: $white;
+                outline: none;
+                transition: transform 0.15s linear;
+                opacity: 0.5;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
         }
+
     }
     .current {
-        margin-top: 17.4rem;
-        
+        top: -5rem;
+        position: relative;
+
         &__container {
             position: relative;
             header {
                @include flex (row, start);
+            }
+        }
+
+        &__greeting {
+            font-weight: $weight-regular !important;
+            text-transform: uppercase;
+        }
+
+        .currently {
+            visibility: hidden;
+
+            @include md-breakpoint {
+                visibility: visible;
+                font-weight: $weight-regular !important;
+                text-transform: uppercase;
             }
         }
 

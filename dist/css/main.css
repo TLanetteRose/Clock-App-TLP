@@ -123,50 +123,50 @@ button::-moz-focus-inner {
 }
 
 .text-body-regular {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   font-weight: 400;
 }
 
 .text-xs {
-  font-size: 15px;
+  font-size: 0.938rem;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.75rem;
   letter-spacing: +3px;
 }
 
 .text-sm {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 1.75rem;
 }
 
 .text-md {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 1.75rem;
   letter-spacing: +4px;
   text-transform: uppercase;
 }
 
 .text-lg {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 1.75rem;
   letter-spacing: -4.8px;
   text-transform: uppercase;
 }
 
 .text-xl {
-  font-size: 100px;
+  font-size: 6.25rem;
   font-weight: 700;
-  line-height: 64px;
+  line-height: 4rem;
 }
 
 .text-xxl {
-  font-size: 200px;
+  font-size: 12.5rem;
   font-weight: 700;
-  line-height: 200px;
+  line-height: 12.5rem;
   letter-spacing: -5px;
 }
 
@@ -240,28 +240,70 @@ button::-moz-focus-inner {
 }
 
 .app__widgets .quote__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-transform: initial;
+  max-width: 57.6rem;
+  /*@include flex (row, space-evenly);*/
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.67rem;
+      grid-template-columns: 1fr 1.67rem;
+  -webkit-column-gap: 1.6rem;
+          column-gap: 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .app__widgets .quote__container #quote {
+    font-size: 1.25rem;
+  }
+}
+
+.app__widgets .quote__container .author {
+  font-weight: 700 !important;
+  padding-top: .18rem;
+}
+
+@media screen and (min-width: 768px) {
+  .app__widgets .quote__container .author {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .app__widgets .quote__container .author {
+    padding: 1.8rem 0 9.8rem;
+  }
 }
 
 .app__widgets .quote__container #refresh {
-  margin-top: -5.7rem;
+  height: 1.8rem;
+  border: none;
+  cursor: pointer;
   background: none;
 }
 
+@media screen and (min-width: 768px) {
+  .app__widgets .quote__container #refresh {
+    margin-top: 0.3rem;
+  }
+}
+
+.app__widgets .quote__container #refresh svg {
+  fill: white;
+  outline: none;
+  -webkit-transition: -webkit-transform 0.15s linear;
+  transition: -webkit-transform 0.15s linear;
+  transition: transform 0.15s linear;
+  transition: transform 0.15s linear, -webkit-transform 0.15s linear;
+  opacity: 0.5;
+}
+
+.app__widgets .quote__container #refresh svg:hover {
+  opacity: 1;
+}
+
 .app__widgets .current {
-  margin-top: 17.4rem;
+  top: -5rem;
+  position: relative;
 }
 
 .app__widgets .current__container {
@@ -282,6 +324,23 @@ button::-moz-focus-inner {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.app__widgets .current__greeting {
+  font-weight: 400 !important;
+  text-transform: uppercase;
+}
+
+.app__widgets .current .currently {
+  visibility: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .app__widgets .current .currently {
+    visibility: visible;
+    font-weight: 400 !important;
+    text-transform: uppercase;
+  }
 }
 
 .app__widgets .current__time {
