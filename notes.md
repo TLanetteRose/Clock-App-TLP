@@ -11,7 +11,7 @@ https://github.com/lukePeavey/quotable for random quotes
 Used display: grid for the quote container
 03/28/2021-- Trying a new CSS Reset and styling page according to my details. Used a px to rem converter 
 https://nekocalc.com/px-to-rem-converter
-
+03/29/2021: WoooHooo! I successfully use fetch today! 
 
 
 
