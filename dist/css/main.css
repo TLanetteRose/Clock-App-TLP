@@ -252,14 +252,26 @@ button::-moz-focus-inner {
 }
 
 @media screen and (min-width: 768px) {
-  .app__widgets .quote__container {
-    font-size: 1.8rem;
-    line-height: 2.8rem;
+  .app__widgets .quote__container #quote {
+    font-size: 1.25rem;
   }
 }
 
 .app__widgets .quote__container .author {
   font-weight: 700 !important;
+  padding-top: .18rem;
+}
+
+@media screen and (min-width: 768px) {
+  .app__widgets .quote__container .author {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .app__widgets .quote__container .author {
+    padding: 1.8rem 0 9.8rem;
+  }
 }
 
 .app__widgets .quote__container #refresh {

@@ -58,13 +58,23 @@
         grid-template-columns: 1fr 1.67rem;
         column-gap: 1.6rem;
 
-        @include md-breakpoint {
-            font-size: 1.8rem;
-            line-height: 2.8rem;
+        #quote {
+            @include md-breakpoint {
+                font-size: 1.25rem;
+            }
         }
 
         .author {
             font-weight: $weight-bold !important;
+            padding-top: .18rem;
+
+            @include md-breakpoint {
+                font-size: 1.25rem;
+            }
+
+            @include lg-breakpoint {
+                padding: 1.8rem 0 9.8rem;
+            }
         }
 
         #refresh {
