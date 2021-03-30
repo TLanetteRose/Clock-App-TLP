@@ -404,7 +404,7 @@ button::-moz-focus-inner {
       -ms-flex-align: center;
           align-items: center;
   width: 11.7rem;
-  height: 3.7rem;
+  height: 2.7rem;
   padding: 1px 0.5rem 0 1.5rem;
   border-radius: 2.8rem;
   text-transform: uppercase;
@@ -420,8 +420,8 @@ button::-moz-focus-inner {
 
 @media screen and (min-width: 768px) {
   .app__widgets .current .expand {
-    width: 14.6rem;
-    height: 5.7rem;
+    /*  width: 14.6rem;
+                height: 5.7rem; */
     font-size: 1.6rem;
     line-height: 2.8rem;
     letter-spacing: 0.5rem;
