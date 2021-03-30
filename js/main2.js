@@ -85,8 +85,14 @@ function getTimeZone() {
         return regionRes.json();
     })
     .then(function(regionRes) {
+        //const regionName = regionRes.region_name;
+        //const countryCode = regionRes.country_code;
+
         // Local Timezone
         document.querySelector('.time-zone').innerHTML = regionRes.abbreviation;
+        // Location 
+        //document.querySelector('.current__location').//innerHTML = `in ${regionName}, ${countryCode}`;
+
         // Details
         document.getElementById('timezone').innerHTML = regionRes.timezone;
         document.getElementById('year-day').innerHTML = regionRes.day_of_year;
@@ -97,7 +103,22 @@ function getTimeZone() {
         console.log(err);
     });
 }
-
+ 
+function getLocation() {
+    fetch(URL_LOCATION)
+    .then(function(locationRes) {
+        return locationRes.json();
+    })
+    .then(function(locationRes) {
+        //const ipLocation = locationRes.data;
+        const regionName = locationRes.region_name;
+        const countryCode = locationRes.country_code;
+        document.querySelector('.current__location').innerHTML = `in ${regionName}, ${countryCode}`;
+    })
+    .catch(function(err){
+        console.log(err);
+    });
+}
 
 getTime();
 getTimeZone();
