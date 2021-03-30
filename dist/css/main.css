@@ -389,11 +389,17 @@ button::-moz-focus-inner {
   bottom: 5px;
 }
 
+footer {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 /* Attribution */
 .attribution {
   /* background-color: $black; */
-  position: relative;
-  bottom: -30rem;
   font-size: 11px;
   text-align: center;
   color: white;
