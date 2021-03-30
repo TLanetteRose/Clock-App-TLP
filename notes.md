@@ -13,6 +13,8 @@ Used display: grid for the quote container
 https://nekocalc.com/px-to-rem-converter
 03/29/2021: WoooHooo! I successfully use fetch today! https://dev.to/asaoluelijah/understanding-fetch-2-building-a-random-quote-generator-app-25nj
 
+03/30/2021-- I got my 'fetch' right today!!! 
+
 
 
 

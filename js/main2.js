@@ -27,7 +27,7 @@ function generateQuote(){
     
 }
 
-setInterval(generateQuote(), 1000);
+setInterval(generateQuote(), 10000);
 
 
 // Get current day and time
@@ -114,6 +114,9 @@ function getLocation() {
         // Location 
         document.querySelector('.current__location').innerHTML = `in ${regionName}, ${countryCode}`;
     })
+    .catch(function(err) {
+        console.log(err);
+    });
 }
 
 getTime();
