@@ -389,88 +389,12 @@ button::-moz-focus-inner {
   bottom: 5px;
 }
 
-.app__widgets .current .expand {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 11.7rem;
-  height: 2.7rem;
-  padding: 1px 0.5rem 0 1.5rem;
-  border-radius: 2.8rem;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.5);
-  background: white;
-  font-size: 1.2rem;
-  font-weight: 700;
-  line-height: 1.4rem;
-  letter-spacing: 3.75px;
-  border: none;
-  cursor: pointer;
-}
-
-@media screen and (min-width: 768px) {
-  .app__widgets .current .expand {
-    /*  width: 14.6rem;
-                height: 5.7rem; */
-    font-size: 1.6rem;
-    line-height: 2.8rem;
-    letter-spacing: 0.5rem;
-    padding: 0.8rem 0.9rem 0.8rem 2.1rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .app__widgets .current .expand {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    margin-left: auto;
-  }
-}
-
-.app__widgets .current .expand .arrow {
-  width: 3rem;
-  height: 3rem;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: -webkit-transform 0.5s, -webkit-filter 02s;
-  transition: -webkit-transform 0.5s, -webkit-filter 02s;
-  transition: transform 0.5s, filter 02s;
-  transition: transform 0.5s, filter 02s, -webkit-transform 0.5s, -webkit-filter 02s;
-}
-
-.app__widgets .current .expand .arrow:hover {
-  -webkit-filter: brightness(330%);
-          filter: brightness(330%);
-}
-
-@media screen and (min-width: 768px) {
-  .app__widgets .current .expand .arrow {
-    width: 4rem;
-    height: 4rem;
-  }
-}
-
-.app__widgets .current .expand .rotate {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
-.description {
-  color: white;
-}
-
-.description .info {
-  list-style-type: none;
+footer {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 /* Attribution */

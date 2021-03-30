@@ -27,6 +27,7 @@
 
 .app__widgets {
     height: 100vh;
+    width: 100%;
     text-align: left;
     padding: 3.8rem 1.9rem;
     color: $white; 
@@ -100,7 +101,7 @@
         }
 
     }
-    .current {
+   .current {
         top: -5rem;
         position: relative;
 
@@ -147,69 +148,13 @@
             position: absolute;
             bottom: 5px;
         }
-
-        .expand {
-            @include flex(row, space-evenly);
-            width: 11.7rem;
-            height: 2.7rem;
-            padding: 1px 0.5rem 0 1.5rem;
-            border-radius: 2.8rem;
-            text-transform: uppercase;
-            color: rgba(0,0,0,0.5);
-            background: $white;
-            font-size: 1.2rem;
-            font-weight: $weight-bold;
-            line-height: 1.4rem;
-            letter-spacing: 3.75px;
-            border: none;
-            cursor: pointer;
-
-            @include md-breakpoint {
-              /*  width: 14.6rem;
-                height: 5.7rem; */
-                font-size: 1.6rem;
-                line-height: 2.8rem;
-                letter-spacing: 0.5rem;
-                padding: 0.8rem 0.9rem 0.8rem 2.1rem;
-            }
-
-            @include lg-breakpoint {
-                align-self: flex-end;
-                margin-left: auto;
-            }
-
-            .arrow {
-                width: 3rem;
-                height: 3rem;
-                transform: rotate(180deg);
-                transition: transform 0.5s, filter 02s;
-
-                &:hover{
-                    filter: brightness(330%);
-                }
-
-                @include md-breakpoint {
-                    width: 4rem;
-                    height: 4rem;
-                }
-            }
-
-            .rotate {
-                transform: rotate(0deg);
-            }
-        }
         
-    }
+    } 
     
 }
 
-.description {
-    color: $white;
-    
-    .info {
-        list-style-type: none;
-    }
-}
+footer  {
+  width: 100%;
 
 
 /* Attribution */

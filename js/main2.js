@@ -6,6 +6,7 @@ const icon = document.querySelector('.icon');
 const details = document.querySelector('.description'); 
 const period = document.querySelector('.period'); 
 const expand = document.querySelector('.expand');
+//const app = document.querySelector('app');
 
 const URL_QUOTE = 'https://api.quotable.io/random';
 const URL_TIMEZONE = 'https://worldtimeapi.org/api/ip';
@@ -52,6 +53,8 @@ function getTime() {
         background.classList.add('day');
         icon.src = '../assets/desktop/icon-sun.svg';
         icon.setAttribute('alt', 'sun icon');
+        details.style.color = '#303030';
+        details.style.background = 'rgba(255,255,255,0.75)';
     } else {
         background.classList.add('night');
         icon.src = '../assets/desktop/icon-moon.svg';
@@ -119,6 +122,16 @@ function getLocation() {
     });
 }
 
+generateQuote();
 getTime();
 getTimeZone();
 getLocation();
+
+// Event Listeners 
+function showDetails() {
+    document.querySelector('app').classList.toggle('transform');
+    details.classList.toggle('transform');
+}
+
+// Random Quote
+document.getElementById('refresh').addEventListener('click', generateQuote);
