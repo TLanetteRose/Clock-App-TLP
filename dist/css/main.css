@@ -416,6 +416,26 @@ button::-moz-focus-inner {
   letter-spacing: 3.75px;
   border: none;
   cursor: pointer;
+  /*
+            .arrow {
+                width: 3rem;
+                height: 3rem;
+                transform: rotate(180deg);
+                transition: transform 0.5s, filter 02s;
+
+                &:hover{
+                    filter: brightness(330%);
+                }
+
+                @include md-breakpoint {
+                    width: 4rem;
+                    height: 4rem;
+                }
+            }
+
+            .rotate {
+                transform: rotate(0deg);
+            } */
 }
 
 @media screen and (min-width: 768px) {
@@ -437,40 +457,45 @@ button::-moz-focus-inner {
   }
 }
 
-.app__widgets .current .expand .arrow {
-  width: 3rem;
-  height: 3rem;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: -webkit-transform 0.5s, -webkit-filter 02s;
-  transition: -webkit-transform 0.5s, -webkit-filter 02s;
-  transition: transform 0.5s, filter 02s;
-  transition: transform 0.5s, filter 02s, -webkit-transform 0.5s, -webkit-filter 02s;
-}
-
-.app__widgets .current .expand .arrow:hover {
-  -webkit-filter: brightness(330%);
-          filter: brightness(330%);
-}
-
-@media screen and (min-width: 768px) {
-  .app__widgets .current .expand .arrow {
-    width: 4rem;
-    height: 4rem;
-  }
-}
-
-.app__widgets .current .expand .rotate {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
 .description {
   color: white;
+  position: relative;
+  overflow: hidden;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .description .info {
   list-style-type: none;
+}
+
+.description::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.75);
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  z-index: -1;
+}
+
+#app {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform 300ms ease-out;
+  transition: -webkit-transform 300ms ease-out;
+  transition: transform 300ms ease-out;
+  transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
+}
+
+#app.show-desc {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 /* Attribution */

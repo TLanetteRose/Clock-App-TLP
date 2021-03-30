@@ -100,7 +100,7 @@
         }
 
     }
-    .current {
+   .current {
         top: -5rem;
         position: relative;
 
@@ -165,19 +165,19 @@
             cursor: pointer;
 
             @include md-breakpoint {
-              /*  width: 14.6rem;
+               width: 14.6rem;
                 height: 5.7rem; */
                 font-size: 1.6rem;
                 line-height: 2.8rem;
                 letter-spacing: 0.5rem;
-                padding: 0.8rem 0.9rem 0.8rem 2.1rem;
+                padding: 0.8rem 0.9rem 0.8rem 2.1rem; 
             }
 
-            @include lg-breakpoint {
+           @include lg-breakpoint {
                 align-self: flex-end;
                 margin-left: auto;
-            }
-
+            } 
+    
             .arrow {
                 width: 3rem;
                 height: 3rem;
@@ -196,20 +196,52 @@
 
             .rotate {
                 transform: rotate(0deg);
-            }
-        }
+            } 
+
+ 
+        } 
+
         
-    }
+    } 
     
 }
 
 .description {
     color: $white;
+    position: relative;
+    overflow: hidden;
+    padding-top: 48px;
+    padding-bottom: 48px;
     
     .info {
         list-style-type: none;
     }
 }
+
+.description::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.75);
+    filter: blur(5px);
+    transform: scale(1.5);
+    z-index: -1;
+}
+
+#app {
+    transform: translateY(0);
+    transition: transform 300ms ease-out;
+}
+
+#app.show-desc {
+    transform: translateY(0);
+
+    .
+}
+
 
 
 /* Attribution */
