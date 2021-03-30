@@ -364,7 +364,7 @@ button::-moz-focus-inner {
           align-items: center;
 }
 
-.app__widgets .current__time .time__container #time {
+.app__widgets .current__time .time__container .time {
   padding-left: 10px;
 }
 

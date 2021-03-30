@@ -133,7 +133,7 @@
             .time__container {
                 @include flex (row, start);
 
-                #time {
+                .time {
                     padding-left: 10px;
                 }
 
