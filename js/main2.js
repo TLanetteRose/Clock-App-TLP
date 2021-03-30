@@ -27,7 +27,7 @@ function generateQuote(){
     
 }
 
-setInterval(generateQuote(), 1000);
+setInterval(generateQuote(), 10000);
 
 
 // Get current day and time
@@ -90,8 +90,6 @@ function getTimeZone() {
 
         // Local Timezone
         document.querySelector('.time-zone').innerHTML = regionRes.abbreviation;
-        // Location 
-        //document.querySelector('.current__location').//innerHTML = `in ${regionName}, ${countryCode}`;
 
         // Details
         document.getElementById('timezone').innerHTML = regionRes.timezone;
@@ -110,16 +108,17 @@ function getLocation() {
         return locationRes.json();
     })
     .then(function(locationRes) {
-        //const ipLocation = locationRes.data;
         const regionName = locationRes.region_name;
         const countryCode = locationRes.country_code;
+
+        // Location 
         document.querySelector('.current__location').innerHTML = `in ${regionName}, ${countryCode}`;
     })
-    .catch(function(err){
+    .catch(function(err) {
         console.log(err);
     });
 }
 
 getTime();
 getTimeZone();
-
+getLocation();
