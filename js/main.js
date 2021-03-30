@@ -1,4 +1,4 @@
-
+/*
 const background = document.querySelector('.background');
 const author = document.querySelector('.author');
 const icon = document.querySelector('.icon');
@@ -152,3 +152,5 @@ expand.addEventListener('click', showDetails);
 
 // Random quote
 document.getElementById('refresh').addEventListener('click', getQuote)
+
+*/
