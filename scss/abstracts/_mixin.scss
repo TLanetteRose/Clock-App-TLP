@@ -6,7 +6,7 @@
         justify-content: $justifyContent;
         align-items: center;
 } 
-%
+
 @mixin sm-breakpoint {
     @media screen and (min-width: $layout-breakpoint-sm){
         @content;
