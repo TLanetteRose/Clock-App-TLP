@@ -53,8 +53,8 @@ function getTime() {
         background.classList.add('day');
         icon.src = '../assets/desktop/icon-sun.svg';
         icon.setAttribute('alt', 'sun icon');
-        details.style.color = '#303030';
-        details.style.background = 'rgba(255,255,255,0.75)';
+        //details.style.color = '#303030';
+        //details.style.background = 'rgba(255,255,255,0.75)';
     } else {
         background.classList.add('night');
         icon.src = '../assets/desktop/icon-moon.svg';
@@ -128,10 +128,7 @@ getTimeZone();
 getLocation();
 
 // Event Listeners 
-function showDetails() {
-    document.querySelector('app').classList.toggle('transform');
-    details.classList.toggle('transform');
-}
+
 
 // Random Quote
 document.getElementById('refresh').addEventListener('click', generateQuote);
