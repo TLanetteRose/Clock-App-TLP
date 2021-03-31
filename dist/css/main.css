@@ -197,6 +197,7 @@ button::-moz-focus-inner {
 
 .app__widgets {
   height: 100vh;
+  margin: 0;
   text-align: left;
   padding: 3.8rem 1.9rem;
   color: white;
@@ -240,8 +241,9 @@ button::-moz-focus-inner {
 }
 
 .app__widgets .quote__container {
+  position: relative;
   text-transform: initial;
-  max-width: 57.6rem;
+  width: 100%;
   /*@include flex (row, space-evenly);*/
   display: -ms-grid;
   display: grid;
@@ -389,12 +391,30 @@ button::-moz-focus-inner {
   bottom: 5px;
 }
 
-footer {
-  width: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.expand .arrow {
+  width: 2.2rem;
+  height: 2.2rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.5s, -webkit-filter 0.2s;
+  transition: -webkit-transform 0.5s, -webkit-filter 0.2s;
+  transition: transform 0.5s, filter 0.2s;
+  transition: transform 0.5s, filter 0.2s, -webkit-transform 0.5s, -webkit-filter 0.2s;
+}
+
+.expand .rotate {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.description {
+  position: relative;
+  overflow: hidden;
+}
+
+.transform {
+  -webkit-transform: translate3d(0, -25.6rem, 0);
+          transform: translate3d(0, -25.6rem, 0);
 }
 
 /* Attribution */
