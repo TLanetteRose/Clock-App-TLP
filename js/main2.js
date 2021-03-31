@@ -128,7 +128,7 @@ getTimeZone();
 getLocation();
 
 // Event Listeners 
-function showDesc (){
+/*function showDesc (){
    document.querySelector('.app__widgets').classList.toggle('transform');
    details.classList.toggle('transform');
 
@@ -141,7 +141,7 @@ function showDesc (){
    const arrow = document.querySelector('.arrow');
    arrow.classList.toggle('rotate');
 }
-expand.addEventListener('click', showDesc);
+expand.addEventListener('click', showDesc); */
 
 
 // Random Quote
