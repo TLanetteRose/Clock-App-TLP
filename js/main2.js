@@ -6,7 +6,7 @@ const icon = document.querySelector('.icon');
 const details = document.querySelector('.description'); 
 const period = document.querySelector('.period'); 
 const expand = document.querySelector('.expand');
-const app = document.querySelector('app');
+//const app = document.querySelector('app');
 
 const URL_QUOTE = 'https://api.quotable.io/random';
 const URL_TIMEZONE = 'https://worldtimeapi.org/api/ip';
@@ -129,7 +129,7 @@ getLocation();
 
 // Event Listeners 
 function showDesc (){
-   app.classList.toggle('transform');
+   document.querySelector('.app__widgets').classList.toggle('transform');
    details.classList.toggle('transform');
 
    if (expand.firstChild.nodeValue === 'More') {
@@ -142,6 +142,7 @@ function showDesc (){
    arrow.classList.toggle('rotate');
 }
 expand.addEventListener('click', showDesc);
+
 
 // Random Quote
 document.getElementById('refresh').addEventListener('click', generateQuote);

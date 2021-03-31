@@ -391,9 +391,30 @@ button::-moz-focus-inner {
   bottom: 5px;
 }
 
+.expand .arrow {
+  width: 2.2rem;
+  height: 2.2rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.5s, -webkit-filter 0.2s;
+  transition: -webkit-transform 0.5s, -webkit-filter 0.2s;
+  transition: transform 0.5s, filter 0.2s;
+  transition: transform 0.5s, filter 0.2s, -webkit-transform 0.5s, -webkit-filter 0.2s;
+}
+
+.expand .rotate {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
 .description {
   position: relative;
   overflow: hidden;
+}
+
+.transform {
+  -webkit-transform: translate3d(0, -25.6rem, 0);
+          transform: translate3d(0, -25.6rem, 0);
 }
 
 /* Attribution */
