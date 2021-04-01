@@ -196,10 +196,11 @@ button::-moz-focus-inner {
 }
 
 .app__widgets {
-  height: 100vh;
+  position: relative;
+  height: 100%;
   margin: 0;
   text-align: left;
-  padding: 3.8rem 1.9rem;
+  padding: 3.17rem 2.6rem 4rem;
   color: white;
   position: relative;
   -webkit-transition: -webkit-transform 0.5s ease;
