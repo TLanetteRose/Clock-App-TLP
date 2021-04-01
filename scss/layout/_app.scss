@@ -52,7 +52,9 @@
         padding: 5.6rem 0 9.8rem;
     }
 
-
+    &__contents {
+        @include flex (column, space-between);
+    }
 
     .quote__container {
         position: relative;
@@ -112,7 +114,7 @@
         &__container {
             position: relative;
             header {
-               @include flex (row, start);
+            //   @include flex (row, start);
             }
         }
 
@@ -136,14 +138,14 @@
             top: -10px;
 
             .time__container {
-                @include flex (row, start);
+               // @include flex (row, start);
 
                 .time {
                     padding-left: 10px;
                 }
 
                 .standard-time {
-                    @include flex(row, start);
+                    //@include flex(row, start);
                 }
             }
         }
