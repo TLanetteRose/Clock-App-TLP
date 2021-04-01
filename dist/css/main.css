@@ -412,6 +412,14 @@ button::-moz-focus-inner {
   overflow: hidden;
 }
 
+.hide {
+  visibility: hidden;
+}
+
+.reveal {
+  visibility: visible;
+}
+
 .transform {
   -webkit-transform: translate3d(0, -25.6rem, 0);
           transform: translate3d(0, -25.6rem, 0);

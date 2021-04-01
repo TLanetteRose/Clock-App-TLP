@@ -176,6 +176,14 @@
     }
 }
 
+.hide {
+    visibility: hidden;
+}
+
+.reveal {
+    visibility: visible;
+}
+
 
 .transform {
     transform: translate3d(0, -25.6rem, 0);
