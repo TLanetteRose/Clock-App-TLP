@@ -14,6 +14,8 @@ https://nekocalc.com/px-to-rem-converter
 03/29/2021: WoooHooo! I successfully use fetch today! https://dev.to/asaoluelijah/understanding-fetch-2-building-a-random-quote-generator-app-25nj
 
 03/30/2021-- I got my 'fetch' right today!!! 
+04/01/2021-- Learning about using 'content' in my css; Content is a CSS property that replaces an element with a generated value. Objects inserted using the content property are anonymous replaced elements (MDN).
+https://developer.mozilla.org/en-US/docs/Web/CSS/content
 
 
 
@@ -199,3 +201,23 @@ li {
     clip-path: inset(50%) !important;
 
 }
+
+
+
+
+//JS
+
+/*function showDesc (){
+   document.querySelector('.app__widgets').classList.toggle('transform');
+   details.classList.toggle('transform');
+
+   if (expand.firstChild.nodeValue === 'More') {
+       expand.firstChild.nodeValue = 'Less'
+   } else {
+       expand.firstChild.nodeValue = 'More'
+   }
+
+   const arrow = document.querySelector('.arrow');
+   arrow.classList.toggle('rotate');
+}
+expand.addEventListener('click', showDesc); */

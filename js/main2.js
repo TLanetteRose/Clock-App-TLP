@@ -127,21 +127,11 @@ getTime();
 getTimeZone();
 getLocation();
 
-// Event Listeners 
-function showDesc (){
-   document.querySelector('.app__widgets').classList.toggle('transform');
-   details.classList.toggle('transform');
+//Event Listeners 
 
-   if (expand.firstChild.nodeValue === 'More') {
-       expand.firstChild.nodeValue = 'Less'
-   } else {
-       expand.firstChild.nodeValue = 'More'
-   }
-
-   const arrow = document.querySelector('.arrow');
-   arrow.classList.toggle('rotate');
-}
-expand.addEventListener('click', showDesc);
+expand.addEventListener('click', ()=> {
+    details.classList.toggle('reveal');
+})
 
 
 // Random Quote
