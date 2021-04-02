@@ -241,7 +241,7 @@ button::-moz-focus-inner {
   }
 }
 
-.app__widgets .quote__container {
+.quote__container {
   position: relative;
   text-transform: initial;
   width: 100%;
@@ -255,29 +255,29 @@ button::-moz-focus-inner {
 }
 
 @media screen and (min-width: 768px) {
-  .app__widgets .quote__container #quote {
+  .quote__container #quote {
     font-size: 1.25rem;
   }
 }
 
-.app__widgets .quote__container .author {
+.quote__container .author {
   font-weight: 700 !important;
   padding-top: .18rem;
 }
 
 @media screen and (min-width: 768px) {
-  .app__widgets .quote__container .author {
+  .quote__container .author {
     font-size: 1.25rem;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .app__widgets .quote__container .author {
+  .quote__container .author {
     padding: 1.8rem 0 9.8rem;
   }
 }
 
-.app__widgets .quote__container #refresh {
+.quote__container #refresh {
   height: 1.8rem;
   border: none;
   cursor: pointer;
@@ -285,12 +285,12 @@ button::-moz-focus-inner {
 }
 
 @media screen and (min-width: 768px) {
-  .app__widgets .quote__container #refresh {
+  .quote__container #refresh {
     margin-top: 0.3rem;
   }
 }
 
-.app__widgets .quote__container #refresh svg {
+.quote__container #refresh svg {
   fill: white;
   outline: none;
   -webkit-transition: -webkit-transform 0.15s linear;
@@ -300,20 +300,20 @@ button::-moz-focus-inner {
   opacity: 0.5;
 }
 
-.app__widgets .quote__container #refresh svg:hover {
+.quote__container #refresh svg:hover {
   opacity: 1;
 }
 
-.app__widgets .current {
+.current {
   top: -5rem;
   position: relative;
 }
 
-.app__widgets .current__container {
+.current__container {
   position: relative;
 }
 
-.app__widgets .current__container header {
+.current__container header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,33 +329,65 @@ button::-moz-focus-inner {
           align-items: center;
 }
 
-.app__widgets .current__greeting {
+.current__greeting {
   font-weight: 400 !important;
   text-transform: uppercase;
 }
 
-.app__widgets .current .currently {
+.current .currently {
   visibility: hidden;
 }
 
 @media screen and (min-width: 768px) {
-  .app__widgets .current .currently {
+  .current .currently {
     visibility: visible;
     font-weight: 400 !important;
     text-transform: uppercase;
   }
 }
 
-.app__widgets .current__time {
+.current__time {
   position: relative;
   top: -10px;
 }
 
-.app__widgets .current__time .time__container .time {
+.current__time .time__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.current__time .time__container .time {
   padding-left: 10px;
 }
 
-.app__widgets .current__location {
+.current__time .time__container .standard-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.current__location {
   position: absolute;
   bottom: 5px;
 }
