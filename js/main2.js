@@ -5,7 +5,7 @@ const author = document.querySelector('.author');
 const icon = document.querySelector('.icon');
 const details = document.querySelector('.description'); 
 const period = document.querySelector('.period'); 
-const expand = document.querySelector('.btn-expand');
+
 //const app = document.querySelector('app');
 
 const URL_QUOTE = 'https://api.quotable.io/random';
@@ -128,8 +128,16 @@ getTimeZone();
 getLocation();
 
 //Event Listeners 
-
-
+function showDesc() {
+    const expand = document.querySelector('.btn-expand');
+    const content = document.querySelector('content');
+    content.classList.toggle('appear');
+    if (expand.innerText === 'More') {
+        expand.innerText === 'Less';
+    } else {
+        expand.innerText === 'More';
+    }
+}
 
 
 // Random Quote

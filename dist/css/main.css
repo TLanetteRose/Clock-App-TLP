@@ -213,13 +213,13 @@ button::-moz-focus-inner {
 }
 
 .bottom {
-  bottom: -80px;
+  bottom: -110px;
 }
 
+/*
 .less {
-  display: none;
-}
-
+    display: none;
+} */
 /*.hide {
     visibility: hidden;
 }

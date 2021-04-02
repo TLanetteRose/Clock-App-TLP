@@ -18,6 +18,7 @@ https://nekocalc.com/px-to-rem-converter
 https://developer.mozilla.org/en-US/docs/Web/CSS/content
 04/02/2021-- starting app style again; reviewing 'revealing and hiding sticky footer'; Found information about hiding/revealing sticky footer with transitions. 
 https://stackoverflow.com/questions/4528085/toggle-show-hide-div-with-button
+Learned that 'innerText' can be use to change the writing on a button. 
 
 
 
