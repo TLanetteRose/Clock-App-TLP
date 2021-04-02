@@ -52,10 +52,7 @@
         padding: 5.6rem 0 9.8rem;
     }
 
-    &__contents {
-        @include flex (column, space-between);
-    }
-
+    
     .quote__container {
         position: relative;
         text-transform: initial;
@@ -114,7 +111,7 @@
         &__container {
             position: relative;
             header {
-            //   @include flex (row, start);
+                 @include flex (row, start);
             }
         }
 
