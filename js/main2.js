@@ -129,15 +129,19 @@ getLocation();
 
 //Event Listeners 
 function showDesc() {
-    const expand = document.querySelector('.btn-expand');
-    const content = document.querySelector('content');
+    let toggle = document.getElementById('toggle');
+    let content = document.getElementById('content');
+
     content.classList.toggle('appear');
-    if (expand.innerText == 'More') {
-        expand.innerText == 'Less';
+
+    if (toggle.innerText == 'More') {
+        toggle.innerText == 'Less';
     } else {
-        expand.innerText == 'More';
+        toggle.innerText == 'More';
     }
 }
+
+toggle.addEventListener('click', showDesc);
 
 
 // Random Quote
