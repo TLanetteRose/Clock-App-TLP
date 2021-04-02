@@ -171,7 +171,7 @@ button::-moz-focus-inner {
 }
 
 .background {
-  height: 100%;
+  height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -245,7 +245,6 @@ button::-moz-focus-inner {
   position: relative;
   text-transform: initial;
   width: 100%;
-  /*@include flex (row, space-evenly);*/
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1.67rem;
@@ -277,7 +276,7 @@ button::-moz-focus-inner {
   }
 }
 
-.quote__container #refresh {
+#refresh {
   height: 1.8rem;
   border: none;
   cursor: pointer;
@@ -285,12 +284,18 @@ button::-moz-focus-inner {
 }
 
 @media screen and (min-width: 768px) {
-  .quote__container #refresh {
+  #refresh {
     margin-top: 0.3rem;
   }
 }
 
-.quote__container #refresh svg {
+@media screen and (min-width: 992px) {
+  #refresh {
+    margin-top: 1rem;
+  }
+}
+
+#refresh svg {
   fill: white;
   outline: none;
   -webkit-transition: -webkit-transform 0.15s linear;
@@ -300,7 +305,7 @@ button::-moz-focus-inner {
   opacity: 0.5;
 }
 
-.quote__container #refresh svg:hover {
+#refresh svg:hover {
   opacity: 1;
 }
 

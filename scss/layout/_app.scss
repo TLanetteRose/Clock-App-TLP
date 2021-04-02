@@ -1,7 +1,7 @@
 // Default: Mobile
 
 .background {
-    height: 100%;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -58,7 +58,7 @@
      position: relative;
      text-transform: initial;
      width: 100%;
-     /*@include flex (row, space-evenly);*/
+     //@include flex (row, space-evenly);
      display: grid;
      grid-template-columns: 1fr 1.67rem;
      column-gap: 1.6rem;
@@ -80,30 +80,33 @@
          @include lg-breakpoint {
              padding: 1.8rem 0 9.8rem;
          }
-     }
+    }  
+}
 
-     #refresh {
-         height: 1.8rem;
-         border: none;
-         cursor: pointer;
-         background: none;
+#refresh {
+    height: 1.8rem;
+    border: none;
+    cursor: pointer;
+    background: none;
 
-         @include md-breakpoint {
-             margin-top: 0.3rem;
-         }
+    @include md-breakpoint {
+        margin-top: 0.3rem;
+    }
 
-         svg {
-             fill: $white;
-             outline: none;
-             transition: transform 0.15s linear;
-             opacity: 0.5;
+    @include lg-breakpoint {
+        margin-top: 1rem;
+    }
 
-             &:hover {
-                 opacity: 1;
-             }
-         }
-     }
+    svg {
+        fill: $white;
+        outline: none;
+        transition: transform 0.15s linear;
+        opacity: 0.5;
 
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
 
 .current {
