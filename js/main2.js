@@ -5,7 +5,7 @@ const author = document.querySelector('.author');
 const icon = document.querySelector('.icon');
 const details = document.querySelector('.description'); 
 const period = document.querySelector('.period'); 
-const expand = document.querySelector('.expand');
+const expand = document.querySelector('.btn-expand');
 //const app = document.querySelector('app');
 
 const URL_QUOTE = 'https://api.quotable.io/random';

@@ -16,7 +16,7 @@ https://nekocalc.com/px-to-rem-converter
 03/30/2021-- I got my 'fetch' right today!!! 
 04/01/2021-- Learning about using 'content' in my css; Content is a CSS property that replaces an element with a generated value. Objects inserted using the content property are anonymous replaced elements (MDN).
 https://developer.mozilla.org/en-US/docs/Web/CSS/content
-04/02/2021-- starting app style again; 
+04/02/2021-- starting app style again; reviewing 'revealing and hiding sticky footer'
 
 
 
