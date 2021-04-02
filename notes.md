@@ -16,11 +16,11 @@ https://nekocalc.com/px-to-rem-converter
 03/30/2021-- I got my 'fetch' right today!!! 
 04/01/2021-- Learning about using 'content' in my css; Content is a CSS property that replaces an element with a generated value. Objects inserted using the content property are anonymous replaced elements (MDN).
 https://developer.mozilla.org/en-US/docs/Web/CSS/content
+04/02/2021-- starting app style again; 
 
 
 
-
-/*
+********************************
 .app__widgets {
     position: relative;
     height: 100%;
@@ -204,7 +204,7 @@ li {
 
 
 
-
+***********************************
 //JS
 
 /*function showDesc (){
@@ -221,3 +221,163 @@ li {
    arrow.classList.toggle('rotate');
 }
 expand.addEventListener('click', showDesc); */
+
+
+*************************** 
+04022021
+.app__widgets {
+    position: relative;
+    height: 100%;
+    //width: 100%;
+    margin: 0;
+    text-align: left;
+    padding: 3.17rem 2.6rem 4rem;
+    //padding: 3.8rem 1.9rem;
+    color: $white; 
+    position: relative;
+    transition: transform 0.5s ease;
+
+    @include flex (column, space-between);
+    max-width: 111rem;
+
+    @include md-breakpoint {
+        padding: 8rem 11.7rem 6.4rem 6.4rem;
+    }
+
+    @include lg-breakpoint {
+        margin: 0 auto;
+    }
+
+    @include xl-breakpoint {
+        padding: 5.6rem 0 9.8rem;
+    }
+    
+}
+
+.quote__container {
+     position: relative;
+     text-transform: initial;
+     width: 100%;
+     //@include flex (row, space-evenly);
+     display: grid;
+     grid-template-columns: 1fr 1.67rem;
+     column-gap: 1.6rem;
+
+     #quote {
+         @include md-breakpoint {
+             font-size: 1.25rem;
+         }
+     }
+
+     .author {
+         font-weight: $weight-bold !important;
+         padding-top: .18rem;
+
+         @include md-breakpoint {
+             font-size: 1.25rem;
+         }
+
+         @include lg-breakpoint {
+             padding: 1.8rem 0 9.8rem;
+         }
+    }  
+}
+
+#refresh {
+    height: 1.8rem;
+    border: none;
+    cursor: pointer;
+    background: none;
+
+    @include md-breakpoint {
+        margin-top: 0.3rem;
+    }
+
+    @include lg-breakpoint {
+        margin-top: 1rem;
+    }
+
+    svg {
+        fill: $white;
+        outline: none;
+        transition: transform 0.15s linear;
+        opacity: 0.5;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.current {
+    top: 10rem;
+    position: relative;
+
+    &__container {
+        position: relative;
+
+        header {
+            @include flex (row, start);
+        }
+    }
+
+    &__greeting {
+        font-weight: $weight-regular !important;
+        text-transform: uppercase;
+    }
+
+    .currently {
+        visibility: hidden;
+
+        @include md-breakpoint {
+            visibility: visible;
+            font-weight: $weight-regular !important;
+            text-transform: uppercase;
+        }
+    }
+
+    &__time {
+        position: relative;
+        top: -10px;
+
+        .time__container {
+            @include flex (row, start);
+
+            .time {
+                padding-left: 10px;
+            }
+
+            .standard-time {
+                @include flex(row, start);
+            }
+        }
+    }
+
+    &__location {
+        position: absolute;
+        bottom: 5px;
+    }
+
+}
+
+.expand {
+    .arrow {
+        width: 2.2rem;
+        height: 2.2rem;
+        transform: rotate(180deg);
+        transition: transform 0.5s, filter 0.2s;
+    }
+    .rotate {
+        transform: rotate(0deg);
+    }
+}
+
+.description {
+    position: relative;
+    width: 100%;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    @include xl-breakpoint {
+        
+    }
+}
