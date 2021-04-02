@@ -132,10 +132,10 @@ function showDesc() {
     const expand = document.querySelector('.btn-expand');
     const content = document.querySelector('content');
     content.classList.toggle('appear');
-    if (expand.innerText === 'More') {
-        expand.innerText === 'Less';
+    if (expand.innerText == 'More') {
+        expand.innerText == 'Less';
     } else {
-        expand.innerText === 'More';
+        expand.innerText == 'More';
     }
 }
 
