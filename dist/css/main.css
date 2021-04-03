@@ -228,6 +228,7 @@ button::-moz-focus-inner {
   }
 }
 
+/* Quote Container */
 .quote__container {
   max-width: 60.3rem;
   display: -ms-grid;
@@ -260,6 +261,25 @@ button::-moz-focus-inner {
 @media screen and (min-width: 992px) {
   .quote__container .author {
     padding: 1.3rem 0 9.8rem;
+  }
+}
+
+#refresh {
+  height: 1.8rem;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+@media screen and (min-width: 768px) {
+  #refresh {
+    margin-top: 0.3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #refresh {
+    margin-top: 1rem;
   }
 }
 

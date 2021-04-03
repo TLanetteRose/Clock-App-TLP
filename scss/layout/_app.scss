@@ -40,9 +40,9 @@
     }
    
     
-
-    
 }
+
+/* Quote Container */
 
 .quote__container {
     max-width: 60.3rem;
@@ -56,6 +56,7 @@
             line-height: 2.8rem;
         }
     }
+
     .author {
         padding-top: 0.8rem;
         font-weight: $weight-bold !important;
@@ -68,6 +69,21 @@
         @include lg-breakpoint {
             padding: 1.3rem 0 9.8rem;
         }
+    }
+}
+
+#refresh {
+    height: 1.8rem;
+    border: none;
+    cursor: pointer;
+    background: none;
+
+    @include md-breakpoint {
+        margin-top: 0.3rem;
+    }
+
+    @include lg-breakpoint {
+        margin-top: 1rem;
     }
 }
 
