@@ -24,6 +24,12 @@
         background: rgba(0,0,0,0.4);
     }
 }
+
+
+
+
+
+/* Footer */
 #content {
     visibility: hidden;
     resize: none;
@@ -41,25 +47,12 @@
 }
 
 .bottom {
-    bottom: -135px;
+    bottom: -110px;
 }
 
 
-/*
-.less {
-    display: none;
-} */
 
 
-
-/*.hide {
-    visibility: hidden;
-}
-
-.reveal {
-    visibility: visible;
-}
-*/
 
 .transform {
     transform: translate3d(0, -25.6rem, 0);
