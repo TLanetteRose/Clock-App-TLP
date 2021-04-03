@@ -98,10 +98,16 @@
     }
 }
 
-
-
 /* Current Section */
 
+.current {
+    text-transform: uppercase;
+
+    @include lg-breakpoint {
+        display: grid;
+        grid-template-columns: 1fr max-content;
+    }
+}
 
 
 

@@ -298,6 +298,10 @@ button::-moz-focus-inner {
 }
 
 /* Current Section */
+.current {
+  text-transform: uppercase;
+}
+
 /* Footer */
 #content {
   visibility: hidden;
