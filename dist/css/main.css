@@ -196,6 +196,18 @@ button::-moz-focus-inner {
   background: rgba(0, 0, 0, 0.4);
 }
 
+.app__widgets {
+  padding: 3.2rem 0 4rem;
+  position: relative;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  text-align: left;
+}
+
+/* Footer */
 #content {
   visibility: hidden;
   resize: none;
