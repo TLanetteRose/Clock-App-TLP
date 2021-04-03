@@ -222,6 +222,12 @@ button::-moz-focus-inner {
           align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .app__widgets {
+    padding: 8.3rem 13.1rem 6.4rem 6.4rem;
+  }
+}
+
 .quote__container {
   max-width: 60.3rem;
   display: -ms-grid;
@@ -232,9 +238,29 @@ button::-moz-focus-inner {
           column-gap: 1.6rem;
 }
 
+@media screen and (min-width: 768px) {
+  .quote__container .quote-text {
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+  }
+}
+
 .quote__container .author {
   padding-top: 0.8rem;
   font-weight: 700 !important;
+}
+
+@media screen and (min-width: 768px) {
+  .quote__container .author {
+    font-size: 1.2rem;
+    line-height: 2.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .quote__container .author {
+    padding: 1.3rem 0 9.8rem;
+  }
 }
 
 /* Footer */

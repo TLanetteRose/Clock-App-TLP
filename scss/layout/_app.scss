@@ -35,16 +35,11 @@
     color: $white;
     @include flex (column, space-between);
 
-    @include $layout-breakpoint-md {
-        padding: 8rem 13.1rem 6.4rem 6.4rem;
+    @include md-breakpoint {
+        padding: 8.3rem 13.1rem 6.4rem 6.4rem;
     }
-    @include $layout-breakpoint-lg {
-        margin: 0 auto;
-    }
-
-    @include $layout-breakpoint-xl {
-        padding: 5.6rem 0 9.8rem;
-    }
+   
+    
 
     
 }
@@ -55,18 +50,23 @@
     grid-template-columns: 1fr 1.67rem;
     column-gap: 1.6rem;
 
-    @include $layout-breakpoint-md {
-        font-size: 1.8rem;
-        line-height: 2.8rem;
+    .quote-text {
+        @include md-breakpoint {
+            font-size: 1.2rem;
+            line-height: 2.8rem;
+        }
     }
-
     .author {
         padding-top: 0.8rem;
         font-weight: $weight-bold !important;
 
-        @include $layout-breakpoint-md {
-            font-size: 1.8rem;
+        @include md-breakpoint {
+            font-size: 1.2rem;
             line-height: 2.8rem;
+        }
+
+        @include lg-breakpoint {
+            padding: 1.3rem 0 9.8rem;
         }
     }
 }
