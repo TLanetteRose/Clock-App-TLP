@@ -222,6 +222,21 @@ button::-moz-focus-inner {
           align-items: center;
 }
 
+.quote__container {
+  max-width: 60.3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.67rem;
+      grid-template-columns: 1fr 1.67rem;
+  -webkit-column-gap: 1.6rem;
+          column-gap: 1.6rem;
+}
+
+.quote__container .author {
+  padding-top: 0.8rem;
+  font-weight: 700 !important;
+}
+
 /* Footer */
 #content {
   visibility: hidden;

@@ -38,6 +38,27 @@
     
 }
 
+.quote__container {
+    max-width: 60.3rem;
+    display: grid;
+    grid-template-columns: 1fr 1.67rem;
+    column-gap: 1.6rem;
+
+    @include $layout-breakpoint-md {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+    }
+
+    .author {
+        padding-top: 0.8rem;
+        font-weight: $weight-bold !important;
+
+        @include $layout-breakpoint-md {
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+        }
+    }
+}
 
 
 
