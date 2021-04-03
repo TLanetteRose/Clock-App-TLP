@@ -135,9 +135,9 @@ function showDesc() {
     content.classList.toggle('appear');
 
     if (toggle.innerText == 'More') {
-        toggle.innerText == 'Less';
+        toggle.innerText = 'Less';
     } else {
-        toggle.innerText == 'More';
+        toggle.innerText = 'More';
     }
 }
 
