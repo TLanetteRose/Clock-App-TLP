@@ -103,7 +103,6 @@
 .current {
     text-transform: uppercase;
     
-    
 
     @include lg-breakpoint {
         display: grid;
@@ -111,14 +110,38 @@
     }
 
     header {
-        @include flex (column, space-evenly);
+        @include flex (row, space-evenly);
     }
 
     &__icon {
+        height: 1.4rem;
         padding-right: 1.6rem;
+        animation: rotation 6s infinite linear;
+
+        @include md-breakpoint {
+            height: 2.4rem;
+        }
 
     }
+
+    &__greeting,
+    span {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        letter-spacing: 0.3rem;
+        font-weight: $weight-regular;
+    }
+
+    span {
+        display: none;
+
+        @include md-breakpoint {
+            display: block;
+        }
+    }
 }
+
+
 
 
 

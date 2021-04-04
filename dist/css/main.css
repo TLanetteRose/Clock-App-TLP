@@ -316,10 +316,10 @@ button::-moz-focus-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -329,7 +329,34 @@ button::-moz-focus-inner {
 }
 
 .current__icon {
+  height: 1.4rem;
   padding-right: 1.6rem;
+  -webkit-animation: rotation 6s infinite linear;
+          animation: rotation 6s infinite linear;
+}
+
+@media screen and (min-width: 768px) {
+  .current__icon {
+    height: 2.4rem;
+  }
+}
+
+.current__greeting,
+.current span {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+}
+
+.current span {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .current span {
+    display: block;
+  }
 }
 
 /* Footer */
