@@ -102,10 +102,21 @@
 
 .current {
     text-transform: uppercase;
+    
+    
 
     @include lg-breakpoint {
         display: grid;
         grid-template-columns: 1fr max-content;
+    }
+
+    header {
+        @include flex (column, space-evenly);
+    }
+
+    &__icon {
+        padding-right: 1.6rem;
+
     }
 }
 
