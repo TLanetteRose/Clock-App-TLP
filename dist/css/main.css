@@ -356,6 +356,15 @@ button::-moz-focus-inner {
   }
 }
 
+@media screen and (min-width: 992px) {
+  .current__greeting,
+  .current span {
+    font-size: 1.75rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.4rem;
+  }
+}
+
 .current span {
   display: none;
 }

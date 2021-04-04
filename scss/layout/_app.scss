@@ -136,7 +136,9 @@
         }
 
         @include lg-breakpoint {
-            
+            font-size: 1.75rem;
+            line-height: 2.8rem;
+            letter-spacing: 0.4rem;
         }
     }
 
@@ -147,6 +149,8 @@
             display: block;
         }
     }
+
+    
 }
 
 
