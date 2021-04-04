@@ -126,10 +126,18 @@
 
     &__greeting,
     span {
-        font-size: 1.5rem;
-        line-height: 2.5rem;
         letter-spacing: 0.3rem;
-        font-weight: $weight-regular;
+        font-weight: $weight-regular !important;
+
+        @include md-breakpoint {
+            font-size: 1.5rem;
+            line-height: 2.8rem;
+            letter-spacing: 0.35rem;
+        }
+
+        @include lg-breakpoint {
+            
+        }
     }
 
     span {
