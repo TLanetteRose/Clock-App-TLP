@@ -1,5 +1,6 @@
 // Default: Mobile
 
+
 .background {
     height: 100vh;
     background-size: cover;
@@ -150,7 +151,41 @@
         }
     }
 
-    
+    &__time {
+        padding-bottom: 4rem;
+
+        @include lg-breakpoint {
+            padding-bottom: 0;
+        }
+    }
+
+    .time__container {
+        @include flex (row, space-evenly);
+        column-gap: 2rem;
+
+        @include md-breakpoint {
+            column-gap: 2rem;
+        }
+    }
+
+    .time {
+        font-weight: $weight-regular !important;
+        letter-spacing: -3px;
+        padding: 1.6rem 1.6rem 1.6rem 0;
+
+        @include md-breakpoint {
+            font-size: 10rem;
+            line-height: 10rem;
+            letter-spacing: -2.5px;
+            font-weight: $weight-regular !important;
+        }
+    }
+
+    .period {
+        display: none;
+    }
+
+
 }
 
 
