@@ -131,13 +131,13 @@
         font-weight: $weight-regular !important;
 
         @include md-breakpoint {
-            font-size: 1.5rem;
+            font-size: 1.5rem !important;
             line-height: 2.8rem;
             letter-spacing: 0.35rem;
         }
 
         @include lg-breakpoint {
-            font-size: 1.75rem;
+            font-size: 1.75rem !important;
             line-height: 2.8rem;
             letter-spacing: 0.4rem;
         }
@@ -152,7 +152,7 @@
     }
 
     &__time {
-        padding-bottom: 4rem;
+        padding-bottom: 4.9rem;
 
         @include lg-breakpoint {
             padding-bottom: 0;
@@ -169,24 +169,31 @@
     }
 
     .time {
+        font-size: 6.95rem !important;
         font-weight: $weight-regular !important;
         letter-spacing: -3px;
-        padding: 1.6rem 1.6rem 1.6rem 0;
+        padding: 1rem 1.6rem 1rem 0;
 
         @include md-breakpoint {
-            font-size: 10rem;
+            font-size: 10rem !important;
             line-height: 10rem;
             letter-spacing: -2.5px;
             font-weight: $weight-regular !important;
         }
 
         @include lg-breakpoint {
-            font-size: 12.5rem;
+            font-size: 12.5rem !important;
             font-weight: $weight-regular !important;
-            
+
         }
     }
 
+    .standard-time {
+        align-self: center;
+        font-size: 1.5rem;
+        padding-top: 3.7rem;
+        font-weight: 300;
+    }
     .period {
         display: none;
     }
