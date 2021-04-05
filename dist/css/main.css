@@ -241,8 +241,8 @@ button::-moz-focus-inner {
 
 @media screen and (min-width: 768px) {
   .quote__container .quote-text {
-    font-size: 1.2rem;
-    line-height: 2.8rem;
+    font-size: 1.2rem !important;
+    line-height: 2.8rem !important;
   }
 }
 
@@ -253,8 +253,8 @@ button::-moz-focus-inner {
 
 @media screen and (min-width: 768px) {
   .quote__container .author {
-    font-size: 1.2rem;
-    line-height: 2.8rem;
+    font-size: 1.2rem !important;
+    line-height: 2.8rem !important;
   }
 }
 
@@ -300,6 +300,7 @@ button::-moz-focus-inner {
 /* Current Section */
 .current {
   text-transform: uppercase;
+  text-align: left;
 }
 
 @media screen and (min-width: 992px) {
@@ -440,6 +441,14 @@ button::-moz-focus-inner {
   font-size: 1.5rem;
   padding-top: 3.7rem;
   font-weight: 300;
+}
+
+@media screen and (min-width: 768px) {
+  .current .standard-time {
+    font-size: 3rem;
+    line-height: 2.8rem;
+    padding-top: 6rem;
+  }
 }
 
 .current .period {

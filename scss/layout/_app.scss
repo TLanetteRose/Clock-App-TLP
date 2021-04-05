@@ -53,8 +53,8 @@
 
     .quote-text {
         @include md-breakpoint {
-            font-size: 1.2rem;
-            line-height: 2.8rem;
+            font-size: 1.2rem !important;
+            line-height: 2.8rem !important;
         }
     }
 
@@ -63,8 +63,8 @@
         font-weight: $weight-bold !important;
 
         @include md-breakpoint {
-            font-size: 1.2rem;
-            line-height: 2.8rem;
+            font-size: 1.2rem !important;
+            line-height: 2.8rem !important;
         }
 
         @include lg-breakpoint {
@@ -103,6 +103,7 @@
 
 .current {
     text-transform: uppercase;
+    text-align: left;
     
 
     @include lg-breakpoint {
@@ -193,6 +194,12 @@
         font-size: 1.5rem;
         padding-top: 3.7rem;
         font-weight: 300;
+
+        @include md-breakpoint {
+            font-size: 3rem;
+            line-height: 2.8rem;
+            padding-top: 6rem;
+        }
     }
     .period {
         display: none;
@@ -225,8 +232,6 @@
 .bottom {
     bottom: -110px;
 }
-
-
 
 
 
