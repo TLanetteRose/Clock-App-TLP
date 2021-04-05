@@ -352,7 +352,7 @@ button::-moz-focus-inner {
   .current__greeting,
   .current span {
     font-size: 1.5rem !important;
-    line-height: 2.8rem;
+    line-height: 2.8rem !important;
     letter-spacing: 0.35rem;
   }
 }
