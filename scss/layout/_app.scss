@@ -179,6 +179,12 @@
             letter-spacing: -2.5px;
             font-weight: $weight-regular !important;
         }
+
+        @include lg-breakpoint {
+            font-size: 12.5rem;
+            font-weight: $weight-regular !important;
+            
+        }
     }
 
     .period {
