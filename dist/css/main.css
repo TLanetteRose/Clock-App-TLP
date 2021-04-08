@@ -2,11 +2,12 @@
 /* Colors */
 /* Font */
 /* Reset */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+/*
 :root {
-  color-scheme: light dark;
+    color-scheme: light dark;
 }
-
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 * {
   outline: 1px solid black;
 }

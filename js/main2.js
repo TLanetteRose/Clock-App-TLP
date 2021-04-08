@@ -111,11 +111,11 @@ function getLocation() {
         return locationRes.json();
     })
     .then(function(locationRes) {
-        const regionName = locationRes.region_name;
-        const countryCode = locationRes.country_code;
+        //const regionName = locationRes.region_name;
+        //const countryCode = locationRes.country_code;
 
         // Location 
-        document.querySelector('.current__location').innerHTML = `in ${regionName}, ${countryCode}`;
+        document.querySelector('.current__location').innerHTML = `in ${locationRes.regionName}, ${locationRes.countryCode}`;
     })
     .catch(function(err) {
         console.log(err);
