@@ -111,12 +111,12 @@ function getLocation(){
         return locationRes.json();
     })
     .then(function(locationRes) {
-        const ipLocation = locationRes.ip;
-        const regionName = ipLocation.region_name;
-        const countryCode = ipLocation.country_name;
+        //const ipLocation = locationRes.ip;
+        const cityName = locationRes.city;
+        const countryCode = locationRes.country_code;
 
         // Location
-        document.querySelector('.current__location').innerHTML = `in ${regionName}, ${countryCode}`;
+        document.querySelector('.current__location').textContent = `in ${cityName}, ${countryCode}`;
     })
     .catch(function(err) {
         console.log(err);
