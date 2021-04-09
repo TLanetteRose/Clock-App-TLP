@@ -105,23 +105,25 @@ function getTimeZone() {
     });
 }
  
-function getLocation() {
+function getLocation(){
     fetch(URL_LOCATION)
     .then(function(locationRes) {
         return locationRes.json();
     })
     .then(function(locationRes) {
-        const ipLocation = locationRes.data;
+        const ipLocation = locationRes.ip;
         const regionName = ipLocation.region_name;
-        const countryCode = ipLocation.country_code;
+        const countryCode = ipLocation.country_name;
 
-        // Location 
-        document.querySelector('.current__location').textContent = `in ${regionName}, ${countryCode}`;
+        // Location
+        document.querySelector('.current__location').innerHTML = `in ${regionName}, ${countryCode}`;
     })
     .catch(function(err) {
         console.log(err);
     });
 }
+
+
 
 generateQuote();
 getTime();
