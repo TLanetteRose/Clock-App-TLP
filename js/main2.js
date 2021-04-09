@@ -124,7 +124,6 @@ function getLocation(){
 }
 
 
-
 generateQuote();
 getTime();
 getTimeZone();
