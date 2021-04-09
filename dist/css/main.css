@@ -13,6 +13,8 @@
 }
 
 html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 100%;
   width: 100%;
 }
@@ -198,9 +200,10 @@ button::-moz-focus-inner {
 }
 
 .app__widgets {
-  padding: 2.2rem 2.6rem 4rem;
+  padding: 3.17rem 2.6rem 4rem;
   position: relative;
   height: 100%;
+  margin-top: -200px;
   max-width: 115rem;
   -webkit-transition: -webkit-transform 0.5s ease;
   transition: -webkit-transform 0.5s ease;
@@ -378,6 +381,7 @@ button::-moz-focus-inner {
 }
 
 .current__time {
+  margin-top: -15px;
   padding-bottom: 2.9rem;
 }
 
@@ -390,6 +394,7 @@ button::-moz-focus-inner {
 .current__location {
   letter-spacing: 0.188rem;
   font-weight: 400 !important;
+  margin-top: -35px;
 }
 
 .current .time__container {
@@ -420,6 +425,7 @@ button::-moz-focus-inner {
 .current .time {
   font-size: 6.95rem !important;
   font-weight: 400 !important;
+  line-height: 1rem !important;
   letter-spacing: -3px;
   padding: 1rem 1.6rem 1rem 0;
 }
@@ -462,6 +468,10 @@ button::-moz-focus-inner {
     font-size: 4rem;
     line-height: 2.8rem;
   }
+}
+
+.current .period {
+  display: none;
 }
 
 /* Footer */
