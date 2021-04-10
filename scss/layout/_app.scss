@@ -105,6 +105,32 @@ body {
 
 /* Current Section */
 
+.current__container {
+    text-transform: uppercase;
+    text-align: left;
+    width: 80vw;
+    margin: 0 auto;
+
+    @include lg-breakpoint {
+        display: grid;
+        grid-template-columns: 1fr max-content;
+    }
+
+    header {
+        @include flex (row, space-evenly);
+    }
+
+    &__icon {
+        height: 1.4rem;
+        padding-right: 1.6rem;
+
+    }
+
+    &__greeting,
+    span {
+        display: none;
+    }
+}
 
 
 /* Footer */
