@@ -168,8 +168,17 @@ body {
             padding-bottom: 0;
         }
 
+        .time__container {
+            @include flex (row, space-evenly);
+            //column-gap: 0;
+
+            @include md-breakpoint {
+                column-gap: 2rem;
+            }
+        }
+
         .time {
-            font-size: 9rem;
+            font-size: 8.5rem;
             font-weight: $weight-regular;
             letter-spacing: -3px;
             margin: 0;
@@ -187,12 +196,16 @@ body {
             }
         }
 
+        .standard-time {
+            align-self: center;
+        }
+
         .current__location {
             letter-spacing: 0.188rem;
             font-weight: $weight-regular !important;
         }
 
-        .time__container
+        
 
     }
 
