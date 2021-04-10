@@ -175,6 +175,10 @@ button::-moz-focus-inner {
   letter-spacing: -5px;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+}
+
 .background {
   height: 100vh;
   background-size: cover;
@@ -301,6 +305,22 @@ button::-moz-focus-inner {
 }
 
 /* Current Section */
+.current {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .current__container {
   text-transform: uppercase;
   text-align: left;
@@ -334,9 +354,79 @@ button::-moz-focus-inner {
   padding-right: 1.6rem;
 }
 
+@media screen and (min-width: 768px) {
+  .current__container .icon {
+    height: 2.4rem;
+  }
+}
+
 .current__container__greeting,
 .current__container span {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .current__container__greeting,
+  .current__container span {
+    display: block;
+  }
+}
+
+.current__container span {
+  letter-spacing: 0.25rem;
+  font-weight: 400 !important;
+}
+
+@media screen and (min-width: 768px) {
+  .current__container span {
+    font-size: 1.5rem !important;
+    line-height: 2.8rem !important;
+    letter-spacing: 0.35rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .current__container span {
+    font-size: 1.75rem !important;
+    line-height: 2.8rem;
+    letter-spacing: 0.4rem;
+  }
+}
+
+.current__container .current__time {
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 992px) {
+  .current__container .current__time {
+    padding-bottom: 0;
+  }
+}
+
+.current__container .current__time .time {
+  font-size: 9rem;
+  font-weight: 400;
+  letter-spacing: -3px;
+  margin: 0;
+  padding: 1rem 1.6rem 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .current__container .current__time .time {
+    font-size: 10rem;
+    line-height: 10rem;
+    letter-spacing: -2.5px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .current__container .current__time .time {
+    font-size: 12.5rem;
+  }
+}
+
+.current__container .current__time .current__location {
+  letter-spacing: 0.188rem;
 }
 
 /* Footer */

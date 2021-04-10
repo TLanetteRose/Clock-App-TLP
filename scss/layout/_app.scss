@@ -1,6 +1,7 @@
 // Default: Mobile
 
 body {
+    font-family: $font-family;
     //overflow: hidden;
 }
 
@@ -104,6 +105,9 @@ body {
 }
 
 /* Current Section */
+.current {
+    @include flex (column, space-evenly);
+}
 
 .current__container {
     text-transform: uppercase;
@@ -124,14 +128,74 @@ body {
 
     .icon {
         padding-right: 1.6rem;
-        
 
+        @include md-breakpoint {
+            height: 2.4rem;
+        }
+        
     }
 
     &__greeting,
     span {
         display: none;
+
+        @include md-breakpoint {
+            display: block;
+        }
     }
+
+    span {
+        letter-spacing: 0.25rem;
+        font-weight: $weight-regular !important;
+
+        @include md-breakpoint {
+            font-size: 1.5rem !important;
+            line-height: 2.8rem !important;
+            letter-spacing: 0.35rem;
+        }
+
+        @include lg-breakpoint {
+            font-size: 1.75rem !important;
+            line-height: 2.8rem;
+            letter-spacing: 0.4rem;
+        }
+    }
+
+    .current__time {
+        padding-bottom: 3rem;
+
+        @include lg-breakpoint {
+            padding-bottom: 0;
+        }
+
+        .time {
+            font-size: 9rem;
+            font-weight: $weight-regular;
+            letter-spacing: -3px;
+            margin: 0;
+            padding: 1rem 1.6rem 1rem 0;
+
+            @include md-breakpoint {
+                font-size: 10rem;
+                line-height: 10rem;
+                letter-spacing: -2.5px;
+                //font-weight: $weight-regular;
+            }
+
+            @include lg-breakpoint {
+                font-size: 12.5rem;
+            }
+        }
+
+        .current__location {
+            letter-spacing: 0.188rem;
+            font-weight: $weight-regular !important;
+        }
+
+        .time__container
+
+    }
+
 }
 
 
