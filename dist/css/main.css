@@ -350,35 +350,38 @@ body {
           align-items: center;
 }
 
-.current__container .icon {
+.current__container header .icon {
   padding-right: 1.6rem;
 }
 
 @media screen and (min-width: 768px) {
-  .current__container .icon {
+  .current__container header .icon {
     height: 2.4rem;
   }
 }
 
-.current__container__greeting,
-.current__container span {
+.current__container header .current__greeting {
+  letter-spacing: 0.3rem;
+  font-weight: 400 !important;
+}
+
+.current__container header span {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .current__container__greeting,
-  .current__container span {
+  .current__container header span {
     display: block;
   }
 }
 
-.current__container span {
+.current__container header span {
   letter-spacing: 0.25rem;
   font-weight: 400 !important;
 }
 
 @media screen and (min-width: 768px) {
-  .current__container span {
+  .current__container header span {
     font-size: 1.5rem !important;
     line-height: 2.8rem !important;
     letter-spacing: 0.35rem;
@@ -386,7 +389,7 @@ body {
 }
 
 @media screen and (min-width: 992px) {
-  .current__container span {
+  .current__container header span {
     font-size: 1.75rem !important;
     line-height: 2.8rem;
     letter-spacing: 0.4rem;
@@ -452,6 +455,8 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  font-size: 1.5rem;
+  padding-top: 2.3rem;
 }
 
 .current__container .current__time .current__location {

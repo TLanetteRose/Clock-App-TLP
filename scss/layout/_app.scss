@@ -124,40 +124,44 @@ body {
        display: flex;
        justify-content: flex-start;
        align-items: center;
-    }
+    
 
-    .icon {
-        padding-right: 1.6rem;
+        .icon {
+            padding-right: 1.6rem;
 
-        @include md-breakpoint {
-            height: 2.4rem;
-        }
+                @include md-breakpoint {
+                height: 2.4rem;
+            }
         
-    }
-
-    &__greeting,
-    span {
-        display: none;
-
-        @include md-breakpoint {
-            display: block;
-        }
-    }
-
-    span {
-        letter-spacing: 0.25rem;
-        font-weight: $weight-regular !important;
-
-        @include md-breakpoint {
-            font-size: 1.5rem !important;
-            line-height: 2.8rem !important;
-            letter-spacing: 0.35rem;
         }
 
-        @include lg-breakpoint {
-            font-size: 1.75rem !important;
-            line-height: 2.8rem;
-            letter-spacing: 0.4rem;
+        .current__greeting {
+            letter-spacing: 0.3rem;
+            font-weight: $weight-regular !important;
+        }
+        span {
+            display: none;
+
+                @include md-breakpoint {
+                    display: block;
+                }
+        }
+
+        span {
+            letter-spacing: 0.25rem;
+            font-weight: $weight-regular !important;
+
+            @include md-breakpoint {
+                font-size: 1.5rem !important;
+                line-height: 2.8rem !important;
+                letter-spacing: 0.35rem;
+            }
+
+            @include lg-breakpoint {
+                font-size: 1.75rem !important;
+                line-height: 2.8rem;
+                letter-spacing: 0.4rem;
+            }
         }
     }
 
@@ -198,6 +202,8 @@ body {
 
         .standard-time {
             align-self: center;
+            font-size: 1.5rem;
+            padding-top: 2.3rem;
         }
 
         .current__location {
