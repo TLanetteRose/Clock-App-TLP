@@ -222,6 +222,7 @@ button::-moz-focus-inner {
   color: white;
 }
 
+/* Quote Container */
 .quote__container {
   max-width: 57rem;
   display: -ms-grid;
@@ -267,6 +268,39 @@ button::-moz-focus-inner {
   }
 }
 
+#refresh {
+  height: 1.8rem;
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+
+@media screen and (min-width: 768px) {
+  #refresh {
+    margin-top: 0.3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #refresh {
+    margin-top: 1rem;
+  }
+}
+
+#refresh svg {
+  fill: white;
+  outline: none;
+  -webkit-transition: -webkit-transform 0.15s linear;
+  transition: -webkit-transform 0.15s linear;
+  transition: transform 0.15s linear;
+  transition: transform 0.15s linear, -webkit-transform 0.15s linear;
+}
+
+#refresh svg:hover {
+  opacity: 1;
+}
+
+/* Current Section */
 /* Footer */
 #content {
   visibility: hidden;
