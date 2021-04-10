@@ -117,12 +117,13 @@ body {
     }
 
     header {
-       // @include flex (row, space-evenly);
+       display: flex;
+       justify-content: flex-start;
+       align-items: center;
     }
 
-    &__icon {
-        height: 1.4rem;
-        padding-left: 0;
+    .icon {
+        padding-right: 1.6rem;
         
 
     }
