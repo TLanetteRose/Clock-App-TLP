@@ -355,6 +355,12 @@ body {
 .current .btn-expand .arrow {
   width: 3.2rem;
   height: 3.2rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.5s, -webkit-filter 0.2s;
+  transition: -webkit-transform 0.5s, -webkit-filter 0.2s;
+  transition: transform 0.5s, filter 0.2s;
+  transition: transform 0.5s, filter 0.2s, -webkit-transform 0.5s, -webkit-filter 0.2s;
 }
 
 .current__container {
