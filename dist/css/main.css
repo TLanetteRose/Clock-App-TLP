@@ -321,7 +321,7 @@ body {
           align-items: center;
 }
 
-.current .btn-expand {
+.current .btn-more {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,46 +329,62 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  border-radius: 2.8rem;
   width: 11.6rem;
   height: 4rem;
-  padding: .063rem 0.5rem 0 1.5rem;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.5);
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  padding: .4rem;
+  border-radius: 2.8rem;
   background: white;
+  color: rgba(0, 0, 0, 0.5);
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.4rem;
   letter-spacing: 0.234rem;
+  text-transform: uppercase;
   cursor: pointer;
   border: none;
 }
 
-.current .btn-expand .arrow {
+.current .btn-more #more {
+  margin-right: 2.1rem;
+  opacity: 0.5;
+}
+
+.current .btn-more #less {
+  display: none;
+}
+
+.current .btn-more #less {
+  margin-right: 2.1rem;
+  opacity: .5;
+}
+
+.current .btn-more .arrow {
   width: 3.2rem;
   height: 3.2rem;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  -webkit-transition: -webkit-transform 0.5s, -webkit-filter 0.2s;
-  transition: -webkit-transform 0.5s, -webkit-filter 0.2s;
-  transition: transform 0.5s, filter 0.2s;
-  transition: transform 0.5s, filter 0.2s, -webkit-transform 0.5s, -webkit-filter 0.2s;
+  -webkit-transition: -webkit-transform 300ms ease-out;
+  transition: -webkit-transform 300ms ease-out;
+  transition: transform 300ms ease-out;
+  transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
 }
 
-.current .btn-expand .arrow:hover {
+.current .btn-more .arrow:hover {
   -webkit-filter: brightness(330%);
           filter: brightness(330%);
 }
 
-.current .btn-expand .rotate {
+.current .btn-more .rotate {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
