@@ -384,3 +384,19 @@ expand.addEventListener('click', showDesc); */
         
     }
 }
+
+
+
+
+function showDesc() {
+    let toggle = document.getElementById('toggle');
+    let content = document.getElementById('content');
+
+    content.classList.toggle('appear');
+
+    if (toggle.innerText == 'More') {
+        toggle.innerText = 'Less';
+    } else {
+        toggle.innerText = 'More';
+    }
+}
