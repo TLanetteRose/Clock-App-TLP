@@ -20,7 +20,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/content
 https://stackoverflow.com/questions/4528085/toggle-show-hide-div-with-button
 Learned that 'innerText' can be use to change the writing on a button. I had an error with the jS. After stepping away, I figured out that I had one extra = sign. 
 04032021: Got the JS organized. Now working on page design. What is max-content in grid layout? 
-
+04102021: Learned that it matters how you nest the classes/ids in SASS.  
 
 
 ********************************
@@ -382,5 +382,21 @@ expand.addEventListener('click', showDesc); */
     overflow: hidden;
     @include xl-breakpoint {
         
+    }
+}
+
+
+
+
+function showDesc() {
+    let toggle = document.getElementById('toggle');
+    let content = document.getElementById('content');
+
+    content.classList.toggle('appear');
+
+    if (toggle.innerText == 'More') {
+        toggle.innerText = 'Less';
+    } else {
+        toggle.innerText = 'More';
     }
 }

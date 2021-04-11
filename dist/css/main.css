@@ -13,6 +13,8 @@
 }
 
 html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 100%;
   width: 100%;
 }
@@ -46,6 +48,7 @@ body,
 
 body {
   margin: 0;
+  padding: 0;
   font-family: system-ui;
   text-rendering: optimizeSpeed;
   line-height: 1.2;
@@ -172,6 +175,10 @@ button::-moz-focus-inner {
   letter-spacing: -5px;
 }
 
+body {
+  font-family: "Inter", sans-serif;
+}
+
 .background {
   height: 100vh;
   background-size: cover;
@@ -197,17 +204,7 @@ button::-moz-focus-inner {
   background: rgba(0, 0, 0, 0.4);
 }
 
-.app__widgets {
-  padding: 2.2rem 2.6rem 4rem;
-  position: relative;
-  height: 100%;
-  max-width: 115rem;
-  -webkit-transition: -webkit-transform 0.5s ease;
-  transition: -webkit-transform 0.5s ease;
-  transition: transform 0.5s ease;
-  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
-  text-align: left;
-  color: white;
+.main__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,17 +218,17 @@ button::-moz-focus-inner {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .app__widgets {
-    padding: 8.3rem 13.1rem 6.4rem 6.4rem;
-  }
+  position: relative;
+  height: 100vh;
+  max-width: 115rem;
+  padding: 2.2rem 2.6rem 4rem;
+  text-align: left;
+  color: white;
 }
 
 /* Quote Container */
 .quote__container {
-  max-width: 60.3rem;
+  max-width: 57rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1.67rem;
@@ -240,10 +237,20 @@ button::-moz-focus-inner {
           column-gap: 1.6rem;
 }
 
+.quote__container__container-random {
+  margin: 0 auto;
+}
+
 @media screen and (min-width: 768px) {
   .quote__container .quote-text {
     font-size: 1.2rem !important;
     line-height: 2.8rem !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .quote__container .quote-text {
+    padding: 1.3rem 0 9.8rem;
   }
 }
 
@@ -291,7 +298,6 @@ button::-moz-focus-inner {
   transition: -webkit-transform 0.15s linear;
   transition: transform 0.15s linear;
   transition: transform 0.15s linear, -webkit-transform 0.15s linear;
-  opacity: 0.5;
 }
 
 #refresh svg:hover {
@@ -300,12 +306,82 @@ button::-moz-focus-inner {
 
 /* Current Section */
 .current {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.current .btn-expand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border-radius: 2.8rem;
+  width: 11.6rem;
+  height: 4rem;
+  padding: .063rem 0.5rem 0 1.5rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  background: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.234rem;
+  cursor: pointer;
+  border: none;
+}
+
+.current .btn-expand .arrow {
+  width: 3.2rem;
+  height: 3.2rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform 0.5s, -webkit-filter 0.2s;
+  transition: -webkit-transform 0.5s, -webkit-filter 0.2s;
+  transition: transform 0.5s, filter 0.2s;
+  transition: transform 0.5s, filter 0.2s, -webkit-transform 0.5s, -webkit-filter 0.2s;
+}
+
+.current .btn-expand .arrow:hover {
+  -webkit-filter: brightness(330%);
+          filter: brightness(330%);
+}
+
+.current .btn-expand .rotate {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.current__container {
   text-transform: uppercase;
   text-align: left;
+  width: 80vw;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 992px) {
-  .current {
+  .current__container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr max-content;
@@ -314,44 +390,50 @@ button::-moz-focus-inner {
   }
 }
 
-.current header {
+.current__container header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.current__icon {
-  height: 1.4rem;
+.current__container header .icon {
   padding-right: 1.6rem;
-  -webkit-animation: rotation 6s infinite linear;
-          animation: rotation 6s infinite linear;
 }
 
 @media screen and (min-width: 768px) {
-  .current__icon {
+  .current__container header .icon {
     height: 2.4rem;
   }
 }
 
-.current__greeting,
-.current span {
+.current__container header .current__greeting {
   letter-spacing: 0.3rem;
   font-weight: 400 !important;
 }
 
+.current__container header span {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
-  .current__greeting,
-  .current span {
+  .current__container header span {
+    display: block;
+  }
+}
+
+.current__container header span {
+  letter-spacing: 0.25rem;
+  font-weight: 400 !important;
+}
+
+@media screen and (min-width: 768px) {
+  .current__container header span {
     font-size: 1.5rem !important;
     line-height: 2.8rem !important;
     letter-spacing: 0.35rem;
@@ -359,40 +441,24 @@ button::-moz-focus-inner {
 }
 
 @media screen and (min-width: 992px) {
-  .current__greeting,
-  .current span {
+  .current__container header span {
     font-size: 1.75rem !important;
     line-height: 2.8rem;
     letter-spacing: 0.4rem;
   }
 }
 
-.current span {
-  display: none;
-}
-
-@media screen and (min-width: 768px) {
-  .current span {
-    display: block;
-  }
-}
-
-.current__time {
-  padding-bottom: 4.9rem;
+.current__container .current__time {
+  padding-bottom: 3rem;
 }
 
 @media screen and (min-width: 992px) {
-  .current__time {
+  .current__container .current__time {
     padding-bottom: 0;
   }
 }
 
-.current__location {
-  letter-spacing: 0.188rem;
-  font-weight: 400 !important;
-}
-
-.current .time__container {
+.current__container .current__time .time__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,66 +472,68 @@ button::-moz-focus-inner {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-column-gap: 2rem;
-          column-gap: 2rem;
 }
 
 @media screen and (min-width: 768px) {
-  .current .time__container {
+  .current__container .current__time .time__container {
     -webkit-column-gap: 2rem;
             column-gap: 2rem;
   }
 }
 
-.current .time {
-  font-size: 6.95rem !important;
-  font-weight: 400 !important;
+.current__container .current__time .time {
+  font-size: 8.5rem;
+  font-weight: 400;
   letter-spacing: -3px;
+  margin: 0;
   padding: 1rem 1.6rem 1rem 0;
 }
 
 @media screen and (min-width: 768px) {
-  .current .time {
-    font-size: 10rem !important;
+  .current__container .current__time .time {
+    font-size: 10rem;
     line-height: 10rem;
     letter-spacing: -2.5px;
-    font-weight: 400 !important;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .current .time {
-    font-size: 12.5rem !important;
-    font-weight: 400 !important;
+  .current__container .current__time .time {
+    font-size: 12.5rem;
   }
 }
 
-.current .standard-time {
+.current__container .current__time .standard-time {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   font-size: 1.5rem;
-  padding-top: 3.7rem;
-  font-weight: 300;
+  padding-top: 2.3rem;
 }
 
 @media screen and (min-width: 768px) {
-  .current .standard-time {
+  .current__container .current__time .standard-time {
     font-size: 3rem;
     line-height: 2.8rem;
     padding-top: 6rem;
   }
 }
 
-.current .period {
-  display: none;
+.current__container .current__time .standard-time .period,
+.current__container .current__time .standard-time .time-zone {
+  font-weight: 400 !important;
+}
+
+.current__container .current__time .current__location {
+  letter-spacing: 0.188rem;
+  font-weight: 400 !important;
 }
 
 /* Footer */
 #content {
   visibility: hidden;
   resize: none;
-  overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
   width: 100%;
   height: 260px;
