@@ -363,6 +363,16 @@ body {
   transition: transform 0.5s, filter 0.2s, -webkit-transform 0.5s, -webkit-filter 0.2s;
 }
 
+.current .btn-expand .arrow:hover {
+  -webkit-filter: brightness(330%);
+          filter: brightness(330%);
+}
+
+.current .btn-expand .rotate {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
 .current__container {
   text-transform: uppercase;
   text-align: left;
