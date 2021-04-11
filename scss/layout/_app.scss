@@ -204,14 +204,24 @@ body {
             align-self: center;
             font-size: 1.5rem;
             padding-top: 2.3rem;
+            
+            @include md-breakpoint {
+                font-size: 3rem;
+                line-height: 2.8rem;
+                padding-top: 6rem;
+            }
+
+            .period,
+            .time-zone {
+                font-weight: $weight-regular !important;
+            }
+
         }
 
         .current__location {
             letter-spacing: 0.188rem;
             font-weight: $weight-regular !important;
         }
-
-        
 
     }
 

@@ -459,6 +459,19 @@ body {
   padding-top: 2.3rem;
 }
 
+@media screen and (min-width: 768px) {
+  .current__container .current__time .standard-time {
+    font-size: 3rem;
+    line-height: 2.8rem;
+    padding-top: 6rem;
+  }
+}
+
+.current__container .current__time .standard-time .period,
+.current__container .current__time .standard-time .time-zone {
+  font-weight: 400 !important;
+}
+
 .current__container .current__time .current__location {
   letter-spacing: 0.188rem;
   font-weight: 400 !important;
