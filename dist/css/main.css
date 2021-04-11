@@ -321,6 +321,42 @@ body {
           align-items: center;
 }
 
+.current .btn-expand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  border-radius: 2.8rem;
+  width: 11.6rem;
+  height: 4rem;
+  padding: .063rem 0.5rem 0 1.5rem;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+  background: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 0.234rem;
+  cursor: pointer;
+  border: none;
+}
+
+.current .btn-expand .arrow {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
 .current__container {
   text-transform: uppercase;
   text-align: left;
