@@ -352,15 +352,33 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   border: none;
+  /*
+        #less {
+            display: none;
+        } */
+  /*
+        .rotate {
+            transform: rotate(0deg);
+        } */
+}
+
+.current .btn-more p {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translate(30%, -50%);
+          transform: translate(30%, -50%);
+  color: #000000;
+  font-style: normal;
+  font-weight: 700;
+  font-size: .75rem;
+  text-transform: uppercase;
+  letter-spacing: .234rem;
+  line-height: .875rem;
 }
 
 .current .btn-more #more {
-  margin-right: 2.1rem;
   opacity: 0.5;
-}
-
-.current .btn-more #less {
-  display: none;
 }
 
 .current .btn-more #less {
@@ -370,7 +388,6 @@ body {
 
 .current .btn-more .arrow {
   width: 3.2rem;
-  height: 3.2rem;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   -webkit-transition: -webkit-transform 300ms ease-out;
@@ -382,11 +399,6 @@ body {
 .current .btn-more .arrow:hover {
   -webkit-filter: brightness(330%);
           filter: brightness(330%);
-}
-
-.current .btn-more .rotate {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
 }
 
 .current__container {
@@ -558,11 +570,11 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
+/*
 #content.appear {
-  visibility: visible;
-  opacity: 1;
-}
-
+    visibility: visible;
+    opacity: 1;
+} */
 .description {
   background: rgba(255, 255, 255, 0.75);
   -webkit-backdrop-filter: blur(40.77px);
@@ -574,11 +586,38 @@ body {
   bottom: -100px;
 }
 
-.transform {
-  -webkit-transform: translate3d(0, -25.6rem, 0);
-          transform: translate3d(0, -25.6rem, 0);
+/* App Function */
+#app {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform 300ms ease-out;
+  transition: -webkit-transform 300ms ease-out;
+  transition: transform 300ms ease-out;
+  transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
 }
 
+#app.show-desc {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+#app.show-desc .btn-more .arrow {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+}
+
+#app.show-desc .btn-more #less {
+  opacity: 0.5;
+}
+
+#app.show-desc .btn-more #more {
+  opacity: 0;
+}
+
+/*
+.transform {
+    transform: translate3d(0, -25.6rem, 0);
+} */
 /* Attribution */
 .attribution {
   /* background-color: $black; */

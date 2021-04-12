@@ -388,8 +388,7 @@ expand.addEventListener('click', showDesc); */
 
 
 
-function showDesc() {
-    let toggle = document.getElementById('toggle');
+let toggle = document.getElementById('toggle');
     let content = document.getElementById('content');
 
     content.classList.toggle('appear');
@@ -400,6 +399,10 @@ function showDesc() {
         toggle.innerText = 'More';
     }
 }
+
+toggle.addEventListener('click', showDesc);
+
+
 
 **************************************
 From Roman7501

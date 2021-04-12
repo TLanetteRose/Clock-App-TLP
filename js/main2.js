@@ -5,8 +5,8 @@ const author = document.querySelector('.author');
 const icon = document.querySelector('.icon');
 const details = document.querySelector('.description'); 
 const period = document.querySelector('.period'); 
-
-//const app = document.querySelector('app');
+const app = document.querySelector('app');
+const btnMore = document.querySelector('btn');
 
 const URL_QUOTE = 'https://api.quotable.io/random';
 const URL_TIMEZONE = 'https://worldtimeapi.org/api/ip';
@@ -131,19 +131,17 @@ getLocation();
 
 //Event Listeners 
 function showDesc() {
-    let toggle = document.getElementById('toggle');
-    let content = document.getElementById('content');
-
-    content.classList.toggle('appear');
-
-    if (toggle.innerText == 'More') {
-        toggle.innerText = 'Less';
+    if (app.classList.contains('show-desc')) {
+        app.classList.remove('show-desc');
+        app.style.transform = 'translateY(0)';
     } else {
-        toggle.innerText = 'More';
+        app.classList.add ('show-desc');
+        app.style.transform = `translateY(-${details.offsetHeight}px)`;
     }
+    console.log(app);
 }
 
-toggle.addEventListener('click', showDesc);
+btnMore.addEventListener('click', showDesc);
 
 
 // Random Quote
