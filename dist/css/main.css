@@ -321,86 +321,6 @@ body {
           align-items: center;
 }
 
-.current .btn-more {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  width: 11.6rem;
-  height: 4rem;
-  margin-top: 1rem;
-  margin-bottom: 5rem;
-  padding: .4rem;
-  border-radius: 2.8rem;
-  background: white;
-  color: rgba(0, 0, 0, 0.5);
-  font-weight: 700;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-  letter-spacing: 0.234rem;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: none;
-  /*
-        #less {
-            display: none;
-        } */
-  /*
-        .rotate {
-            transform: rotate(0deg);
-        } */
-}
-
-.current .btn-more p {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  -webkit-transform: translate(30%, -50%);
-          transform: translate(30%, -50%);
-  color: #000000;
-  font-style: normal;
-  font-weight: 700;
-  font-size: .75rem;
-  text-transform: uppercase;
-  letter-spacing: .234rem;
-  line-height: .875rem;
-}
-
-.current .btn-more #more {
-  opacity: 0.5;
-}
-
-.current .btn-more #less {
-  margin-right: 2.1rem;
-  opacity: .5;
-}
-
-.current .btn-more .arrow {
-  width: 3.2rem;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: -webkit-transform 300ms ease-out;
-  transition: -webkit-transform 300ms ease-out;
-  transition: transform 300ms ease-out;
-  transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
-}
-
-.current .btn-more .arrow:hover {
-  -webkit-filter: brightness(330%);
-          filter: brightness(330%);
-}
-
 .current__container {
   text-transform: uppercase;
   text-align: left;
@@ -587,33 +507,6 @@ body {
 }
 
 /* App Function */
-#app {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-transition: -webkit-transform 300ms ease-out;
-  transition: -webkit-transform 300ms ease-out;
-  transition: transform 300ms ease-out;
-  transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
-}
-
-#app.show-desc {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-#app.show-desc .btn-more .arrow {
-  -webkit-transform: rotate(0);
-          transform: rotate(0);
-}
-
-#app.show-desc .btn-more #less {
-  opacity: 0.5;
-}
-
-#app.show-desc .btn-more #more {
-  opacity: 0;
-}
-
 /*
 .transform {
     transform: translate3d(0, -25.6rem, 0);

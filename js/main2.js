@@ -130,18 +130,9 @@ getTimeZone();
 getLocation();
 
 //Event Listeners 
-function showDesc() {
-    if (app.classList.contains('show-desc')) {
-        app.classList.remove('show-desc');
-        app.style.transform = 'translateY(0)';
-    } else {
-        app.classList.add ('show-desc');
-        app.style.transform = `translateY(-${details.offsetHeight}px)`;
-    }
-    console.log(app);
-}
 
-btnMore.addEventListener('click', showDesc);
+
+
 
 
 // Random Quote
