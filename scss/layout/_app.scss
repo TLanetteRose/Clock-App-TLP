@@ -108,40 +108,7 @@ body {
 .current {
     @include flex (column, space-evenly);
 
-    .btn-expand {
-        @include flex (row, space-between);
-
-        align-self: flex-start;
-        border-radius: 2.8rem;
-        width: 11.6rem;
-        height: 4rem;
-        padding: .063rem 0.5rem 0 1.5rem;
-        text-transform: uppercase;
-        color: rgba(0,0,0,0.5);
-        background: $white;
-        font-weight: $weight-bold;
-        font-size: 1.2rem;
-        line-height: 1.4rem;
-        letter-spacing: 0.234rem;
-        cursor: pointer;
-        border: none;
-
-
-        .arrow {
-            width: 3.2rem;
-            height: 3.2rem;
-            transform: rotate(180deg);
-            transition: transform 0.5s, filter 0.2s;
-
-            &:hover {
-                filter: brightness(330%);
-            }
-        }
-
-        .rotate {
-            transform: rotate(0deg);
-        }
-    }
+    
 }
 
 
@@ -263,7 +230,6 @@ body {
 
 }
 
-
 /* Footer */
 #content {
     visibility: hidden;
@@ -275,11 +241,11 @@ body {
     position: absolute;
     transition: all 0.5s ease-in-out;
 }
-
+/*
 #content.appear {
     visibility: visible;
     opacity: 1;
-}
+} */
 
 .description {
     background: rgba(255, 255, 255, 0.75);
@@ -292,11 +258,14 @@ body {
     bottom: -100px;
 }
 
+/* App Function */ 
 
 
+
+/*
 .transform {
     transform: translate3d(0, -25.6rem, 0);
-}
+} */
 
 /* Attribution */
 .attribution {

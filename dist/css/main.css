@@ -321,58 +321,6 @@ body {
           align-items: center;
 }
 
-.current .btn-expand {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  border-radius: 2.8rem;
-  width: 11.6rem;
-  height: 4rem;
-  padding: .063rem 0.5rem 0 1.5rem;
-  text-transform: uppercase;
-  color: rgba(0, 0, 0, 0.5);
-  background: white;
-  font-weight: 700;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-  letter-spacing: 0.234rem;
-  cursor: pointer;
-  border: none;
-}
-
-.current .btn-expand .arrow {
-  width: 3.2rem;
-  height: 3.2rem;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
-  -webkit-transition: -webkit-transform 0.5s, -webkit-filter 0.2s;
-  transition: -webkit-transform 0.5s, -webkit-filter 0.2s;
-  transition: transform 0.5s, filter 0.2s;
-  transition: transform 0.5s, filter 0.2s, -webkit-transform 0.5s, -webkit-filter 0.2s;
-}
-
-.current .btn-expand .arrow:hover {
-  -webkit-filter: brightness(330%);
-          filter: brightness(330%);
-}
-
-.current .btn-expand .rotate {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-}
-
 .current__container {
   text-transform: uppercase;
   text-align: left;
@@ -542,11 +490,11 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
+/*
 #content.appear {
-  visibility: visible;
-  opacity: 1;
-}
-
+    visibility: visible;
+    opacity: 1;
+} */
 .description {
   background: rgba(255, 255, 255, 0.75);
   -webkit-backdrop-filter: blur(40.77px);
@@ -558,11 +506,11 @@ body {
   bottom: -100px;
 }
 
+/* App Function */
+/*
 .transform {
-  -webkit-transform: translate3d(0, -25.6rem, 0);
-          transform: translate3d(0, -25.6rem, 0);
-}
-
+    transform: translate3d(0, -25.6rem, 0);
+} */
 /* Attribution */
 .attribution {
   /* background-color: $black; */
