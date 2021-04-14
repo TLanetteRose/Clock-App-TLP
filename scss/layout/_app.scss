@@ -107,128 +107,127 @@ body {
 /* Current Section */
 .current {
     @include flex (column, space-evenly);
+   
 
-    
-}
-
-
-.current__container {
-    text-transform: uppercase;
-    text-align: left;
-    width: 80vw;
-    margin: 0 auto;
-
-    @include lg-breakpoint {
-        display: grid;
-        grid-template-columns: 1fr max-content;
-    }
-
-    header {
-       display: flex;
-       justify-content: flex-start;
-       align-items: center;
-    
-
-        .icon {
-            padding-right: 1.6rem;
-
-                @include md-breakpoint {
-                height: 2.4rem;
-            }
-        
-        }
-
-        .current__greeting {
-            letter-spacing: 0.3rem;
-            font-weight: $weight-regular !important;
-        }
-        span {
-            display: none;
-
-                @include md-breakpoint {
-                    display: block;
-                }
-        }
-
-        span {
-            letter-spacing: 0.25rem;
-            font-weight: $weight-regular !important;
-
-            @include md-breakpoint {
-                font-size: 1.5rem !important;
-                line-height: 2.8rem !important;
-                letter-spacing: 0.35rem;
-            }
-
-            @include lg-breakpoint {
-                font-size: 1.75rem !important;
-                line-height: 2.8rem;
-                letter-spacing: 0.4rem;
-            }
-        }
-    }
-
-    .current__time {
-        padding-bottom: 3rem;
+    .current__container {
+        text-transform: uppercase;
+        text-align: left;
+        width: 80vw;
+        margin: 0 auto;
 
         @include lg-breakpoint {
-            padding-bottom: 0;
+            display: grid;
+            grid-template-columns: 1fr max-content;
         }
 
-        .time__container {
-            @include flex (row, space-evenly);
-            //column-gap: 0;
+        header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
 
-            @include md-breakpoint {
-                column-gap: 2rem;
+            .icon {
+                padding-right: 1.6rem;
+
+                    @include md-breakpoint {
+                    height: 2.4rem;
+                }
+            
+            }
+
+            .current__greeting {
+                letter-spacing: 0.3rem;
+                font-weight: $weight-regular !important;
+            }
+            span {
+                display: none;
+
+                    @include md-breakpoint {
+                        display: block;
+                    }
+            }
+
+            span {
+                letter-spacing: 0.25rem;
+                font-weight: $weight-regular !important;
+
+                @include md-breakpoint {
+                    font-size: 1.5rem !important;
+                    line-height: 2.8rem !important;
+                    letter-spacing: 0.35rem;
+                }
+
+                @include lg-breakpoint {
+                    font-size: 1.75rem !important;
+                    line-height: 2.8rem;
+                    letter-spacing: 0.4rem;
+                }
             }
         }
 
-        .time {
-            font-size: 8.5rem;
-            font-weight: $weight-regular;
-            letter-spacing: -3px;
-            margin: 0;
-            padding: 1rem 1.6rem 1rem 0;
-
-            @include md-breakpoint {
-                font-size: 10rem;
-                line-height: 10rem;
-                letter-spacing: -2.5px;
-                //font-weight: $weight-regular;
-            }
+        .current__time {
+            padding-bottom: 3rem;
 
             @include lg-breakpoint {
-                font-size: 12.5rem;
-            }
-        }
-
-        .standard-time {
-            align-self: center;
-            font-size: 1.5rem;
-            padding-top: 2.3rem;
-            
-            @include md-breakpoint {
-                font-size: 3rem;
-                line-height: 2.8rem;
-                padding-top: 6rem;
+                padding-bottom: 0;
             }
 
-            .period,
-            .time-zone {
+            .time__container {
+                @include flex (row, space-evenly);
+                //column-gap: 0;
+
+                @include md-breakpoint {
+                    column-gap: 2rem;
+                }
+            }
+
+            .time {
+                font-size: 8.5rem;
+                font-weight: $weight-regular;
+                letter-spacing: -3px;
+                margin: 0;
+                padding: 1rem 1.6rem 1rem 0;
+
+                @include md-breakpoint {
+                    font-size: 10rem;
+                    line-height: 10rem;
+                    letter-spacing: -2.5px;
+                    //font-weight: $weight-regular;
+                }
+
+                @include lg-breakpoint {
+                    font-size: 12.5rem;
+                }
+            }
+
+            .standard-time {
+                align-self: center;
+                font-size: 1.5rem;
+                padding-top: 2.3rem;
+                
+                @include md-breakpoint {
+                    font-size: 3rem;
+                    line-height: 2.8rem;
+                    padding-top: 6rem;
+                }
+
+                .period,
+                .time-zone {
+                    font-weight: $weight-regular !important;
+                }
+
+            }
+
+            .current__location {
+                letter-spacing: 0.188rem;
                 font-weight: $weight-regular !important;
             }
 
         }
 
-        .current__location {
-            letter-spacing: 0.188rem;
-            font-weight: $weight-regular !important;
-        }
-
     }
-
 }
+
 
 /* Footer */
 #content {
@@ -241,11 +240,11 @@ body {
     position: absolute;
     transition: all 0.5s ease-in-out;
 }
-/*
+
 #content.appear {
     visibility: visible;
     opacity: 1;
-} */
+} 
 
 .description {
     background: rgba(255, 255, 255, 0.75);
@@ -255,7 +254,7 @@ body {
 }
 
 .bottom {
-    bottom: -100px;
+    bottom: -110px;
 }
 
 /* App Function */ 
