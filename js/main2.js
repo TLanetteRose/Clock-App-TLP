@@ -5,8 +5,9 @@ const author = document.querySelector('.author');
 const icon = document.querySelector('.icon');
 const details = document.querySelector('.description'); 
 const period = document.querySelector('.period'); 
-const app = document.querySelector('app');
-const btnMore = document.querySelector('.btn-more');
+const app = document.querySelector('.main__container');
+const btnExpand = document.querySelector('.btn-more');
+const arrow = document.querySelector('.arrow');
 
 const URL_QUOTE = 'https://api.quotable.io/random';
 const URL_TIMEZONE = 'https://worldtimeapi.org/api/ip';
@@ -130,11 +131,23 @@ getTimeZone();
 getLocation();
 
 
+btnExpand.addEventListener('click', () => {
+    showDesc = !showDesc 
+    if (showDesc === true) {
+        details.style.display = 'visible'
+    } else {
+        details.style.display = 'hidden'
+    }
 
+    btnExpand.innerText = buttonStates[btnExpand.innerText]
+})
 
+let showDesc = false
 
-//Event Listeners 
-// More or Less Button
+let buttonStates = {
+    'More' : 'Less',
+    'Less' : 'More'
+}
 
 
 // Random Quote

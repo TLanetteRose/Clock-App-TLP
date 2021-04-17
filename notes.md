@@ -210,20 +210,19 @@ li {
 ***********************************
 //JS
 
-/*function showDesc (){
-   document.querySelector('.app__widgets').classList.toggle('transform');
-   details.classList.toggle('transform');
+/* function showDesc (){
+   //app.classList.toggle('transform');
+   details.classList.toggle('appear');
 
-   if (expand.firstChild.nodeValue === 'More') {
-       expand.firstChild.nodeValue = 'Less'
+   if (btnExpand.innerText === 'More') {
+       btnExpand.innerText = 'Less'
    } else {
-       expand.firstChild.nodeValue = 'More'
+       btnExpand.innerText = 'More'
    }
 
-   const arrow = document.querySelector('.arrow');
    arrow.classList.toggle('rotate');
 }
-expand.addEventListener('click', showDesc); */
+btnExpand.addEventListener('click', showDesc); */
 
 
 *************************** 
@@ -386,7 +385,7 @@ expand.addEventListener('click', showDesc); */
 }
 
 
-
+***********************************
 
 let toggle = document.getElementById('toggle');
     let content = document.getElementById('content');
@@ -483,3 +482,24 @@ function showDesc() {
 refreshBtn.addEventListener("click", getQuote);
 
 btnMore.addEventListener("click", showDesc);
+
+**********************
+https://medium.com/swlh/now-you-see-it-now-you-dont-two-ways-to-toggle-using-vanilla-javascript-9f45c6db7698
+
+btnExpand.addEventListener('click', () => {
+    showDesc = !showDesc 
+    if (showDesc === true) {
+        details.style.display = 'visible'
+    } else {
+        details.style.display = 'hidden'
+    }
+
+    btnExpand.innerText = buttonStates[btnExpand.innerText]
+})
+
+let showDesc = false
+
+let buttonStates = {
+    'More' : 'Less',
+    'Less' : 'More'
+}
