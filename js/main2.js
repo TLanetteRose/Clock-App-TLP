@@ -132,11 +132,14 @@ getLocation();
 
 
 btnExpand.addEventListener('click', () => {
+    
     showDesc = !showDesc 
     if (showDesc === true) {
-        details.style.display = 'visible'
+        details.style.visibility = 'visible'
+        arrow.classList.toggle('rotate')
     } else {
-        details.style.display = 'hidden'
+        details.style.visibility = 'hidden'
+        arrow.classList.toggle('rotate')
     }
 
     btnExpand.innerText = buttonStates[btnExpand.innerText]
