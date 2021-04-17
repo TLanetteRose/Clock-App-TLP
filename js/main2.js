@@ -130,7 +130,15 @@ getTimeZone();
 getLocation();
 
 //Event Listeners 
-
+function showDesc() {
+    document.querySelector('app').classList.toggle('transform');
+    details.classList.toggle('transform');
+    if (btnMore.innerText === 'More') {
+        btnMore.innerText = 'Less'
+    } else {
+        btnMore.innerText = 'More'
+    }
+}
 
 
 
