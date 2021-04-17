@@ -130,6 +130,7 @@ getTime();
 getTimeZone();
 getLocation();
 
+// Event Listeners
 
 btnExpand.addEventListener('click', () => {
     
