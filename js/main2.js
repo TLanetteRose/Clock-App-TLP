@@ -137,11 +137,11 @@ btnExpand.addEventListener('click', () => {
     showDesc = !showDesc 
     if (showDesc === true) {
         details.style.visibility = 'visible'
-        arrow.classList.toggle('rotate')
     } else {
         details.style.visibility = 'hidden'
-        arrow.classList.toggle('rotate')
     }
+
+    arrow.classList.toggle('rotate')
 
     btnExpand.innerText = buttonStates[btnExpand.innerText]
 })
