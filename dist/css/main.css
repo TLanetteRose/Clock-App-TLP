@@ -477,6 +477,22 @@ body {
   font-weight: 400 !important;
 }
 
+.btn-more .arrow {
+  width: 3.2rem;
+  height: 3.2rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: -webkit-transform .5s, -webkit-filter .2s;
+  transition: -webkit-transform .5s, -webkit-filter .2s;
+  transition: transform .5s, filter .2s;
+  transition: transform .5s, filter .2s, -webkit-transform .5s, -webkit-filter .2s;
+}
+
+.btn-more .rotate {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
 /* Footer */
 #content {
   visibility: hidden;
@@ -493,6 +509,8 @@ body {
 #content.appear {
   visibility: visible;
   opacity: 1;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
 }
 
 .description {

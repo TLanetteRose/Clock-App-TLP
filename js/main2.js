@@ -6,7 +6,7 @@ const icon = document.querySelector('.icon');
 const details = document.querySelector('.description'); 
 const period = document.querySelector('.period'); 
 const app = document.querySelector('app');
-const btnMore = document.querySelector('btn');
+const btnMore = document.querySelector('.btn-more');
 
 const URL_QUOTE = 'https://api.quotable.io/random';
 const URL_TIMEZONE = 'https://worldtimeapi.org/api/ip';
@@ -129,18 +129,12 @@ getTime();
 getTimeZone();
 getLocation();
 
+
+
+
+
 //Event Listeners 
-function showDesc() {
-    document.querySelector('app').classList.toggle('transform');
-    details.classList.toggle('transform');
-    if (btnMore.innerText === 'More') {
-        btnMore.innerText = 'Less'
-    } else {
-        btnMore.innerText = 'More'
-    }
-}
-
-
+// More or Less Button
 
 
 // Random Quote
