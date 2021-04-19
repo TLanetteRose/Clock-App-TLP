@@ -507,7 +507,7 @@ body {
 }
 
 .description .appear {
-  visibility: visible;
+  visibility: hidden;
   opacity: 1;
   transform: translateX(0);
   -webkit-transform: translateX(0);

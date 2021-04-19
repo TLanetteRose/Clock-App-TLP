@@ -237,9 +237,10 @@ body {
         transition: transform .5s, filter .2s;
     }
 
+    
     .rotate {
         transform: rotate(0deg);
-    }
+    } 
 }
 
 /* Footer */
@@ -255,7 +256,7 @@ body {
 }
 
 .description .appear {
-    visibility: visible;
+    visibility: hidden;
     opacity: 1;
     transform: translateX(0);
     -webkit-transform: translateX(0);
