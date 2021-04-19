@@ -137,13 +137,14 @@ btnExpand.addEventListener('click', () => {
     showDesc = !showDesc 
 
     if (showDesc === true) {
-        details.style.visibility = 'visible'
+        details.style.visibility = 'visible';
+
     } else {
-        details.style.visibility = 'hidden'
+        details.style.visibility = 'hidden';
     }
     
     btnExpand.innerText = buttonStates[btnExpand.innerText]
-})
+});
 
 let showDesc = false
 
