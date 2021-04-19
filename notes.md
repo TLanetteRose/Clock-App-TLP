@@ -488,15 +488,18 @@ btnMore.addEventListener("click", showDesc);
 https://medium.com/swlh/now-you-see-it-now-you-dont-two-ways-to-toggle-using-vanilla-javascript-9f45c6db7698
 
 btnExpand.addEventListener('click', () => {
+    
     showDesc = !showDesc 
-    if (showDesc === true) {
-        details.style.display = 'visible'
-    } else {
-        details.style.display = 'hidden'
-    }
 
+    if (showDesc === true) {
+        details.style.visibility = 'visible';
+
+    } else {
+        details.style.visibility = 'hidden';
+    }
+    
     btnExpand.innerText = buttonStates[btnExpand.innerText]
-})
+});
 
 let showDesc = false
 

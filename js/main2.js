@@ -132,26 +132,6 @@ getLocation();
 
 // Event Listeners
 
-btnExpand.addEventListener('click', () => {
-    
-    showDesc = !showDesc 
-
-    if (showDesc === true) {
-        details.style.visibility = 'visible';
-
-    } else {
-        details.style.visibility = 'hidden';
-    }
-    
-    btnExpand.innerText = buttonStates[btnExpand.innerText]
-});
-
-let showDesc = false
-
-let buttonStates = {
-    'More' : 'Less',
-    'Less' : 'More'
-}
 
 
 // Random Quote
