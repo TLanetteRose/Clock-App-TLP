@@ -495,12 +495,9 @@ body {
 
 /* Footer */
 .description {
-  visibility: hidden;
-  resize: vertical;
   width: 100%;
   height: 260px;
   opacity: 0;
-  position: absolute;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   -webkit-transition: all .5s ease-in-out;
@@ -515,8 +512,30 @@ body {
   -webkit-transform: translateY(0);
 }
 
+.desc-hidden {
+  overflow: hidden;
+  position: relative;
+  height: 16rem;
+}
+
+.desc-hidden::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.desc-visible {
+  height: auto;
+  overflow: auto;
+}
+
 .description {
   background: rgba(255, 255, 255, 0.75);
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  padding: 4rem 0;
   color: #303030;
 }
 
