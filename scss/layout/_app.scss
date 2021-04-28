@@ -30,7 +30,9 @@ body {
     }
 }
 
-
+.main__container {
+    @include flex (column, space-between);
+}
 
 /* App Function */ 
 
