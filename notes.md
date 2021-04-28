@@ -513,3 +513,282 @@ let buttonStates = {
     'More' : 'Less',
     'Less' : 'More'
 }
+
+**************************************************
+Start over 04/28/2021
+body {
+    font-family: $font-family;
+    //overflow: hidden;
+}
+
+.background {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+
+    &::before {
+        content: '';
+        position: absolute; 
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        background: rgba(0,0,0,0.4);
+    }
+}
+
+.main__container {
+    @include flex(column, space-between);
+    position: relative;
+    height: 100vh;
+    max-width: 115rem;
+    padding: 2.2rem 2.6rem 4rem;
+    text-align: left;
+    color: $white;
+    
+}
+
+/* Quote Container */
+
+.quote__container {
+    max-width: 57rem;
+    display: grid;
+    grid-template-columns: 1fr 1.67rem;
+    column-gap: 1.6rem;
+
+    &__container-random {
+        margin: 0 auto;
+    }
+
+    .quote-text {
+        @include md-breakpoint {
+            font-size: 1.2rem !important;
+            line-height: 2.8rem !important;
+        }
+
+       @include lg-breakpoint {
+           padding: 1.3rem 0 9.8rem;
+        }
+    }
+
+    .author {
+        padding-top: 0.8rem;
+        font-weight: $weight-bold !important;
+
+        @include md-breakpoint {
+            font-size: 1.2rem !important;
+            line-height: 2.8rem !important;
+        }
+
+        @include lg-breakpoint {
+            padding: 1.3rem 0 9.8rem;
+        }
+    }
+}
+
+#refresh {
+    height: 1.8rem;
+    border: none;
+    cursor: pointer;
+    background: none;
+
+    @include md-breakpoint {
+        margin-top: 0.3rem;
+    }
+
+    @include lg-breakpoint {
+        margin-top: 1rem;
+    }
+
+    svg {
+        fill: $white;
+        outline: none;
+        transition: transform 0.15s linear;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+/* Current Section */
+.current {
+    @include flex (column, space-evenly);
+   
+
+    .current__container {
+        text-transform: uppercase;
+        text-align: left;
+        width: 80vw;
+        margin: 0 auto;
+
+        @include lg-breakpoint {
+            display: grid;
+            grid-template-columns: 1fr max-content;
+        }
+
+        header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        
+
+            .icon {
+                padding-right: 1.6rem;
+
+                    @include md-breakpoint {
+                    height: 2.4rem;
+                }
+            
+            }
+
+            .current__greeting {
+                letter-spacing: 0.3rem;
+                font-weight: $weight-regular !important;
+            }
+            span {
+                display: none;
+
+                    @include md-breakpoint {
+                        display: block;
+                    }
+            }
+
+            span {
+                letter-spacing: 0.25rem;
+                font-weight: $weight-regular !important;
+
+                @include md-breakpoint {
+                    font-size: 1.5rem !important;
+                    line-height: 2.8rem !important;
+                    letter-spacing: 0.35rem;
+                }
+
+                @include lg-breakpoint {
+                    font-size: 1.75rem !important;
+                    line-height: 2.8rem;
+                    letter-spacing: 0.4rem;
+                }
+            }
+        }
+
+        .current__time {
+            padding-bottom: 3rem;
+
+            @include lg-breakpoint {
+                padding-bottom: 0;
+            }
+
+            .time__container {
+                @include flex (row, space-evenly);
+                //column-gap: 0;
+
+                @include md-breakpoint {
+                    column-gap: 2rem;
+                }
+            }
+
+            .time {
+                font-size: 8.5rem;
+                font-weight: $weight-regular;
+                letter-spacing: -3px;
+                margin: 0;
+                padding: 1rem 1.6rem 1rem 0;
+
+                @include md-breakpoint {
+                    font-size: 10rem;
+                    line-height: 10rem;
+                    letter-spacing: -2.5px;
+                    //font-weight: $weight-regular;
+                }
+
+                @include lg-breakpoint {
+                    font-size: 12.5rem;
+                }
+            }
+
+            .standard-time {
+                align-self: center;
+                font-size: 1.5rem;
+                padding-top: 2.3rem;
+                
+                @include md-breakpoint {
+                    font-size: 3rem;
+                    line-height: 2.8rem;
+                    padding-top: 6rem;
+                }
+
+                .period,
+                .time-zone {
+                    font-weight: $weight-regular !important;
+                }
+
+            }
+
+            .current__location {
+                letter-spacing: 0.188rem;
+                font-weight: $weight-regular !important;
+            }
+
+        }
+
+    }
+}
+
+.btn-more {
+
+    .arrow {
+        width: 3.2rem;
+        height: 3.2rem;
+        transform: rotate(180deg);
+        transition: transform .5s, filter .2s;
+    }
+
+    
+    .rotate {
+        transform: rotate(0deg);
+    } 
+}
+
+/* Footer */
+.description {
+    visibility: hidden;
+    resize: vertical;
+    //overflow-y: hidden;
+    //overflow-x: hidden;
+    width: 100%;
+    height: 260px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+
+.description .appear {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+} 
+
+.description {
+    background: rgba(255, 255, 255, 0.75);
+    //backdrop-filter: blur(40.77px);
+    //padding: 4rem 0;
+    color: $dark-gray;
+}
+
+.bottom {
+    bottom: -110px;
+}

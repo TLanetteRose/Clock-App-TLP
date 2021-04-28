@@ -132,11 +132,6 @@ getLocation();
 
 
 // Event Listeners
-let toggle = document.getElementById('toggle');
-
-toggle.addEventListener('click', function() {
-    details.classList.toggle('appear');
-}, false);
 
 
 
