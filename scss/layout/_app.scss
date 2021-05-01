@@ -178,7 +178,6 @@ body {
     padding: 0;
     //backdrop-filter: blur(40.77px);
     //padding: 4rem 0;
-    //color: $dark-gray;
 
     .desc-content {
         max-width: 85vw;
@@ -201,7 +200,6 @@ body {
         .desc-info {
            font-size: 12px !important;
            font-weight: $weight-regular;
-           color: $dark-gray;
            text-transform: uppercase; 
         }
 
@@ -230,14 +228,12 @@ body {
 
 /* Attribution */
 .attribution {
-    //background: rgba(255, 255, 255, 0.75);
     position: relative;
     padding: 5px 0;
     font-size: 11px;
     text-align: center;
-    color: $black;
 }
 
-.attribution a {
-    color: $black;
+.attribution a:hover {
+    color: $white;
 }
