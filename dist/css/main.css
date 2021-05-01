@@ -329,6 +329,11 @@ body {
           align-items: center;
 }
 
+.current__container header .icon {
+  max-width: 5vw;
+  max-width: 5vh;
+}
+
 .current__container header .current__greeting {
   text-transform: uppercase;
   font-weight: 400 !important;
@@ -417,6 +422,31 @@ body {
   text-transform: uppercase;
 }
 
+.current__location {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 0;
+  padding-left: 5px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
 footer {
   max-height: 40vh;
   width: 100vw;
@@ -485,7 +515,8 @@ footer .info .desc-info {
 }
 
 footer .info .desc-item {
-  font-size: 24px;
+  font-size: 20px;
+  font-weight: 400;
   margin: 0;
 }
 
