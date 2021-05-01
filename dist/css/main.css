@@ -368,30 +368,24 @@ body {
   max-width: 85vw;
 }
 
-.bottom {
+footer {
+  max-width: 100vw;
+  max-height: 40vh;
   width: 100%;
-}
-
-.bottom .desc-content {
-  list-style-type: none;
-  max-width: 85vw;
-  margin: 0 auto;
-}
-
-.bottom .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  height: 100%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(255, 255, 255, 0.75);
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0 auto;
+  padding: 0;
+  color: #303030;
 }
 
 /* App Function */
