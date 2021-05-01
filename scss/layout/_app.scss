@@ -47,9 +47,15 @@ body {
 
 .quote__container {
   max-width: 85vw;
+  width: 100%;
+  @include flex (row, space-evenly);
+  align-items: baseline;
+  //display: grid;
+  //grid-template-columns: 1fr 1.67rem;
+  //column-gap: 1.6rem;
   height: auto;
   margin-top: 5vh;
-  box-sizing: inherit;
+  box-sizing: border-box;
 
   &-random {
       max-width: 100%;
@@ -63,6 +69,13 @@ body {
           margin-top: 25px;
       }
   }
+}
+
+#refresh {
+    //height: 1.8rem;
+    border: none;
+    cursor: pointer;
+    background: none;
 }
 
 .current {

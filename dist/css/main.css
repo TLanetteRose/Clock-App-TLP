@@ -249,10 +249,27 @@ body {
 
 .quote__container {
   max-width: 85vw;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   height: auto;
   margin-top: 5vh;
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .quote__container-random {
@@ -266,6 +283,12 @@ body {
 
 .quote__container-random .author {
   margin-top: 25px;
+}
+
+#refresh {
+  border: none;
+  cursor: pointer;
+  background: none;
 }
 
 .current {
