@@ -99,7 +99,7 @@ body {
 
         .time__container {
             @include flex(row, space-evenly);
-            width: 289px;
+            max-width: 85vw;
         }
     }
 }
