@@ -470,7 +470,7 @@ body {
   letter-spacing: 3px;
 }
 
-footer {
+.description {
   max-height: 40vh;
   width: 100vw;
   height: 100vw;
@@ -481,13 +481,11 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: rgba(255, 255, 255, 0.75);
   margin: 0 auto;
   padding: 0;
-  color: #303030;
 }
 
-footer .desc-content {
+.description .desc-content {
   max-width: 85vw;
   max-height: 100%;
   width: 100%;
@@ -510,7 +508,7 @@ footer .desc-content {
   align-items: center;
 }
 
-footer .info {
+.description .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -530,14 +528,14 @@ footer .info {
   height: 100%;
 }
 
-footer .info .desc-info {
+.description .info .desc-info {
   font-size: 12px !important;
   font-weight: 400;
   color: #303030;
   text-transform: uppercase;
 }
 
-footer .info .desc-item {
+.description .info .desc-item {
   font-size: 20px;
   font-weight: 400;
   margin: 0;

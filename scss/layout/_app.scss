@@ -166,19 +166,19 @@ body {
     }
 }
 
-footer {
+.description {
     //display: none;
     max-height: 40vh;
     width: 100vw;
     height: 100vw;
     flex-flow: row nowrap;
     justify-content: center;
-    background: rgba(255, 255, 255, 0.75);
+    //background: rgba(255, 255, 255, 0.75);
     margin: 0 auto;
     padding: 0;
     //backdrop-filter: blur(40.77px);
     //padding: 4rem 0;
-    color: $dark-gray;
+    //color: $dark-gray;
 
     .desc-content {
         max-width: 85vw;
