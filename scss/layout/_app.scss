@@ -104,6 +104,20 @@ body {
     }
 }
 
+.bottom {
+    width: 100%;
+
+    .desc-content {
+        list-style-type: none;
+        max-width: 85vw;
+        margin: 0 auto;
+    }
+
+    .info {
+        @include flex (row, space-between);
+    }
+}
+
 
 /* App Function */ 
 
