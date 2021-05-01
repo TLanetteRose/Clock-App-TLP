@@ -32,6 +32,11 @@ body {
     }
 }
 
+.item-container {
+    @include flex(row, space-between);
+    flex-wrap: nowrap;
+}
+
 .main__container {
   @include flex (column, space-between); 
   max-width: 100vw; 
@@ -42,17 +47,25 @@ body {
 }
 
 .quote__container {
-  @include flex (row, space-between);
-  flex-wrap: nowrap;
+  max-width: 500px;
+  height: auto;
 }
 
 .current {
     @include flex (column, space-between);
-    width: 100vw;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    max-width: 85vw;
+    max-height: 60vh;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-bottom: 50px;
 
     &__container {
         @include flex (column, space-between);
         width: 100vw;
+        
 
         header {
             width: 289px;
@@ -61,6 +74,16 @@ body {
             .currently {
                 visibility: hidden;
             }
+        }
+    }
+
+    &__time {
+        @include flex (column, space-between);
+        width: 289px;
+
+        .time__container {
+            @include flex(row, space-evenly);
+            width: 289px;
         }
     }
 }
