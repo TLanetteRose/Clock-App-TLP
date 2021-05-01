@@ -313,7 +313,8 @@ body {
 }
 
 .current__container header {
-  width: 289px;
+  max-width: 85vw;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -346,7 +347,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 289px;
+  max-width: 85vw;
+  width: 100%;
 }
 
 .current__time .time__container {

@@ -82,7 +82,8 @@ body {
         width: 100vw;
 
         header {
-            width: 289px;
+            max-width: 85vw;
+            width: 100%;
             @include flex (row, space-around);
 
             .currently {
@@ -93,7 +94,8 @@ body {
 
     &__time {
         @include flex (column, space-between);
-        width: 289px;
+        max-width: 85vw;
+        width: 100%;
 
         .time__container {
             @include flex(row, space-evenly);
