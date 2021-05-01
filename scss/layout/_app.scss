@@ -85,6 +85,12 @@ body {
             width: 100%;
             @include flex (row, space-around);
 
+            .current__greeting {
+                text-transform: uppercase;
+                font-weight: $weight-regular !important;
+                letter-spacing: 3px;
+            }
+
             .currently {
                 visibility: hidden;
             }
@@ -106,7 +112,6 @@ body {
                 font-size: 8.5rem;
                 font-weight: $weight-regular;
                 letter-spacing: -3px;
-
             }
 
             .standard-time {
@@ -114,10 +119,24 @@ body {
                 max-height: 60vh;
                 width: 100%;
                 height: auto;
-                @include flex (row, space-between);
+                @include flex (column, space-between);
                 flex-wrap: nowrap;
                 align-items: baseline;
+
+                .period,
+                .time-zone {
+                    padding-top: 5px;
+                    font-weight: $weight-regular !important;
+                }
+
+                .period {
+                    text-transform: uppercase;
+                }
             }
+        }
+
+        &__location {
+
         }
     }
 }
@@ -159,6 +178,11 @@ footer {
            font-weight: $weight-regular;
            color: $dark-gray;
            text-transform: uppercase; 
+        }
+
+        .desc-item {
+            font-size: 24px;
+            margin: 0;
         }
 
     
