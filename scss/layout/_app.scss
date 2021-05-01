@@ -166,7 +166,19 @@ body {
     }
 
     .btn-more {
-        
+        max-width: 15vh;
+        max-height: 5vh;
+        width: 100%;
+        height: 100%;
+        margin: 50px 220px 10px 0;
+        padding-right: 5px;
+        @include flex (row, space-between);
+        flex-wrap: nowrap;
+        align-items: center;
+        //justify-content: flex-end;
+        border-radius: 25px;
+        border: 1px solid $dark-gray;
+        cursor: pointer;
     }
 }
 
