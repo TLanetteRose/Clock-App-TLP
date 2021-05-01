@@ -116,12 +116,19 @@ footer {
     //padding: 4rem 0;
     color: $dark-gray;
 
-    .bottom {
-        bottom: -110px;
+    .desc-content {
+        max-width: 85vw;
+        max-height: 100%;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 5vh 0vh;
     }
 }
 
-
+.bottom {
+    bottom: -110px;
+}
 
 
 /* App Function */ 
@@ -137,7 +144,6 @@ footer {
 .attribution {
     background: rgba(255, 255, 255, 0.75);
     position: relative;
-    top: 10px;
     font-size: 11px;
     text-align: center;
     color: $black;
