@@ -99,6 +99,25 @@ body {
         .time__container {
             @include flex(row, space-evenly);
             max-width: 85vw;
+
+            .time {
+                margin: 0;
+                padding: 1rem 1.6rem 1rem 0;
+                font-size: 8.5rem;
+                font-weight: $weight-regular;
+                letter-spacing: -3px;
+
+            }
+
+            .standard-time {
+                max-width: 100vw;
+                max-height: 60vh;
+                width: 100%;
+                height: auto;
+                @include flex (row, space-between);
+                flex-wrap: nowrap;
+                align-items: baseline;
+            }
         }
     }
 }
@@ -142,9 +161,7 @@ footer {
            text-transform: uppercase; 
         }
 
-        .desc-item {
-            
-        }
+    
     }
 }
 
