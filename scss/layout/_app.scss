@@ -33,7 +33,7 @@ body {
 }
 
 .item-container {
-    @include flex(row, space-between);
+    @include flex (row, space-between);
     flex-wrap: nowrap;
 }
 
@@ -47,8 +47,23 @@ body {
 }
 
 .quote__container {
-  max-width: 500px;
+  max-width: 85vw;
   height: auto;
+  margin-top: 5vh;
+  box-sizing: inherit;
+
+  &-random {
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+      padding-right: 25px;
+      margin: 0;
+      text-align: left;
+
+      .author {
+          margin-top: 25px;
+      }
+  }
 }
 
 .current {
@@ -65,7 +80,6 @@ body {
     &__container {
         @include flex (column, space-between);
         width: 100vw;
-        
 
         header {
             width: 289px;

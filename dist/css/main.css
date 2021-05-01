@@ -248,8 +248,24 @@ body {
 }
 
 .quote__container {
-  max-width: 500px;
+  max-width: 85vw;
   height: auto;
+  margin-top: 5vh;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.quote__container-random {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  padding-right: 25px;
+  margin: 0;
+  text-align: left;
+}
+
+.quote__container-random .author {
+  margin-top: 25px;
 }
 
 .current {
