@@ -179,6 +179,26 @@ body {
         border-radius: 25px;
         border: 1px solid $dark-gray;
         cursor: pointer;
+
+        .btn-more-label {
+            font-size: 16px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: $dark-gray;
+            padding-left: 10px;
+        }
+
+        .arrow {
+            width: 2.4rem;
+            height: 2.4rem;
+            text-align: center;
+            transform: rotate(180deg);
+            transition: transform .5s filter .2s;
+        }
+
+        .rotate {
+            transform: rotate(0deg);
+        }
     }
 }
 
