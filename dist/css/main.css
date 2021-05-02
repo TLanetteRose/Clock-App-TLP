@@ -594,6 +594,13 @@ body {
   margin: 0;
 }
 
+.description .appear {
+  display: inline-block;
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .bottom {
   bottom: -110px;
 }

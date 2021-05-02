@@ -248,6 +248,12 @@ body {
     }
 }
 
+.description .appear {
+    display: inline-block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .bottom {
     bottom: -110px;
 }
