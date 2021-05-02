@@ -7,6 +7,7 @@ const details = document.querySelector('.description');
 const period = document.querySelector('.period'); 
 const app = document.querySelector('.main__container');
 const btnExpand = document.querySelector('.btn-more');
+const btnLabel = document.querySelector('.btn-more-label');
 const arrow = document.querySelector('.arrow');
 
 const URL_QUOTE = 'https://api.quotable.io/random';
@@ -132,7 +133,20 @@ getLocation();
 
 
 // Event Listeners
-
+btnExpand.addEventListener('click', () => {
+    app.classList.toggle('transform');
+    details.classList.toggle('transform');
+    
+    if (btnExpand.firstChild.nodeValue === 'More') {
+        btnExpand.firstChild.nodeValue ='Less'
+        details.style.display = 'none';
+    } else {
+        btnExpand.firstChild.nodeValue = 'More'
+        details.style.display = 'block';
+    }
+    arrow.classList.toggle('rotate');
+});
+    
 
 
 // Random Quote

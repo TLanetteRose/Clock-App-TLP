@@ -476,7 +476,11 @@ body {
   width: 100%;
   height: 100%;
   margin: 50px 220px 10px 0;
-  padding-right: 5px;
+  padding: 0 5px 0 10px;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #303030;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -496,14 +500,6 @@ body {
   border-radius: 25px;
   border: 1px solid #303030;
   cursor: pointer;
-}
-
-.current .btn-more .btn-more-label {
-  font-size: 16px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #303030;
-  padding-left: 10px;
 }
 
 .current .btn-more .arrow {
@@ -595,7 +591,7 @@ body {
 }
 
 .description .appear {
-  display: inline-block;
+  display: block;
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
