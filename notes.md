@@ -29,7 +29,7 @@ Learned that 'innerText' can be use to change the writing on a button. I had an 
 04102021: Learned that it matters how you nest the classes/ids in SASS. 
 04/18/2021: Why does arrow disappear after I click the button?
 05/01/2021: I have been feeling like an imposter lately. I decided to redo my CSS on my own. when I copy other code and try to understand, I do understand it. However, it didn't fit me. So I went back to basics. I started with the sizing and position of the items on the page. I used flex this time ( I love flex!).
-
+05/02/2021: I was able to get my show/hide footer event listener to work. However, the words aren't changin correctly. 
 
 ********************************
 .app__widgets {
