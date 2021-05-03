@@ -532,8 +532,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
   margin: 0 auto;
   padding: 0;
 }
