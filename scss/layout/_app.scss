@@ -2,7 +2,6 @@
 
 body {
     font-family: $font-family;
-    color: white;
     //overflow: hidden;
 }
 
@@ -56,6 +55,7 @@ body {
   height: auto;
   margin-top: 5vh;
   box-sizing: border-box;
+  color: white;
 
   &-random {
       max-width: 100%;
@@ -88,6 +88,7 @@ body {
     height: 100%;
     margin: 0 auto;
     margin-bottom: 50px;
+    color: white;
 
     &__container {
         @include flex (column, space-between);
@@ -268,5 +269,5 @@ body {
 }
 
 .attribution a:hover {
-    color: $white;
+    //color: $white;
 }

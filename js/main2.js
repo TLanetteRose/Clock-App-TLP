@@ -55,8 +55,8 @@ function getTime() {
         background.classList.add('day');
         icon.src = '../assets/desktop/icon-sun.svg';
         icon.setAttribute('alt', 'sun icon');
-        //details.style.color = '$dark-gray';
-        //details.style.background = 'rgba(255,255,255,0.75)';
+        details.style.color = '$dark-gray';
+        details.style.background = 'rgba(255,255,255,0.75)';
     } else {
         background.classList.add('night');
         icon.src = '../assets/desktop/icon-moon.svg';

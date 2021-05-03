@@ -179,7 +179,6 @@ button::-moz-focus-inner {
 
 body {
   font-family: "Inter", sans-serif;
-  color: white;
 }
 
 .background {
@@ -270,6 +269,7 @@ body {
   margin-top: 5vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  color: white;
 }
 
 .quote__container-random {
@@ -316,6 +316,7 @@ body {
   height: 100%;
   margin: 0 auto;
   margin-bottom: 50px;
+  color: white;
 }
 
 .current__container {
@@ -608,10 +609,6 @@ body {
   padding: 5px 0;
   font-size: 11px;
   text-align: center;
-}
-
-.attribution a:hover {
-  color: white;
 }
 
 .day {
