@@ -190,7 +190,7 @@ body {
             height: 2.4rem;
             text-align: center;
             transform: rotate(0deg);
-            transition: transform .5s filter .2s;
+            transition: transform .8s filter .2s;
         }
 
         .rotate {
@@ -206,10 +206,10 @@ body {
     height: 100vw;
     flex-flow: row nowrap;
     justify-content: center;
+    transition: all .5s ease;
     //background: rgba(255, 255, 255, 0.75);
     margin: 0 auto;
     padding: 0;
-    //backdrop-filter: blur(40.77px);
     //padding: 4rem 0;
 
     .desc-content {

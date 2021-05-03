@@ -509,10 +509,10 @@ body {
   text-align: center;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  -webkit-transition: -webkit-transform .5s filter .2s;
-  transition: -webkit-transform .5s filter .2s;
-  transition: transform .5s filter .2s;
-  transition: transform .5s filter .2s, -webkit-transform .5s filter .2s;
+  -webkit-transition: -webkit-transform .8s filter .2s;
+  transition: -webkit-transform .8s filter .2s;
+  transition: transform .8s filter .2s;
+  transition: transform .8s filter .2s, -webkit-transform .8s filter .2s;
 }
 
 .current .btn-more .rotate {
@@ -532,6 +532,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
   margin: 0 auto;
   padding: 0;
 }
