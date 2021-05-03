@@ -30,11 +30,6 @@ body {
     }
 }
 
-.item-container {
-    @include flex (row, space-between);
-    flex-wrap: nowrap;
-}
-
 .main__container {
   @include flex (column, space-between); 
   max-width: 100vw; 
@@ -42,6 +37,11 @@ body {
   width: 100%;
   height: 100vh;
   box-sizing: inherit;
+}
+
+.item-container {
+    @include flex (row, space-between);
+    flex-wrap: nowrap;
 }
 
 .quote__container {
@@ -56,6 +56,10 @@ body {
   margin-top: 5vh;
   box-sizing: border-box;
   color: white;
+
+  @include md-breakpoint {
+      width: 80%;
+  }
 
   &-random {
       max-width: 100%;
@@ -90,9 +94,16 @@ body {
     margin-bottom: 50px;
     color: white;
 
+    @include md-breakpoint {
+        width: 80%;
+    }
+
     &__container {
         @include flex (column, space-between);
         width: 100vw;
+    @include md-breakpoint {
+        width: 537px;
+    }
 
         header {
             max-width: 85vw;
