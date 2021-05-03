@@ -135,12 +135,21 @@ body {
             @include flex(row, space-evenly);
             max-width: 85vw;
 
+            @include md-breakpoint {
+                width: 539px;
+                
+            }
+
             .time {
                 margin: 0;
                 padding: 1rem 1.6rem 1rem 0;
                 font-size: 8.5rem;
                 font-weight: $weight-regular;
                 letter-spacing: -3px;
+
+                @include md-breakpoint {
+                    
+                }
             }
 
             .standard-time {
