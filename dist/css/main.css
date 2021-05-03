@@ -506,8 +506,8 @@ body {
   width: 2.4rem;
   height: 2.4rem;
   text-align: center;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
   -webkit-transition: -webkit-transform .5s filter .2s;
   transition: -webkit-transform .5s filter .2s;
   transition: transform .5s filter .2s;
@@ -515,8 +515,8 @@ body {
 }
 
 .current .btn-more .rotate {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .description {

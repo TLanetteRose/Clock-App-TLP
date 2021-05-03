@@ -184,20 +184,16 @@ body {
         border: 1px solid $dark-gray;
         cursor: pointer;
 
-        .btn-more-label {
-            
-        }
-
         .arrow {
             width: 2.4rem;
             height: 2.4rem;
             text-align: center;
-            transform: rotate(180deg);
+            transform: rotate(0deg);
             transition: transform .5s filter .2s;
         }
 
         .rotate {
-            transform: rotate(0deg);
+            transform: rotate(180deg);
         }
     }
 }

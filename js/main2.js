@@ -139,10 +139,10 @@ btnExpand.addEventListener('click', () => {
     
     if (btnExpand.firstChild.nodeValue === 'More') {
         btnExpand.firstChild.nodeValue ='Less'
-        details.style.display = 'none';
+        details.style.display = 'block';
     } else {
         btnExpand.firstChild.nodeValue = 'More'
-        details.style.display = 'block';
+        details.style.display = 'none';
     }
     arrow.classList.toggle('rotate');
 });
