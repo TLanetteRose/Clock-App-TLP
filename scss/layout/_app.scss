@@ -54,13 +54,6 @@ body {
   box-sizing: border-box;
   color: white;
 
-  @include md-breakpoint {
-    font-size: 2vh;
-
-
-  }
-
-
   &-random {
       max-width: 100%;
       width: 100%;
@@ -94,16 +87,10 @@ body {
     margin-bottom: 50px;
     color: white;
 
-    @include md-breakpoint {
-        width: 80%;
-    }
 
     &__container {
         @include flex (column, space-between);
         width: 100vw;
-    @include md-breakpoint {
-        width: 537px;
-    }
 
         header {
             max-width: 85vw;
@@ -185,10 +172,6 @@ body {
         text-transform: uppercase;
         letter-spacing: 3px;
 
-        @include md-breakpoint {
-            flex-flow: column nowrap;
-            align-items: flex-start;
-        }
     }
 
     .btn-more {

@@ -272,12 +272,6 @@ body {
   color: white;
 }
 
-@media screen and (min-width: 768px) {
-  .quote__container {
-    font-size: 2vh;
-  }
-}
-
 .quote__container-random {
   max-width: 100%;
   width: 100%;
@@ -325,12 +319,6 @@ body {
   color: white;
 }
 
-@media screen and (min-width: 768px) {
-  .current {
-    width: 80%;
-  }
-}
-
 .current__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -346,12 +334,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100vw;
-}
-
-@media screen and (min-width: 768px) {
-  .current__container {
-    width: 537px;
-  }
 }
 
 .current__container header {
@@ -499,18 +481,6 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 3px;
-}
-
-@media screen and (min-width: 768px) {
-  .current__location {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
 }
 
 .current .btn-more {
