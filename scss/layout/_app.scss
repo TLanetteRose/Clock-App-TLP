@@ -49,17 +49,10 @@ body {
   width: 100%;
   @include flex (row, space-evenly);
   align-items: baseline;
-  //display: grid;
-  //grid-template-columns: 1fr 1.67rem;
-  //column-gap: 1.6rem;
   height: auto;
   margin-top: 5vh;
   box-sizing: border-box;
   color: white;
-
-  @include md-breakpoint {
-      width: 80%;
-  }
 
   &-random {
       max-width: 100%;
@@ -94,16 +87,10 @@ body {
     margin-bottom: 50px;
     color: white;
 
-    @include md-breakpoint {
-        width: 80%;
-    }
 
     &__container {
         @include flex (column, space-between);
         width: 100vw;
-    @include md-breakpoint {
-        width: 537px;
-    }
 
         header {
             max-width: 85vw;
@@ -148,7 +135,7 @@ body {
                 letter-spacing: -3px;
 
                 @include md-breakpoint {
-                    
+                    font-size: 20vh;
                 }
             }
 
@@ -184,6 +171,7 @@ body {
         font-weight: $weight-regular;
         text-transform: uppercase;
         letter-spacing: 3px;
+
     }
 
     .btn-more {
