@@ -274,7 +274,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .quote__container {
-    width: 80%;
+    font-size: 2vh;
   }
 }
 
@@ -435,6 +435,12 @@ body {
   letter-spacing: -3px;
 }
 
+@media screen and (min-width: 768px) {
+  .current__time .time__container .time {
+    font-size: 20vh;
+  }
+}
+
 .current__time .time__container .standard-time {
   max-width: 100vw;
   max-height: 60vh;
@@ -493,6 +499,18 @@ body {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+
+@media screen and (min-width: 768px) {
+  .current__location {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
 }
 
 .current .btn-more {

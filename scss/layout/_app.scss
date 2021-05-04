@@ -49,17 +49,17 @@ body {
   width: 100%;
   @include flex (row, space-evenly);
   align-items: baseline;
-  //display: grid;
-  //grid-template-columns: 1fr 1.67rem;
-  //column-gap: 1.6rem;
   height: auto;
   margin-top: 5vh;
   box-sizing: border-box;
   color: white;
 
   @include md-breakpoint {
-      width: 80%;
+    font-size: 2vh;
+
+
   }
+
 
   &-random {
       max-width: 100%;
@@ -148,7 +148,7 @@ body {
                 letter-spacing: -3px;
 
                 @include md-breakpoint {
-                    
+                    font-size: 20vh;
                 }
             }
 
@@ -184,6 +184,11 @@ body {
         font-weight: $weight-regular;
         text-transform: uppercase;
         letter-spacing: 3px;
+
+        @include md-breakpoint {
+            flex-flow: column nowrap;
+            align-items: flex-start;
+        }
     }
 
     .btn-more {
