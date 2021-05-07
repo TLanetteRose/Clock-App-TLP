@@ -6,6 +6,7 @@ const icon = document.querySelector('.icon');
 const details = document.querySelector('.description'); 
 const period = document.querySelector('.period'); 
 const app = document.querySelector('.main__container');
+const quotes = document.querySelector('.quote__container');
 const btnExpand = document.querySelector('.btn-more');
 const btnLabel = document.querySelector('.btn-more-label');
 const arrow = document.querySelector('.arrow');
@@ -140,9 +141,12 @@ btnExpand.addEventListener('click', () => {
     if (btnExpand.firstChild.nodeValue === 'More') {
         btnExpand.firstChild.nodeValue ='Less'
         details.style.display = 'block';
+        quotes.style.display = 'none';
+
     } else {
         btnExpand.firstChild.nodeValue = 'More'
         details.style.display = 'none';
+        quotes.style.display = 'block';
     }
     arrow.classList.toggle('rotate');
 });

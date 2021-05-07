@@ -535,7 +535,7 @@ body {
 
 .description {
   display: none;
-  max-height: 40vh;
+  max-height: 38vh;
   width: 100vw;
   height: 100vh;
   -webkit-box-orient: horizontal;
@@ -592,6 +592,7 @@ body {
   max-height: 100%;
   width: 100%;
   height: 100%;
+  padding: 5px 0;
 }
 
 .description .info .desc-info {
@@ -614,7 +615,7 @@ body {
 }
 
 .bottom {
-  bottom: -110rem;
+  bottom: -110px;
 }
 
 /* App Function */
