@@ -32,6 +32,7 @@ body {
 
 .main__container {
   @include flex (column, space-between); 
+  position: relative;
   max-width: 100vw; 
   max-height: 100vh;
   width: 100%;
@@ -80,7 +81,7 @@ body {
     flex-wrap: nowrap;
     justify-content: flex-end;
     max-width: 85vw;
-    max-height: 60vh;
+    max-height: 80vh;
     width: 100%;
     height: 100%;
     margin: 0 auto;
@@ -121,18 +122,20 @@ body {
         .time__container {
             @include flex(row, space-evenly);
             max-width: 85vw;
+            width: 100%;
 
-            @include md-breakpoint {
+            @include sm-breakpoint {
                 width: 539px;
                 
             }
 
             .time {
                 margin: 0;
-                padding: 1rem 1.6rem 1rem 0;
+                //padding: 1rem 1.6rem 1rem 0;
                 font-size: 8.5rem;
                 font-weight: $weight-regular;
                 letter-spacing: -3px;
+                text-align: left;
 
                 @include md-breakpoint {
                     font-size: 20vh;
@@ -147,10 +150,11 @@ body {
                 @include flex (column, space-between);
                 flex-wrap: nowrap;
                 align-items: baseline;
+                padding-left: 50px;
 
                 .period,
                 .time-zone {
-                    padding-top: 5px;
+                    padding: 5px 0 0 5px;
                     font-weight: $weight-regular !important;
                 }
 
@@ -209,9 +213,9 @@ body {
 
 .description {
     display: none;
-    max-height: 40vh;
+    max-height: 38vh;
     width: 100vw;
-    height: 100vw;
+    height: 100vh;
     flex-flow: row nowrap;
     justify-content: center;
     transition: all 0.3s ease-in-out;
@@ -237,6 +241,7 @@ body {
         max-height: 100%;
         width: 100%;
         height: 100%;
+        padding: 5px 0;
 
         .desc-info {
            font-size: 12px !important;
