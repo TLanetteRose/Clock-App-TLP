@@ -204,12 +204,12 @@ body {
                 width: 2.4rem;
                 height: 2.4rem;
                 text-align: center;
-                transform: rotate(0deg);
-                transition: transform 0.5s, filter 0.2s;
+                transform: rotate(180deg);
+                transition: transform 300ms ease-out;
             }
 
             .rotate {
-                transform: rotate(180deg);
+                transform: rotate(0);
             }
         }
     }
