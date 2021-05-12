@@ -520,10 +520,10 @@ body {
   text-align: center;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  -webkit-transition: -webkit-transform 0.5s, -webkit-filter 0.2s;
-  transition: -webkit-transform 0.5s, -webkit-filter 0.2s;
-  transition: transform 0.5s, filter 0.2s;
-  transition: transform 0.5s, filter 0.2s, -webkit-transform 0.5s, -webkit-filter 0.2s;
+  -webkit-transition: -webkit-transform 300ms ease-out;
+  transition: -webkit-transform 300ms ease-out;
+  transition: transform 300ms ease-out;
+  transition: transform 300ms ease-out, -webkit-transform 300ms ease-out;
 }
 
 .current .btn-container .btn-more .rotate {
