@@ -579,21 +579,6 @@ body {
   padding: 5vh 0vh;
 }
 
-@media screen and (min-width: 768px) {
-  .description .desc-content {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: "region week-day" "day week-number";
-    -webkit-column-gap: 8rem;
-            column-gap: 8rem;
-    row-gap: 4.8rem;
-  }
-}
-
 .description .info {
   display: -webkit-box;
   display: -ms-flexbox;
