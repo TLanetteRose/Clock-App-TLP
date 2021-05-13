@@ -7,7 +7,7 @@ const details = document.querySelector('.description');
 const period = document.querySelector('.period'); 
 const app = document.querySelector('.main__container');
 const quotes = document.querySelector('.quote__container');
-const btnExpand = document.querySelector('.btn-more');
+const btnExpand = document.querySelector('.more');
 const btnLabel = document.querySelector('.btn-more-label');
 const arrow = document.querySelector('.arrow');
 

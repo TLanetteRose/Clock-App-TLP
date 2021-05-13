@@ -8,6 +8,12 @@
   
   <title>Frontend Mentor | Clock App</title>
   <link rel="stylesheet" href="/dist/css/main.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
 </head>
 <body>
   <h1 class="sr-only">Clock app</h1> 
@@ -46,8 +52,10 @@
 
       <section class="btn-container">
         <button id="toggle" class="btn-more">
-        More
-        <img src="./assets/desktop/icon-arrow-up.svg" alt="arrow icon" aria-hidden="true" class="arrow"/>
+          <span class="more">More</span>
+          <div class="arrow">
+            <i class="fas fa-angle-down"></i>
+          </div>
         </button>
       </section><!-- .btn-container -->
       
@@ -85,5 +93,6 @@
 </body>
 
 <script src="js/main2.js"></script>
+<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
 </html>
