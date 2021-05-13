@@ -253,6 +253,8 @@ body {
     padding: 0;
     //padding: 4rem 0;
 
+    
+
     .desc-content {
         max-width: 85vw;
         max-height: 100%;
@@ -260,8 +262,17 @@ body {
         height: auto;
         margin: 0 auto;
         padding: 5vh 0vh;
-        @include flex (column, center);
-        align-items: center;
+       // @include flex (column, center);
+       // align-items: center;
+
+       @include md-breakpoint {
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+           grid-template-rows: repeat(2, 1fr);
+           grid-template-areas: "region week-day" "day week-number";
+           column-gap: 8rem;
+           row-gap: 4.8rem;
+       }
     }
 
     .info {
