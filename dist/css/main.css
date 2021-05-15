@@ -342,8 +342,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -370,12 +371,7 @@ body {
 .current__container header .icon {
   max-width: 5vw;
   max-width: 5vh;
-}
-
-@media screen and (min-width: 768px) {
-  .current__container header .icon {
-    padding-right: 20px;
-  }
+  padding-right: 20px;
 }
 
 .current__container header .current__greeting {
@@ -392,6 +388,9 @@ body {
   .current__container header .currently {
     visibility: visible;
     padding-left: 5px;
+    text-transform: uppercase;
+    font-weight: 400 !important;
+    letter-spacing: 3px;
   }
 }
 
