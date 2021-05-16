@@ -316,6 +316,12 @@ body {
   color: white;
 }
 
+@media screen and (min-width: 768px) {
+  .current {
+    margin-top: 70px;
+  }
+}
+
 .current__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,8 +378,16 @@ body {
 
 .current__container header .icon {
   max-width: 5vw;
-  max-width: 5vh;
+  max-height: 5vh;
   padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .current__container header .icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    padding-right: 5px;
+  }
 }
 
 .current__container header .current__greeting {
@@ -384,7 +398,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .current__container header .current__greeting {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    padding-left: 10px;
   }
 }
 
@@ -397,7 +412,7 @@ body {
     visibility: visible;
     padding-left: 5px;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 400 !important;
     letter-spacing: 3px;
   }
@@ -454,6 +469,7 @@ body {
 @media screen and (min-width: 768px) {
   .current__time .time__container .time {
     font-size: 12rem;
+    letter-spacing: -4px;
   }
 }
 
@@ -648,7 +664,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: "timezone week-day" "year-day week-number";
+        grid-template-areas: "region week-day" "year-day week-number";
     -webkit-column-gap: 8rem;
             column-gap: 8rem;
     row-gap: 2rem;
@@ -704,7 +720,7 @@ body {
 }
 
 .description .desc-region {
-  grid-area: timezone;
+  grid-area: region;
 }
 
 .description .desc-week-day {
@@ -740,13 +756,6 @@ body {
   .transform {
     -webkit-transform: translate3d(0, -3.2rem, 0);
             transform: translate3d(0, -3.2rem, 0);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .transform {
-    -webkit-transform: translate3d(0, -4rem, 0);
-            transform: translate3d(0, -4rem, 0);
   }
 }
 
