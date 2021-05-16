@@ -457,6 +457,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .current__time .time__container .time {
+    font-size: 16rem;
+  }
+}
+
 .current__time .time__container .standard-time {
   max-width: 100vw;
   max-height: 100vh;
@@ -492,6 +498,13 @@ body {
   .current__time .time__container .standard-time .period,
   .current__time .time__container .standard-time .time-zone {
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .current__time .time__container .standard-time .period,
+  .current__time .time__container .standard-time .time-zone {
+    font-size: 3rem;
   }
 }
 
@@ -626,8 +639,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
   margin: 0 auto;
   padding: 0;
 }
@@ -652,7 +665,7 @@ body {
         grid-template-areas: "timezone week-day" "year-day week-number";
     -webkit-column-gap: 8rem;
             column-gap: 8rem;
-    row-gap: 4.8rem;
+    row-gap: 2rem;
     padding: 7vh 0vh;
   }
 }
@@ -735,6 +748,13 @@ body {
 .transform {
   -webkit-transform: translate3d(0, -2rem, 0);
           transform: translate3d(0, -2rem, 0);
+}
+
+@media screen and (min-width: 768px) {
+  .transform {
+    -webkit-transform: translate3d(0, -3.3rem, 0);
+            transform: translate3d(0, -3.3rem, 0);
+  }
 }
 
 /* Attribution */
