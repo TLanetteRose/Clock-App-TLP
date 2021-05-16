@@ -189,7 +189,7 @@ body {
                 @include flex (column, center);
                 flex-wrap: nowrap;
                 align-items: flex-start;
-                padding-left: 5%;
+                padding-left: 8%;
 
                 .period,
                 .time-zone {
@@ -348,12 +348,18 @@ body {
            font-size: 12px !important;
            font-weight: $weight-regular;
            text-transform: uppercase; 
+           text-align: left;
         }
 
         .desc-item {
-            font-size: 20px;
+            font-size: 1.25rem;
             font-weight: $weight-regular; 
             margin: 0;
+
+            @include md-breakpoint {
+                font-size: 1.875rem;
+                text-align: left;
+            }
         }
     
     }

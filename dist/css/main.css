@@ -480,7 +480,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding-left: 5%;
+  padding-left: 8%;
 }
 
 .current__time .time__container .standard-time .period,
@@ -688,12 +688,20 @@ body {
   font-size: 12px !important;
   font-weight: 400;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .description .info .desc-item {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
   margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .description .info .desc-item {
+    font-size: 1.875rem;
+    text-align: left;
+  }
 }
 
 .description .desc-region {
