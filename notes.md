@@ -33,6 +33,7 @@ Learned that 'innerText' can be use to change the writing on a button. I had an 
 05/08/2021: Read about media queries and making the site responsive by sizig layout elements using percentages. I learned first-hand that using percentages makes it easier for your page to adjust to larger sizes. (Yay!) 
 05/13/2021: The project assets included an img for an up arrow. I was having a hard time getting the up arrow to start as a down arrow on the button. After reviewing other's project code, I realized that I could use another image (Duh!). I have now replaced the given image with a fontawesome icon. Realized that I needed to use a grid layout for the md and lg breakpoints
 05/15/2021: Finally understood that I forgot the grid-area designations to make the grid work. 
+08/13/2021: Starting my styling again. 
 
 ********************************
 .app__widgets {

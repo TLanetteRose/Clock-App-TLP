@@ -7,6 +7,13 @@
         align-items: center;
 } 
 
+@mixin flex2 ($direction, $justifyContent, $alignItems){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
+
 @mixin sm-breakpoint {
     @media screen and (min-width: $layout-breakpoint-sm){
         @content;
