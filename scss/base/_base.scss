@@ -81,6 +81,14 @@ select {
     }
 }
 
+.wrapper {
+    max-width: 148rem;
+    min-height: 100vh;
+    overflow-x: hidden;
+    margin: auto;
+    position: relative;
+}
+
 /* Other */
 
 .sr-only {
