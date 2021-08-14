@@ -80,7 +80,8 @@ body {
 }
 
 .current {
-    @include flex (column, space-between, center);
+    @include flex (column, flex-end, center);
+    flex-wrap: nowrap;
 }
 
 
