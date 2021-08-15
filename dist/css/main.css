@@ -303,48 +303,6 @@ body {
 .main__container .quote__container #refresh svg:hover {
   opacity: 1;
 }
-.main__container .current {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  flex-wrap: nowrap;
-  max-width: 111rem;
-  max-height: 36.7rem;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  padding-bottom: 3rem;
-  margin-bottom: 5rem;
-  text-transform: uppercase;
-  color: white;
-}
-.main__container .current__container {
-  width: 100%;
-}
-.main__container .current__container header {
-  max-width: 111rem;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-}
-.main__container .current__container header .icon {
-  max-width: 5vw;
-  max-height: 5vh;
-  padding-right: 2rem;
-}
-.main__container .current__container header .current__greeting {
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.3rem;
-  font-weight: 400 !important;
-}
-.main__container .current__container header span {
-  display: none;
-}
 
 .description {
   width: 100vw;

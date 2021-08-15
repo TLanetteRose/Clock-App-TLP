@@ -126,49 +126,7 @@ body {
 
     }
 
-    .current {
-        @include flex (column, flex-end, center);
-        flex-wrap: nowrap;
-        max-width: 111rem;
-        max-height: 36.7rem;
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        padding-bottom: 3rem;
-        margin-bottom: 5rem;
-        text-transform: uppercase;
-        color: $white;
-
-        &__container {
-            width: 100%;
-
-            header {
-                max-width: 111rem;
-                width: 100%;
-                height: 100%;
-                @include flex (row, flex-start, center);
-
-               .icon {
-                   max-width: 5vw;
-                   max-height: 5vh;
-                   padding-right: 2rem;
-               }
-
-               .current__greeting {
-                   font-size: 1.5rem;
-                   line-height: 2.5rem;
-                   letter-spacing: 0.3rem;
-                   font-weight: $weight-regular !important;
-               }
-
-               span {
-                   display: none;
-                   
-
-               }
-            }
-        }
-    }
+    
 
 }
 
