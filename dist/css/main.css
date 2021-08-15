@@ -207,22 +207,30 @@ body {
 }
 
 .main__container {
-  height: 100vh;
-  width: 100vw;
-  padding: 3.2rem 2.7rem 4rem;
+  height: 100%;
+  width: 100%;
+  max-width: 111rem;
+  position: relative;
+  padding: 3.2rem 2.6rem 4rem;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (min-width: 768px) and (1024px) {
+@media screen and (min-width: 768px) {
   .main__container {
-    padding: 8rem 6.4rem 6.4rem;
+    padding: 8rem 13rem 6.4rem 6.4rem;
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 992px) {
   .main__container {
-    padding: 5.6rem 5.6rem 9.8rem;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main__container {
+    padding: 5.6rem 0 9.8rem;
   }
 }
 .main__container .quote__container {
@@ -248,7 +256,7 @@ body {
     font-size: 0.75rem;
   }
 }
-@media screen and (min-width: 768px) and (1024px) {
+@media screen and (min-width: 768px) {
   .main__container .quote__container-random {
     font-size: 1.175rem;
   }
@@ -286,6 +294,11 @@ body {
   max-width: 85vw;
   width: 100%;
 }
+.current__container header .icon {
+  max-width: 5vw;
+  max-height: 5vw;
+  padding-right: 1rem;
+}
 .current__container header .current__greeting {
   text-transform: uppercase;
   font-weight: 400 !important;
@@ -296,25 +309,70 @@ body {
     font-size: 0.75rem;
   }
 }
-@media screen and (min-width: 768px) and (1024px) {
+@media screen and (min-width: 768px) {
   .current__container header .current__greeting {
     font-size: 1.5rem;
     text-align: left;
   }
 }
-@media screen and (min-width: 300px) and (max-width: 767px) {
-  .current__container header .currently {
-    display: none;
-  }
+.current__container header .currently {
+  text-transform: uppercase;
+  font-weight: 400 !important;
+  letter-spacing: 0.3rem;
 }
-@media screen and (min-width: 768px) and (1024px) {
+@media screen and (min-width: 768px) {
   .current__container header .currently {
     padding-left: 0.5rem;
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    font-weight: 400 !important;
-    letter-spacing: 0.3rem;
   }
+}
+.current__container .current__time {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 85vw;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5%;
+}
+.current__container .current__time .time__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 85vw;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .current__container .current__time .time__container {
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+}
+.current__container .current__time .time__container .time {
+  margin: 0;
+  font-size: 10rem;
+  line-height: 10rem;
+  font-weight: 400;
+  letter-spacing: -0.3rem;
+  text-align: left;
+}
+@media (max-width: 375px) {
+  .current__container .current__time .time__container .time {
+    font-size: 6rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .current__container .current__time .time__container .time {
+    font-size: 12rem;
+  }
+}
+
+.description {
+  width: 100vw;
+  height: 100vh;
 }
 
 /* Attribution */
@@ -328,12 +386,12 @@ body {
 .day {
   background-image: url(../../assets/mobile/bg-image-daytime.jpg);
 }
-@media screen and (min-width: 768px) and (1024px) {
+@media screen and (min-width: 768px) {
   .day {
     background-image: url(../../assets/tablet/bg-image-daytime.jpg);
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 992px) {
   .day {
     background-image: url(../../assets/desktop/bg-image-daytime.jpg);
   }
@@ -342,12 +400,12 @@ body {
 .night {
   background-image: url(../../assets/mobile/bg-image-nighttime.jpg);
 }
-@media screen and (min-width: 768px) and (1024px) {
+@media screen and (min-width: 768px) {
   .night {
     background-image: url(../../assets/tablet/bg-image-nighttime.jpg);
   }
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 992px) {
   .night {
     background-image: url(../../assets/desktop/bg-image-nighttime.jpg);
   }

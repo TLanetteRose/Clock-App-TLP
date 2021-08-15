@@ -12,9 +12,8 @@ $weight-regular: 400;
 $weight-bold: 700;
 
 // Breakpoints
-$bp-mobile-start: 300px;
-$bp-mobile-end: 767px;
-$bp-tablet-start: 768px;
-$bp-tablet-end: 1024px;
-$bp-desktop-start: 1025px;
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
 
