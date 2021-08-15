@@ -61,6 +61,10 @@ body {
             text-align: left;
             color: white;
 
+            @media (max-width: 375px) {
+                font-size: .75rem;
+            }
+
             @include md-breakpoint {
                 font-size: 1.175rem;
             }
@@ -103,6 +107,12 @@ body {
                 text-transform: uppercase;
                 font-weight: $weight-regular !important;
                 letter-spacing: .3rem;
+
+                @media (max-width: 375px) {
+                    font-size: .75rem;
+
+                }
+
                 @include md-breakpoint {
                 font-size: 1.5rem;
                 text-align: left;
@@ -111,7 +121,7 @@ body {
 
             .currently {
                 @include sm-breakpoint {
-                    visibility: hidden;
+                    display: none;
                 }
                 
                 @include md-breakpoint {

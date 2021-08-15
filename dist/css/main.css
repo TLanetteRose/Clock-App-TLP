@@ -243,6 +243,11 @@ body {
   text-align: left;
   color: white;
 }
+@media (max-width: 375px) {
+  .main__container .quote__container-random {
+    font-size: 0.75rem;
+  }
+}
 @media screen and (min-width: 768px) and (1024px) {
   .main__container .quote__container-random {
     font-size: 1.175rem;
@@ -286,6 +291,11 @@ body {
   font-weight: 400 !important;
   letter-spacing: 0.3rem;
 }
+@media (max-width: 375px) {
+  .current__container header .current__greeting {
+    font-size: 0.75rem;
+  }
+}
 @media screen and (min-width: 768px) and (1024px) {
   .current__container header .current__greeting {
     font-size: 1.5rem;
@@ -294,7 +304,7 @@ body {
 }
 @media screen and (min-width: 300px) and (max-width: 767px) {
   .current__container header .currently {
-    visibility: hidden;
+    display: none;
   }
 }
 @media screen and (min-width: 768px) and (1024px) {
