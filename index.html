@@ -27,6 +27,7 @@
     <main id="app" class="main__container">
       <section class="quote__container">
         <div class="quote__container-random">
+          <h2 class="sr-only">Quote</h2>
           <q id="quote" class="quote-text"></q>
           <p class="author"></p>
         </div><!-- .quote__container-random -->
@@ -38,9 +39,9 @@
       <section class="current">
         <div class="current__container item-container">
           <header>
-            <img class="icon">
-            <h2 class="current__greeting text-sm"></h2>
-            <p class="currently text-sm">&nbsp;it's currently</p>
+            <img class="icon" />
+            <h2 class="current__greeting"></h2>
+            <span class="currently">&nbsp;it's currently</span>
           </header>
 
           <section class="current__time">
@@ -56,6 +57,7 @@
         </div><!-- .current__container -->
 
         <section class="btn-container">
+          <h3 class="sr-only">More</h3>
           <button id="toggle" class="btn-more">
             <span class="more">More</span>
             <div class="arrow">
