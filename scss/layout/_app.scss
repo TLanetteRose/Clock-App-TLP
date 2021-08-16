@@ -143,7 +143,7 @@ body {
         }*/
 
         header {
-            @include flex (row, space-between, baseline);
+            @include flex (row, flex-start, center);
             max-width: 49rem;
             width: 100%;
             height: 100%;
@@ -174,7 +174,7 @@ body {
 
                 .period,
                 .time-zone {
-                    font-weight: $weight-bold;
+                    font-weight: $weight-regular;
                     font-size: 1.5rem;
                     line-height: 1.5rem;
                     padding-left: 2rem;
@@ -182,6 +182,10 @@ body {
             }
         }
 
+        &__location {
+            margin-top: -2rem;
+            padding-left: .5rem;
+        }
         
         
     }

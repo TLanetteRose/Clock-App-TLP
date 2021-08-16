@@ -168,7 +168,7 @@ button::-moz-focus-inner {
 .text-xl {
   font-size: 6.25rem;
   font-weight: 700;
-  line-height: 4rem;
+  line-height: 5rem;
 }
 
 .text-xxl {
@@ -324,8 +324,8 @@ body {
 .main__container .current header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content: flex-start;
+  align-items: center;
   max-width: 49rem;
   width: 100%;
   height: 100%;
@@ -360,10 +360,14 @@ body {
 }
 .main__container .current__time .time__container .period,
 .main__container .current__time .time__container .time-zone {
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.5rem;
   line-height: 1.5rem;
   padding-left: 2rem;
+}
+.main__container .current__location {
+  margin-top: -2rem;
+  padding-left: 0.5rem;
 }
 
 .description {
