@@ -126,7 +126,52 @@ body {
 
     }
 
-    
+    .current {
+        max-width: 111rem;
+        width: 100%;
+        height: 100%;
+        position: relative; 
+        text-transform: uppercase;
+        text-align: left;
+        color: $white;
+        @include flex (column, space-between, flex-start);
+        align-content: space-around;
+
+       /* @include lg-breakpoint {
+            display: grid;
+            grid-template-columns: 1fr max-content;
+        }*/
+
+        header {
+            @include flex (row, space-between, baseline);
+            max-width: 49rem;
+            width: 100%;
+            height: 100%;
+
+            .icon {
+                padding-right: 1rem;
+            }
+
+            .currently {
+                display: none;
+
+                @include md-breakpoint {
+                    display: block;
+                }
+            }
+        }
+
+        &__time {
+            @include flex (column, space-around, flex-start);
+
+            .time__container {
+                @include flex (row, space-between, center);
+            }
+        }
+
+        
+        
+    }
 
 }
 

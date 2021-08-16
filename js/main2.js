@@ -43,11 +43,11 @@ function getTime() {
     // Setting greeting and time of day
     let greeting = '';
     if (hour >= 5 && hour <= 11){
-        greeting = 'morning,';
+        greeting = 'morning';
     } else if (hour >= 12 && hour <= 17) {
-        greeting = 'afternoon,';
+        greeting = 'afternoon';
     } else {
-        greeting = 'evening,';
+        greeting = 'evening';
     }
     document.querySelector('.current__greeting').textContent = `good ${greeting}`
 
