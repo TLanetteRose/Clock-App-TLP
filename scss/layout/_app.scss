@@ -162,10 +162,23 @@ body {
         }
 
         &__time {
+            max-width: 111rem;
+            width: 100%;
             @include flex (column, space-around, flex-start);
 
             .time__container {
-                @include flex (row, space-between, center);
+                max-width: 111rem;
+                width: 100%;
+                @include flex (row, flex-start, center);
+                flex-wrap: nowrap;
+
+                .period,
+                .time-zone {
+                    font-weight: $weight-bold;
+                    font-size: 1.5rem;
+                    line-height: 1.5rem;
+                    padding-left: 2rem;
+                }
             }
         }
 
