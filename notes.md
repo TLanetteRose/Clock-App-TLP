@@ -35,7 +35,10 @@ Learned that 'innerText' can be use to change the writing on a button. I had an 
 05/15/2021: Finally understood that I forgot the grid-area designations to make the grid work. 
 08/13/2021: Starting my styling again. 
 08/15/2021: I was having a problem getting an element to style a certain way. I realized it was where I placed the style in the CSS. 
-Referred to emestabillo (Emmilie Estabillo) for reference. 
+Referred to emestabillo (Emmilie Estabillo) and Roman Jean-Elie (romanjeanelie) for reference. 
+
+08/16/2021: Adding styling to clock sections. 
+
 
 ********************************
 .app__widgets {

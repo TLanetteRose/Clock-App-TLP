@@ -89,6 +89,7 @@ select {
 .wrapper {
   max-width: 148rem;
   min-height: 100vh;
+  width: 100%;
   overflow-x: hidden;
   margin: auto;
   position: relative;
@@ -211,7 +212,7 @@ body {
   width: 100%;
   max-width: 111rem;
   position: relative;
-  padding: 3.2rem 2.6rem 4rem;
+  padding: 3.2rem 2.6rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -304,18 +305,13 @@ body {
   opacity: 1;
 }
 .main__container .current {
-  max-width: 111rem;
-  width: 100%;
+  max-width: 148rem;
+  width: 100vw;
   height: 100%;
   position: relative;
   text-transform: uppercase;
   text-align: left;
   color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-content: space-around;
   /* @include lg-breakpoint {
        display: grid;
        grid-template-columns: 1fr max-content;
