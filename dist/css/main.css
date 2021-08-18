@@ -275,6 +275,7 @@ body {
 }
 .main__container .current {
   text-transform: uppercase;
+  margin-top: 5rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1.4fr 0.6fr;
@@ -289,6 +290,7 @@ body {
   }
 }
 .main__container .current__container {
+  text-transform: uppercase;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 0.7fr 1.3fr;
@@ -297,8 +299,30 @@ body {
   grid-template-areas: "greeting" "current-time";
   grid-area: time-container;
 }
-.main__container .current__container .header {
+.main__container .current__container header {
   grid-area: greeting;
+  max-width: 85vw;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main__container .current__container header .icon {
+  padding-right: 0.5rem;
+}
+.main__container .current__container header .current__greeting {
+  font-weight: 400 !important;
+  letter-spacing: 0.3rem;
+}
+@media screen and (min-width: 768px) {
+  .main__container .current__container header .current__greeting {
+    font-size: 1.5rem;
+  }
+}
+.main__container .current__container header .currently {
+  display: none;
 }
 .main__container .current__container .current__time {
   grid-area: current-time;

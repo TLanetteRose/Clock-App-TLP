@@ -109,7 +109,7 @@ body {
 
     .current {
         text-transform: uppercase;
-        
+        margin-top: 5rem;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1.4fr 0.6fr;
@@ -124,6 +124,7 @@ body {
         }
 
         &__container {
+            text-transform: uppercase;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 0.7fr 1.3fr;
@@ -134,8 +135,32 @@ body {
                 "current-time";
             grid-area: time-container;
 
-            .header {
+            header {
                 grid-area: greeting;
+                max-width: 85vw;
+                width: 100%;
+                height: 100%;
+                @include flex (row, flex-start, center);
+
+                .icon {
+                    //max-width: 5vw;
+                    //max-height: 5vw;
+                    padding-right: .5rem;
+                }
+
+                .current__greeting {
+                    font-weight: $weight-regular !important;
+                    letter-spacing: .3rem;
+
+                    @include md-breakpoint {
+                        font-size: 1.5rem;
+                    }
+                }
+
+                .currently {
+                    display: none;
+                }
+
             }
 
             .current__time {
