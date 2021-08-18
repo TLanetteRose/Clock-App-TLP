@@ -245,7 +245,6 @@ body {
 .main__container .quote__container-random {
   width: 100%;
   height: auto;
-  padding-right: 2.5rem;
   margin: 0;
   grid-area: random-quote;
 }
@@ -275,6 +274,7 @@ body {
 }
 .main__container .current {
   text-transform: uppercase;
+  text-align: left;
   margin-top: 5rem;
   display: grid;
   grid-template-columns: 1fr;
@@ -304,10 +304,13 @@ body {
   max-width: 85vw;
   width: 100%;
   height: 100%;
+  margin: 0;
+  padding-top: 2rem;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  align-content: flex-end;
 }
 .main__container .current__container header .icon {
   padding-right: 0.5rem;
@@ -326,6 +329,19 @@ body {
 }
 .main__container .current__container .current__time {
   grid-area: current-time;
+}
+.main__container .current__container .current__time .time__container {
+  max-width: 85vw;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.main__container .current__container .current__time .time__container .time {
+  margin: 0;
+  font-weight: 400 !important;
+  letter-spacing: -0.3rem;
 }
 .main__container .current .btn-container {
   grid-area: more-button;
