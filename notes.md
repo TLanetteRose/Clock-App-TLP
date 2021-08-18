@@ -39,6 +39,8 @@ Referred to emestabillo (Emmilie Estabillo) and Roman Jean-Elie (romanjeanelie) 
 
 08/16/2021: Adding styling to clock sections. 
 
+08/18/2021: Realized it was ok to use a CSS grid generator to help layout my clock app. 
+
 
 ********************************
 .app__widgets {

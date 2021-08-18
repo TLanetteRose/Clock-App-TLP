@@ -31,15 +31,147 @@ body {
 }
 
 .main__container {
-    @include flex (column, space-between, center);
-}
+    max-width: 111rem;
+    max-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+    color: $white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: 
+        "quote"
+        "clock"
+        "footer";
 
+
+    .quote__container {
+        max-width: 85vw;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 5vh;
+        text-align: left;
+        align-items: baseline;
+        display: grid;
+        grid-template-columns: 1.4fr 0.6fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: 
+            "random-quote refresh";
+        grid-area: quote;
+
+        @include md-breakpoint {
+            padding-right: 5rem;
+        }
+
+        &-random {
+            width: 100%;
+            height: auto;
+            padding-right: 2.5rem;
+            margin: 0;
+            grid-area: random-quote;
+
+            @include md-breakpoint {
+                padding-right: 5rem;
+                font-size: 1.175rem;
+            }
+
+            .author {
+                margin-top: 2.5rem;
+            }
+
+        }
+
+        #refresh {
+            border: none;
+            cursor: pointer;
+            background: none;
+            grid-area: refresh;
+
+            svg {
+                fill: white;
+                outline: none;
+                transition: transform 0.15s linear;
+                opacity: 0.5;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+    }
+
+    .current {
+        text-transform: uppercase;
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.4fr 0.6fr;
+        grid-auto-flow: row;
+        grid-template-areas: 
+            "time-container"
+            "more-button";
+        grid-area: clock;
+
+        @include lg-breakpoint {
+            grid-template-columns: 1fr max-content;
+        }
+
+        &__container {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.7fr 1.3fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas: 
+                "greeting"
+                "current-time";
+            grid-area: time-container;
+
+            .header {
+                grid-area: greeting;
+            }
+
+            .current__time {
+                grid-area: current-time;
+            }
+        }
+        
+        .btn-container {
+            grid-area: more-button;
+        }
+
+    }
+}
 
 
 .description {
     display: none;
     width: 100vw;
     height: 100vh;
+
+
+.desc-region {
+    grid-area: region;
+}
+
+    .desc-year-day {
+        grid-area: year-day;
+    }
+
+    .desc-week-day {
+        grid-area: week-day;
+    }
+
+    .desc-week-number{
+        grid-area: week-number;
+    }
 }
 
 /* Attribution */
@@ -48,8 +180,17 @@ body {
     padding: 5px 0;
     font-size: 11px;
     text-align: center;
+    grid-area: attribution;
 }
 
 .attribution a:hover {
     //color: $white;
 }
+
+    
+    
+
+
+
+
+
