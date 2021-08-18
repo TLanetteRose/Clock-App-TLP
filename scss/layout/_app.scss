@@ -2,6 +2,7 @@
 
 body {
     font-family: $font-family;
+    color: $white;
     //overflow: hidden;
 }
 
@@ -31,191 +32,88 @@ body {
 }
 
 .main__container {
-    max-width: 111rem;
-    max-height: 100vh;
+    @include flex (column, space-between, center);
+    position: relative;
     width: 100%;
+    height: 100%;
     margin: 0 auto;
     padding: 0 auto;
-    color: $white;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: 
-        "quote"
-        "clock"
-        "footer";
-
+    transition: transform 0.5s ease;
 
     .quote__container {
-        max-width: 85vw;
+        max-width: 60rem;
         width: 100%;
         height: auto;
-        margin: 0 auto;
-        margin-top: 5vh;
+        margin-top: 2.5rem;
+        padding: 0 2.6rem;
+        @include flex(row, space-between, baseline);
         text-align: left;
-        align-items: baseline;
-        display: grid;
-        grid-template-columns: 1.4fr 0.6fr;
-        grid-template-rows: 1fr;
-        gap: 0px 0px;
-        grid-auto-flow: row;
-        grid-template-areas: 
-            "random-quote refresh";
-        grid-area: quote;
-
-        @include md-breakpoint {
-            padding-right: 5rem;
-        }
 
         &-random {
-            width: 100%;
+            max-width: 90%;
+            width: 90%;
             height: auto;
-            //padding-right: 2rem;
-            margin: 0;
-            grid-area: random-quote;
-
-            @include md-breakpoint {
-                padding-right: 5rem;
-                font-size: 1.175rem;
-            }
 
             .author {
                 margin-top: 2.5rem;
             }
-
         }
 
         #refresh {
-            border: none;
+            border:none;
             cursor: pointer;
             background: none;
-            grid-area: refresh;
-
-            svg {
-                fill: white;
-                outline: none;
-                transition: transform 0.15s linear;
-                opacity: 0.5;
-
-                &:hover {
-                    opacity: 1;
-                }
-            }
+            padding-left: 1rem;
         }
-
     }
 
     .current {
+        @include flex (column, center, flex-start);
+        max-width: 85vw;
+        width: 100%;
+        height: 90%;
+        margin-top: 10rem;
         text-transform: uppercase;
-        text-align: left;
-        margin-top: 5rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1.4fr 0.6fr;
-        grid-auto-flow: row;
-        grid-template-areas: 
-            "time-container"
-            "more-button";
-        grid-area: clock;
-
-        @include lg-breakpoint {
-            grid-template-columns: 1fr max-content;
-        }
 
         &__container {
-            text-transform: uppercase;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 0.7fr 1.3fr;
-            gap: 0px 0px;
-            grid-auto-flow: row;
-            grid-template-areas: 
-                "greeting"
-                "current-time";
-            grid-area: time-container;
-
+            width: 100%;
             header {
-                grid-area: greeting;
                 max-width: 85vw;
                 width: 100%;
-                height: 100%;
-                margin: 0;
-                padding-top: 2rem;
-                @include flex (row, flex-start, center);
-                align-content: flex-end;
-
+                height: auto;
+                
                 .icon {
-                    //max-width: 5vw;
-                    //max-height: 5vw;
-                    padding-right: .5rem;
+                    padding-right: 1rem;
                 }
 
                 .current__greeting {
                     font-weight: $weight-regular !important;
                     letter-spacing: .3rem;
-                    
-
-                    @include md-breakpoint {
-                        font-size: 1.5rem;
-                    }
                 }
 
                 .currently {
                     display: none;
-                }
 
-            }
-
-            .current__time {
-                grid-area: current-time;
-
-                .time__container {
-                    max-width: 85vw;
-                    width: 100%;
-                    //margin-top: -4rem;
-                    @include flex (row, flex-start, center);
-
-                    .time {
-                        margin: 0;
-                        font-weight: $weight-regular !important;
-                        letter-spacing: -0.3rem;
+                    @include md-breakpoint {
+                        display: block;
                     }
                 }
             }
         }
-        
-        .btn-container {
-            grid-area: more-button;
+
+        &__time {
+            max-width: 111.3rem;
+            width:100%;
+            height: 100%;
+            
+            .time__container {
+                @include flex (row, space-between, center);
+            }
         }
-
     }
 }
 
 
-.description {
-    display: none;
-    width: 100vw;
-    height: 100vh;
-
-
-.desc-region {
-    grid-area: region;
-}
-
-    .desc-year-day {
-        grid-area: year-day;
-    }
-
-    .desc-week-day {
-        grid-area: week-day;
-    }
-
-    .desc-week-number{
-        grid-area: week-number;
-    }
-}
 
 /* Attribution */
 .attribution {
@@ -223,7 +121,6 @@ body {
     padding: 5px 0;
     font-size: 11px;
     text-align: center;
-    grid-area: attribution;
 }
 
 .attribution a:hover {

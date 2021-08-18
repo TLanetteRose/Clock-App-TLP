@@ -181,6 +181,7 @@ button::-moz-focus-inner {
 
 body {
   font-family: "Inter", sans-serif;
+  color: white;
 }
 
 .background {
@@ -208,51 +209,33 @@ body {
 }
 
 .main__container {
-  max-width: 111rem;
-  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
   width: 100%;
+  height: 100%;
   margin: 0 auto;
   padding: 0 auto;
-  color: white;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "quote" "clock" "footer";
+  transition: transform 0.5s ease;
 }
 .main__container .quote__container {
-  max-width: 85vw;
+  max-width: 60rem;
   width: 100%;
   height: auto;
-  margin: 0 auto;
-  margin-top: 5vh;
-  text-align: left;
+  margin-top: 2.5rem;
+  padding: 0 2.6rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: baseline;
-  display: grid;
-  grid-template-columns: 1.4fr 0.6fr;
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "random-quote refresh";
-  grid-area: quote;
-}
-@media screen and (min-width: 768px) {
-  .main__container .quote__container {
-    padding-right: 5rem;
-  }
+  text-align: left;
 }
 .main__container .quote__container-random {
-  width: 100%;
+  max-width: 90%;
+  width: 90%;
   height: auto;
-  margin: 0;
-  grid-area: random-quote;
-}
-@media screen and (min-width: 768px) {
-  .main__container .quote__container-random {
-    padding-right: 5rem;
-    font-size: 1.175rem;
-  }
 }
 .main__container .quote__container-random .author {
   margin-top: 2.5rem;
@@ -261,108 +244,52 @@ body {
   border: none;
   cursor: pointer;
   background: none;
-  grid-area: refresh;
-}
-.main__container .quote__container #refresh svg {
-  fill: white;
-  outline: none;
-  transition: transform 0.15s linear;
-  opacity: 0.5;
-}
-.main__container .quote__container #refresh svg:hover {
-  opacity: 1;
+  padding-left: 1rem;
 }
 .main__container .current {
-  text-transform: uppercase;
-  text-align: left;
-  margin-top: 5rem;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1.4fr 0.6fr;
-  grid-auto-flow: row;
-  grid-template-areas: "time-container" "more-button";
-  grid-area: clock;
-}
-@media screen and (min-width: 992px) {
-  .main__container .current {
-    grid-template-columns: 1fr -webkit-max-content;
-    grid-template-columns: 1fr max-content;
-  }
-}
-.main__container .current__container {
-  text-transform: uppercase;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0.7fr 1.3fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas: "greeting" "current-time";
-  grid-area: time-container;
-}
-.main__container .current__container header {
-  grid-area: greeting;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   max-width: 85vw;
   width: 100%;
-  height: 100%;
-  margin: 0;
-  padding-top: 2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: flex-end;
+  height: 90%;
+  margin-top: 10rem;
+  text-transform: uppercase;
+}
+.main__container .current__container {
+  width: 100%;
+}
+.main__container .current__container header {
+  max-width: 85vw;
+  width: 100%;
+  height: auto;
 }
 .main__container .current__container header .icon {
-  padding-right: 0.5rem;
+  padding-right: 1rem;
 }
 .main__container .current__container header .current__greeting {
   font-weight: 400 !important;
   letter-spacing: 0.3rem;
 }
-@media screen and (min-width: 768px) {
-  .main__container .current__container header .current__greeting {
-    font-size: 1.5rem;
-  }
-}
 .main__container .current__container header .currently {
   display: none;
 }
-.main__container .current__container .current__time {
-  grid-area: current-time;
+@media screen and (min-width: 768px) {
+  .main__container .current__container header .currently {
+    display: block;
+  }
 }
-.main__container .current__container .current__time .time__container {
-  max-width: 85vw;
+.main__container .current__time {
+  max-width: 111.3rem;
   width: 100%;
+  height: 100%;
+}
+.main__container .current__time .time__container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-}
-.main__container .current__container .current__time .time__container .time {
-  margin: 0;
-  font-weight: 400 !important;
-  letter-spacing: -0.3rem;
-}
-.main__container .current .btn-container {
-  grid-area: more-button;
-}
-
-.description {
-  display: none;
-  width: 100vw;
-  height: 100vh;
-}
-.description .desc-region {
-  grid-area: region;
-}
-.description .desc-year-day {
-  grid-area: year-day;
-}
-.description .desc-week-day {
-  grid-area: week-day;
-}
-.description .desc-week-number {
-  grid-area: week-number;
 }
 
 /* Attribution */
@@ -371,7 +298,6 @@ body {
   padding: 5px 0;
   font-size: 11px;
   text-align: center;
-  grid-area: attribution;
 }
 
 .day {
