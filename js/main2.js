@@ -43,11 +43,11 @@ function getTime() {
     // Setting greeting and time of day
     let greeting = '';
     if (hour >= 5 && hour <= 11){
-        greeting = 'morning,';
+        greeting = 'morning';
     } else if (hour >= 12 && hour <= 17) {
-        greeting = 'afternoon,';
+        greeting = 'afternoon';
     } else {
-        greeting = 'evening,';
+        greeting = 'evening';
     }
     document.querySelector('.current__greeting').textContent = `good ${greeting}`
 
@@ -141,12 +141,12 @@ btnExpand.addEventListener('click', () => {
     if (btnExpand.firstChild.nodeValue === 'More') {
         btnExpand.firstChild.nodeValue ='Less'
         details.style.display = 'block';
-        quotes.style.visibility = 'hidden';
+        //quotes.style.visibility = 'hidden';
 
     } else {
         btnExpand.firstChild.nodeValue = 'More'
         details.style.display = 'none';
-        quotes.style.visibility = 'visible';
+        //quotes.style.visibility = 'visible';
     }
     arrow.classList.toggle('rotate');
 });

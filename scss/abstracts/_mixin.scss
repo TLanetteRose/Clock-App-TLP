@@ -1,32 +1,26 @@
 // Mixin for styles that will be reused in all stylesheets
 
-@mixin flex ($direction, $justifyContent) {
-        display: flex;
-        flex-direction: $direction;
-        justify-content: $justifyContent;
-        align-items: center;
-} 
-
-@mixin sm-breakpoint {
-    @media screen and (min-width: $layout-breakpoint-sm){
-        @content;
-    }
+@mixin flex ($direction, $justifyContent, $alignItems){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
 }
 
 @mixin md-breakpoint {
-    @media screen and (min-width: $layout-breakpoint-md) {
+    @media screen and (min-width: $bp-md) {
         @content;
     }
 }
 
 @mixin lg-breakpoint {
-    @media screen and (min-width: $layout-breakpoint-lg) {
+    @media screen and (min-width: $bp-lg) {
         @content;
     }
 }
 
 @mixin xl-breakpoint {
-    @media screen and (min-width: $layout-breakpoint-xl) {
+    @media screen and (min-width: $bp-xl) {
         @content;
     }
 } 
