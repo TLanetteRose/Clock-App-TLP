@@ -141,12 +141,12 @@ btnExpand.addEventListener('click', () => {
     if (btnExpand.firstChild.nodeValue === 'More') {
         btnExpand.firstChild.nodeValue ='Less'
         details.style.display = 'block';
-        quotes.style.visibility = 'hidden';
+        //quotes.style.visibility = 'hidden';
 
     } else {
         btnExpand.firstChild.nodeValue = 'More'
         details.style.display = 'none';
-        quotes.style.visibility = 'visible';
+        //quotes.style.visibility = 'visible';
     }
     arrow.classList.toggle('rotate');
 });
