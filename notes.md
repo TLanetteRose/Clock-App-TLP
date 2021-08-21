@@ -41,6 +41,8 @@ Referred to emestabillo (Emmilie Estabillo) and Roman Jean-Elie (romanjeanelie) 
 
 08/18/2021: Realized it was ok to use a CSS grid generator to help layout my clock app. 
 
+08/21/2021: Learning that less for CSS is sometimes better. I was stuck on positioning. Decided to follow another coder's example. 
+
 
 ********************************
 .app__widgets {
