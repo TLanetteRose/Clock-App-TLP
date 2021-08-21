@@ -7,7 +7,7 @@ body {
 }
 
 .background {
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -32,18 +32,29 @@ body {
 }
 
 .main__container {
-    @include flex (column, space-between, center);
+    @include flex (column, space-between, flex-start);
     position: relative;
-    max-width: 100vw;
-    width: 100%;
     height: 100%;
-    margin: 0;
-    padding: 0 auto;
-    box-sizing: inherit;
+    max-width: 111rem;
+    margin: auto;
+    padding: 3.7rem 2.6rem 4rem;
     transition: transform 0.5s ease;
 
+    @include md-breakpoint {
+        padding: 8rem 13.1rem 6.4rem 6.4rem;
+    }
+
+    @include lg-breakpoint {
+        margin: 0 auto;
+    }
+
+    @include xl-breakpoint {
+        padding: 5.6rem 0 9.8rem;
+    }
+    
+
     .quote__container {
-        max-width: 85vw;
+        max-width: 57.3rem; //85vw;
         width: 100%;
         height: auto;
         margin-top: 2.5rem;
@@ -52,9 +63,14 @@ body {
         overflow: hidden;
 
         &-random {
-            max-width: 85vw;
+            .quote-text {
+               font-size: 1.2rem;
+               line-height: 2.2rem;
+               margin-right: 4rem;
+            }
+            /*max-width: 85vw;
             width: 90%;
-            height: auto;
+            height: auto;*/
 
             .author {
                 margin-top: 2.5rem;
@@ -201,6 +217,7 @@ body {
     position: relative;
     margin: 0 auto;
     padding: 0;
+    overflow: hidden;
     transition: all 0.5s ease;
    
     .desc-content {
