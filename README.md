@@ -59,7 +59,7 @@ I used an awesome open-source devtool app called [Responsively](https://opencoll
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: Here's my solution link - [Clock App Solution](https://www.frontendmentor.io/solutions/clock-app-with-sass-and-vanilla-js-syNJXL-ZO)
 - Live Site URL: Here's my finished app - [Clock App TLP](http://clock-app-tlp.vercel.app/)
 
 ## My process
@@ -97,7 +97,7 @@ My code snippet below:
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I will continue to focus on CSS positioning elements using flex box and CSS Grid.
 
 ### Useful resources
 
@@ -107,7 +107,7 @@ Use this section to outline areas that you want to continue focusing on in futur
 - [Free IP Geolocation Api](https://freegeoip.app/)
 - [World Time API](http://worldtimeapi.org/)
 
-#### Inspiration for Code
+#### Help with Positioning
 
 - [Codrops Flexbox](https://tympanus.net/codrops/css_reference/flexbox/) - This was a great resource that provide practice and visual representation for different flexbox properties.
 - [Layoutit!](https://grid.layoutit.com/) - I finally realized it was not cheating if I used a grid generator. This is a very good generator to use.
