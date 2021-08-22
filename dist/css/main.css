@@ -208,7 +208,7 @@ body {
   padding: 3.7rem 2.6rem 4rem;
   transition: transform 0.5s ease;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .main__container {
     padding: 8rem 13.1rem 6.4rem 6.4rem;
   }
@@ -225,29 +225,18 @@ body {
 }
 
 .quote__container {
-  /*max-width: 57.3rem; //85vw;
-  width: 100%;
-  height: auto;
-  margin-top: 2.5rem;
-  @include flex(row, space-between, baseline);
-  text-align: left;
-  overflow: hidden;*/
   max-width: 57.3rem;
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr 1.67rem;
   -moz-column-gap: 1.6rem;
        column-gap: 1.6rem;
 }
-.quote__container-random {
-  /*max-width: 85vw;
-  width: 90%;
-  height: auto;*/
-}
 .quote__container-random .quote-text {
   font-size: 1.2rem;
   line-height: 2.2rem;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .quote__container-random .quote-text {
     font-size: 1.8rem;
     line-height: 2.8rem;
@@ -259,7 +248,7 @@ body {
   font-size: 1.2rem;
   line-height: 2.2rem;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .quote__container-random .author {
     font-size: 1.8rem;
     line-height: 2.8rem;
@@ -271,16 +260,12 @@ body {
   }
 }
 .quote__container #refresh {
-  /*border:none;
-  cursor: pointer;
-  background: none;
-  padding-left: 1rem;*/
   height: 1.8rem;
   border: none;
   cursor: pointer;
   background: none;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .quote__container #refresh {
     margin-top: 0.3rem;
   }
@@ -301,20 +286,9 @@ body {
 }
 
 .current {
-  /* @include flex (column, center, center);
-  max-width: 85vw;
-  width: 90%;
-  height: 100%;
-  margin-top: 10rem;
-
-  text-align: left;*/
   max-width: 111rem;
-  width: 100%;
-  padding-bottom: 3.7rem;
+  width: 110%;
   text-transform: uppercase;
-  /*position: relative;
-  width: 100%;
-  */
 }
 @media screen and (min-width: 992px) {
   .current {
@@ -324,9 +298,6 @@ body {
   }
 }
 .current header {
-  /*max-width: 85vw;
-  width: 100%;
-  height: auto;*/
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -335,12 +306,12 @@ body {
 .current header .icon {
   padding-right: 1.6rem;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .current header .icon {
     height: 2.4rem;
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .current header__greeting,
 .current header span {
     font-size: 2rem;
@@ -359,17 +330,12 @@ body {
 .current header .currently {
   display: none;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .current header .currently {
     display: block;
   }
 }
 .current__time {
-  /*max-width: 111.3rem;
-  width:100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;*/
   padding-bottom: 1rem;
 }
 .current__time .time__container {
@@ -378,23 +344,19 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .current__time .time__container {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
   }
 }
 .current__time .time__container .time {
-  /*margin: 0;
-  padding-right: 1rem;
-  font-weight: $weight-regular !important;
-  letter-spacing: -0.3rem;*/
   line-height: 10rem !important;
   padding: 1.6rem 1.6rem 1.6rem 0;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .current__time .time__container .time {
-    font-size: 17.5rem;
+    font-size: 18rem;
     line-height: 17.5rem;
     letter-spacing: -4.38px;
     padding: 2.6rem 2.6rem 2.6rem 0;
@@ -409,14 +371,10 @@ body {
   }
 }
 .current__time .time__container .standard-time {
-  /*max-width: 100vw;
-  max-height: 100vh;
-  width: 100%;
-  height: 100%;*/
   align-self: center;
   padding-top: 3.7rem;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .current__time .time__container .standard-time {
     font-size: 3.2rem;
     line-height: 2.8rem;
@@ -433,7 +391,7 @@ body {
 .current__time .time__container .standard-time .time-zone {
   font-weight: 400 !important;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .current__time .time__container .standard-time .period {
     padding-bottom: 1.2rem;
   }
@@ -443,13 +401,7 @@ body {
     padding-bottom: 2rem;
   }
 }
-.current__time__location {
-  /*width: 100%;
-  height: 100%;
-  padding-left: .5rem;
-  margin: 0;*/
-}
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .current__time__location {
     font-size: 1.8rem;
     letter-spacing: 0.36rem;
@@ -476,7 +428,7 @@ body {
   border-radius: 2.8rem;
   cursor: pointer;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .current .btn-more {
     width: 14.6rem;
     height: 5.6rem;
@@ -498,7 +450,7 @@ body {
   text-transform: uppercase;
   transition: all 0.6s ease;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .current .btn-more .more {
     font-size: 1.6rem;
     line-height: 2.8rem;
@@ -521,48 +473,40 @@ body {
 }
 
 .description {
-  /*width: 100vw;
-  height: 100%;
-  position: relative;
-  margin: 0 auto;
-  padding: 0;
-  overflow: hidden;
-  transition: all 0.5s ease;*/
   width: 100%;
   max-height: 44rem;
   padding: 1rem 2.6rem 3.2rem;
   position: absolute;
   transition: all 0.5s ease;
   bottom: -25.6rem;
+  overflow: hidden;
+  /*.desc-hidden {
+      display: none;
+  }*/
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .description {
-    padding: 11.9rem 6.4em 11.9rem;
+    padding: 8rem 6.4em 8rem;
     bottom: -44rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .description {
-    padding: 7.4rem 16.5rem 8.4rem;
+    padding: 5rem 16.5rem 8.4rem;
     bottom: -40rem;
   }
 }
 .description .desc-content {
   max-width: 111rem;
-  /*max-height: 100%;
-  width: 100%;
-
-  margin: 0 auto;
-  padding: 6vh 0vh;*/
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .description .desc-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: "timezone week-day" "year-day week-number";
-    -moz-column-gap: 8rem;
-         column-gap: 8rem;
+    -moz-column-gap: 6rem;
+         column-gap: 6rem;
     row-gap: 1rem;
   }
 }
@@ -576,14 +520,11 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  /*max-width: 85vw;
-  max-height: 100%;
-  */
   width: 100%;
   height: 100%;
-  padding: 1.6rem;
+  padding: 1rem;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .description .info {
     display: unset;
     padding-bottom: 0;
@@ -596,7 +537,7 @@ body {
   line-height: 2.8rem;
   text-transform: uppercase;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .description .info .desc-info {
     font-size: 1.3rem;
     line-height: 3.8rem;
@@ -615,7 +556,7 @@ body {
   font-weight: 700;
   line-height: 2.42rem;
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .description .info .desc-item {
     font-size: 4rem;
     padding: 2rem 0;
@@ -626,9 +567,6 @@ body {
     font-size: 5.6rem;
     padding-top: 3.5rem;
   }
-}
-.description .desc-hidden {
-  display: none;
 }
 .description .desc-region {
   grid-area: timezone;
@@ -648,10 +586,14 @@ body {
   transform: translateY(0);
 }
 
+.top {
+  top: 100%;
+}
+
 .transform {
   transform: translate3d(0, -25.6rem, 0);
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .transform {
     transform: translate3d(0, -44rem, 0);
   }
@@ -665,17 +607,21 @@ body {
 /* Attribution */
 .attribution {
   position: relative;
-  margin-top: 2rem;
+  margin-bottom: 3rem;
   padding: 5px 0;
   font-size: 11px;
   text-align: center;
   bottom: 0;
 }
 
+.attribution a:hover {
+  color: white;
+}
+
 .day {
   background-image: url(../../assets/mobile/bg-image-daytime.jpg);
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .day {
     background-image: url(../../assets/tablet/bg-image-daytime.jpg);
   }
@@ -689,7 +635,7 @@ body {
 .night {
   background-image: url(../../assets/mobile/bg-image-nighttime.jpg);
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
   .night {
     background-image: url(../../assets/tablet/bg-image-nighttime.jpg);
   }
