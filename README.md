@@ -16,8 +16,6 @@ This is a solution to the [Clock app challenge on Frontend Mentor](https://www.f
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -32,21 +30,28 @@ Users should be able to:
 - Generate random programming quotes by clicking the refresh icon near the quote
 
 ### Screenshot
+#### Desktop Clock App
+![Clock App - MacBook Air](screenshots/ClockAppMacAir.jpg)
+***
 
-![](./screenshot.jpg)
+#### Tablet Clock App
+![Clock App - iPad](screenshots/ClockAppiPad.jpg)
+***
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+#### Mobile Clock App
+![Clock App - Nexus 5](screenshots/ClockAppNexus5one.jpg)
+***
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+I have included two screen shots of four devices: 
+* Nexus 5 (360x640)
+* iPad (768x1024)
+* MacBook Air (1440x900)
 
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
-
+I used an awesome open-source devtool app called [Responsively](https://opencollective.com/responsively). It allowed me to see the calculator on different sized devices live while I was editing. You can inspect the code and take screen shots.  I also used the [Photoscape app](http://www.photoscape.org/ps/main/index.php). It's a free photo editing app (you can pay for extras). I was able to combine screenshots of each area of my Clock App and resize the final photo. 
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: Here's my finished app - [Clock App TLP](http://clock-app-tlp.vercel.app/)
 
 ## My process
 
@@ -57,29 +62,29 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [Sass](https://sass-lang.com/) - I love using SASS! 
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I had a difficult time with this project because I kept over-thinking the positioning of the elements. I restarted the styling of this app at least 2 times. Then I saw a coding tweet that made everthing click -- It said that less CSS is sometimes better to use for your styling. I decided to follow one coder's example which had fewer lines of CSS than my original style sheet. 
+
+One new style I learn about is the transform-function **translate3d()**. This function repositions an element in 3D space. It was used to change the position of the footer element when the button was clicked. 
+
 
 To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+.transform {
+    transform: translate3d(0, -25.6rem, 0);
+
+    @include md-breakpoint {
+        transform: translate3d(0, -44rem, 0);
+    }
+
+    @include xl-breakpoint {
+        transform: translate3d(0, -40rem, 0);
+    }
 }
 ```
 
