@@ -135,15 +135,16 @@ body {
     width: 90%;
     height: 100%;
     margin-top: 10rem;
-    padding-bottom: 3rem;
+    
     text-align: left;*/
     max-width: 111rem;
     width: 100%;
+    padding-bottom: 3.7rem;
     text-transform: uppercase;
 
     @include lg-breakpoint {
         display: grid;
-        grid-template-columns: 1fr max-content;
+        grid-template-columns: 1fr max-content;   
     }
     
 
@@ -166,13 +167,13 @@ body {
         &__greeting,
         span  { 
             @include md-breakpoint {
-                font-size: 1.8rem;
+                font-size: 2rem;
                 line-height: 2.8rem;
                 letter-spacing: .36rem;
             }
 
             @include lg-breakpoint {
-                font-size: 2rem;
+                font-size: 2.4rem;
                 line-height: 2.8rem;
                 letter-spacing: 0.4rem;
             }
@@ -194,7 +195,7 @@ body {
         height: 100%;
         padding: 0;
         margin: 0;*/
-        padding-bottom: 4rem;
+        padding-bottom: 1rem;
         
         .time__container {
             @include flex (row, flex-start, center);
@@ -269,7 +270,8 @@ body {
             margin: 0;*/
             @include md-breakpoint {
                 font-size: 1.8rem;
-                letter-spacing: 3.6rem;
+                letter-spacing: .36rem;
+                padding-top: 4rem;
             }
 
             @include xl-breakpoint {
@@ -281,10 +283,11 @@ body {
 
     }
 
-    .btn-container {
+    //.btn-container {
         /*position: relative;
         width: 100%;
-        height: 100%;*/
+        */
+       // height: 100%;
 
         .btn-more {
             width: 11.5rem;
@@ -332,36 +335,51 @@ body {
                 .fa-angle-down {
                     color: $white;
                     font-size: 1.5rem;
-                    transition: all 0.6s ease;
+                    transition: transform 0.5s, filter 0.2s;
                 }
             }
 
             .rotate {
                 transform: rotate(180deg);
-                transition: all 0.6s ease;
             }
             
         }
-    }
+    //}
 }
 
 
 .description {
-    width: 100vw;
+    /*width: 100vw;
     height: 100%;
     position: relative;
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
+    transition: all 0.5s ease;*/
+    width: 100%;
+    max-height: 44rem;
+    padding: 1rem 2.6rem 3.2rem;
+    position: absolute;
     transition: all 0.5s ease;
+    bottom: -25.6rem;
+
+    @include md-breakpoint {
+        padding: 11.9rem 6.4em 11.9rem;
+        bottom: -44rem;
+    }
+
+    @include xl-breakpoint {
+        padding: 7.4rem 16.5rem 8.4rem;
+        bottom: -40rem;
+    }
    
     .desc-content {
-        max-width: 85vw;
-        max-height: 100%;
+        max-width: 111rem;
+        /*max-height: 100%;
         width: 100%;
-        height: auto;
+        
         margin: 0 auto;
-        padding: 6vh 0vh;
+        padding: 6vh 0vh;*/
 
         @include md-breakpoint {
             display: grid;
@@ -371,85 +389,121 @@ body {
                 "timezone week-day"
                 "year-day week-number";
             column-gap: 8rem;
-            row-gap: 4.8rem;
-            padding: 7vh 0vh;
+            row-gap: 1rem;
+            //padding: 0;
+        }
+
+        @include lg-breakpoint {
+            row-gap: 5.8rem;
         }
     }
 
     .info {
         @include flex (row, space-between, center);
-        max-width: 85vw;
+        /*max-width: 85vw;
         max-height: 100%;
+        */
         width: 100%;
-        height: 100%;
-        padding: .5rem 0;
+        height: 100%; 
+        padding: 1.6rem;
 
         @include md-breakpoint {
             display: unset;
+            padding-bottom: 0;
         }
 
         .desc-info {
             font-size: 0.75rem;
             font-weight: $weight-regular;
+            letter-spacing: .2rem;
+            line-height: 2.8rem;
             text-transform: uppercase;
-            text-align: left;
+            //text-align: left;
+
+            @include md-breakpoint {
+                font-size: 1.3rem;
+                line-height: 3.8rem;
+                letter-spacing: 0.26rem;
+            }
+
+            @include lg-breakpoint {
+                font-size: 1.5rem;
+                line-height: 2.8rem;
+                letter-spacing: 0.3rem;
+            }
         }
 
         .desc-item {
-            font-size: 1.25rem;
-            font-weight: $weight-regular;
-            margin: 0;
+            font-size: 1.5rem;
+            font-weight: $weight-bold;
+            line-height: 2.42rem;
 
             @include md-breakpoint {
-                font-size: 1.875rem;
-                text-align: left;
+                font-size: 4rem;
+                padding: 2rem 0;
+                //text-align: left;
+            }
+
+            @include xl-breakpoint {
+                font-size: 5.6rem;
+                padding-top: 3.5rem;
             }
         }
+
     }
 
-   
+    .desc-hidden {
+        display: none;
+    }
+    
+    .desc-region {
+        grid-area: timezone;
+    }
+
+    .desc-week-day {
+        grid-area: week-day;
+    }
+
+    .desc-year-day {
+        grid-area: year-day;
+    }
+
+    .desc-week-number {
+        grid-area: week-number;
+    }
+
+    .description .appear {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.desc-hidden {
-    display: none;
-}
- 
-.desc-region {
-    grid-area: timezone;
-}
-
-.desc-week-day {
-    grid-area: week-day;
-}
-
-.desc-year-day {
-    grid-area: year-day;
-}
-
-.desc-week-number {
-    grid-area: week-number;
-}
-
-.description .appear {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-}
 
 .top {
     //top: 120%;
 }
 
 .transform {
-    transform: translate3d(0, -2rem, 0);
+    transform: translate3d(0, -25.6rem, 0);
+
+    @include md-breakpoint {
+        transform: translate3d(0, -44rem, 0);
+    }
+
+    @include xl-breakpoint {
+        transform: translate3d(0, -40rem, 0);
+    }
 }
 
 /* Attribution */
 .attribution {
     position: relative;
+    margin-top: 2rem;
     padding: 5px 0;
     font-size: 11px;
     text-align: center;
+    bottom: 0;
 }
 
 .attribution a:hover {

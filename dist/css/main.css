@@ -208,7 +208,7 @@ body {
   padding: 3.7rem 2.6rem 4rem;
   transition: transform 0.5s ease;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .main__container {
     padding: 8rem 13.1rem 6.4rem 6.4rem;
   }
@@ -247,7 +247,7 @@ body {
   font-size: 1.2rem;
   line-height: 2.2rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .quote__container-random .quote-text {
     font-size: 1.8rem;
     line-height: 2.8rem;
@@ -259,7 +259,7 @@ body {
   font-size: 1.2rem;
   line-height: 2.2rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .quote__container-random .author {
     font-size: 1.8rem;
     line-height: 2.8rem;
@@ -280,7 +280,7 @@ body {
   cursor: pointer;
   background: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .quote__container #refresh {
     margin-top: 0.3rem;
   }
@@ -306,11 +306,15 @@ body {
   width: 90%;
   height: 100%;
   margin-top: 10rem;
-  padding-bottom: 3rem;
+
   text-align: left;*/
   max-width: 111rem;
   width: 100%;
+  padding-bottom: 3.7rem;
   text-transform: uppercase;
+  /*position: relative;
+  width: 100%;
+  */
 }
 @media screen and (min-width: 992px) {
   .current {
@@ -331,15 +335,15 @@ body {
 .current header .icon {
   padding-right: 1.6rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .current header .icon {
     height: 2.4rem;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .current header__greeting,
 .current header span {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 2.8rem;
     letter-spacing: 0.36rem;
   }
@@ -347,7 +351,7 @@ body {
 @media screen and (min-width: 992px) {
   .current header__greeting,
 .current header span {
-    font-size: 2rem;
+    font-size: 2.4rem;
     line-height: 2.8rem;
     letter-spacing: 0.4rem;
   }
@@ -355,7 +359,7 @@ body {
 .current header .currently {
   display: none;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .current header .currently {
     display: block;
   }
@@ -366,7 +370,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;*/
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
 }
 .current__time .time__container {
   display: flex;
@@ -374,7 +378,7 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .current__time .time__container {
     -moz-column-gap: 2rem;
          column-gap: 2rem;
@@ -388,7 +392,7 @@ body {
   line-height: 10rem !important;
   padding: 1.6rem 1.6rem 1.6rem 0;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .current__time .time__container .time {
     font-size: 17.5rem;
     line-height: 17.5rem;
@@ -412,7 +416,7 @@ body {
   align-self: center;
   padding-top: 3.7rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .current__time .time__container .standard-time {
     font-size: 3.2rem;
     line-height: 2.8rem;
@@ -429,7 +433,7 @@ body {
 .current__time .time__container .standard-time .time-zone {
   font-weight: 400 !important;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .current__time .time__container .standard-time .period {
     padding-bottom: 1.2rem;
   }
@@ -445,10 +449,11 @@ body {
   padding-left: .5rem;
   margin: 0;*/
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .current__time__location {
     font-size: 1.8rem;
-    letter-spacing: 3.6rem;
+    letter-spacing: 0.36rem;
+    padding-top: 4rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -458,12 +463,7 @@ body {
     letter-spacing: 0.48rem;
   }
 }
-.current .btn-container {
-  /*position: relative;
-  width: 100%;
-  height: 100%;*/
-}
-.current .btn-container .btn-more {
+.current .btn-more {
   width: 11.5rem;
   height: 4rem;
   padding: 0.1rem 0.75rem 0 1rem;
@@ -476,20 +476,20 @@ body {
   border-radius: 2.8rem;
   cursor: pointer;
 }
-@media screen and (min-width: 768px) {
-  .current .btn-container .btn-more {
+@media screen and (min-width: 769px) {
+  .current .btn-more {
     width: 14.6rem;
     height: 5.6rem;
     padding: 0.8rem 0.9rem 0.8rem 2.1rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .current .btn-container .btn-more {
+  .current .btn-more {
     align-self: flex-end;
     margin-left: auto;
   }
 }
-.current .btn-container .btn-more .more {
+.current .btn-more .more {
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 1.4rem;
@@ -498,47 +498,64 @@ body {
   text-transform: uppercase;
   transition: all 0.6s ease;
 }
-@media screen and (min-width: 768px) {
-  .current .btn-container .btn-more .more {
+@media screen and (min-width: 769px) {
+  .current .btn-more .more {
     font-size: 1.6rem;
     line-height: 2.8rem;
     letter-spacing: 0.5rem;
   }
 }
-.current .btn-container .btn-more .arrow {
+.current .btn-more .arrow {
   padding: 0.5rem 1rem;
   border-radius: 2.4rem;
   background-color: black;
   margin-left: 1rem;
 }
-.current .btn-container .btn-more .arrow .fa-angle-down {
+.current .btn-more .arrow .fa-angle-down {
   color: white;
   font-size: 1.5rem;
-  transition: all 0.6s ease;
+  transition: transform 0.5s, filter 0.2s;
 }
-.current .btn-container .btn-more .rotate {
+.current .btn-more .rotate {
   transform: rotate(180deg);
-  transition: all 0.6s ease;
 }
 
 .description {
-  width: 100vw;
+  /*width: 100vw;
   height: 100%;
   position: relative;
   margin: 0 auto;
   padding: 0;
   overflow: hidden;
+  transition: all 0.5s ease;*/
+  width: 100%;
+  max-height: 44rem;
+  padding: 1rem 2.6rem 3.2rem;
+  position: absolute;
   transition: all 0.5s ease;
+  bottom: -25.6rem;
+}
+@media screen and (min-width: 769px) {
+  .description {
+    padding: 11.9rem 6.4em 11.9rem;
+    bottom: -44rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .description {
+    padding: 7.4rem 16.5rem 8.4rem;
+    bottom: -40rem;
+  }
 }
 .description .desc-content {
-  max-width: 85vw;
-  max-height: 100%;
+  max-width: 111rem;
+  /*max-height: 100%;
   width: 100%;
-  height: auto;
+
   margin: 0 auto;
-  padding: 6vh 0vh;
+  padding: 6vh 0vh;*/
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .description .desc-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -546,8 +563,12 @@ body {
     grid-template-areas: "timezone week-day" "year-day week-number";
     -moz-column-gap: 8rem;
          column-gap: 8rem;
-    row-gap: 4.8rem;
-    padding: 7vh 0vh;
+    row-gap: 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .description .desc-content {
+    row-gap: 5.8rem;
   }
 }
 .description .info {
@@ -555,77 +576,106 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  max-width: 85vw;
+  /*max-width: 85vw;
   max-height: 100%;
+  */
   width: 100%;
   height: 100%;
-  padding: 0.5rem 0;
+  padding: 1.6rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .description .info {
     display: unset;
+    padding-bottom: 0;
   }
 }
 .description .info .desc-info {
   font-size: 0.75rem;
   font-weight: 400;
+  letter-spacing: 0.2rem;
+  line-height: 2.8rem;
   text-transform: uppercase;
-  text-align: left;
 }
-.description .info .desc-item {
-  font-size: 1.25rem;
-  font-weight: 400;
-  margin: 0;
-}
-@media screen and (min-width: 768px) {
-  .description .info .desc-item {
-    font-size: 1.875rem;
-    text-align: left;
+@media screen and (min-width: 769px) {
+  .description .info .desc-info {
+    font-size: 1.3rem;
+    line-height: 3.8rem;
+    letter-spacing: 0.26rem;
   }
 }
-
-.desc-hidden {
+@media screen and (min-width: 992px) {
+  .description .info .desc-info {
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.3rem;
+  }
+}
+.description .info .desc-item {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.42rem;
+}
+@media screen and (min-width: 769px) {
+  .description .info .desc-item {
+    font-size: 4rem;
+    padding: 2rem 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .description .info .desc-item {
+    font-size: 5.6rem;
+    padding-top: 3.5rem;
+  }
+}
+.description .desc-hidden {
   display: none;
 }
-
-.desc-region {
+.description .desc-region {
   grid-area: timezone;
 }
-
-.desc-week-day {
+.description .desc-week-day {
   grid-area: week-day;
 }
-
-.desc-year-day {
+.description .desc-year-day {
   grid-area: year-day;
 }
-
-.desc-week-number {
+.description .desc-week-number {
   grid-area: week-number;
 }
-
-.description .appear {
+.description .description .appear {
   display: block;
   opacity: 1;
   transform: translateY(0);
 }
 
 .transform {
-  transform: translate3d(0, -2rem, 0);
+  transform: translate3d(0, -25.6rem, 0);
+}
+@media screen and (min-width: 769px) {
+  .transform {
+    transform: translate3d(0, -44rem, 0);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .transform {
+    transform: translate3d(0, -40rem, 0);
+  }
 }
 
 /* Attribution */
 .attribution {
   position: relative;
+  margin-top: 2rem;
   padding: 5px 0;
   font-size: 11px;
   text-align: center;
+  bottom: 0;
 }
 
 .day {
   background-image: url(../../assets/mobile/bg-image-daytime.jpg);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .day {
     background-image: url(../../assets/tablet/bg-image-daytime.jpg);
   }
@@ -639,7 +689,7 @@ body {
 .night {
   background-image: url(../../assets/mobile/bg-image-nighttime.jpg);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .night {
     background-image: url(../../assets/tablet/bg-image-nighttime.jpg);
   }
