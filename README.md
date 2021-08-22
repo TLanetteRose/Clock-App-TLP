@@ -79,7 +79,7 @@ I had a difficult time with this project because I kept over-thinking the positi
 
 One new style I learn about is the transform-function **translate3d()**. This function repositions an element in 3D space. It was used to change the position of the footer element when the button was clicked.
 
-To see how you can add code snippets, see below:
+My code snippet below:
 
 ```css
 .transform {
@@ -94,8 +94,6 @@ To see how you can add code snippets, see below:
 	}
 }
 ```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 ### Continued development
 
