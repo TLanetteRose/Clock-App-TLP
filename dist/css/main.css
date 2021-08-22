@@ -311,18 +311,16 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
-  .current header__greeting,
+  .current header .current__greeting,
 .current header span {
-    font-size: 2rem;
+    font-size: 2.4rem;
     line-height: 2.8rem;
     letter-spacing: 0.36rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .current header__greeting,
+  .current header .current__greeting,
 .current header span {
-    font-size: 2.4rem;
-    line-height: 2.8rem;
     letter-spacing: 0.4rem;
   }
 }

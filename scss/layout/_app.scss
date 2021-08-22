@@ -136,17 +136,15 @@ body {
             }
         }
 
-        &__greeting,
+        .current__greeting,
         span  { 
             @include md-breakpoint {
-                font-size: 2rem;
+                font-size: 2.4rem;
                 line-height: 2.8rem;
                 letter-spacing: .36rem;
             }
 
             @include lg-breakpoint {
-                font-size: 2.4rem;
-                line-height: 2.8rem;
                 letter-spacing: 0.4rem;
             }
         }
