@@ -611,6 +611,11 @@ body {
   text-align: center;
   bottom: 0;
 }
+@media screen and (min-width: 768px) {
+  .attribution {
+    margin-top: 1.5rem;
+  }
+}
 
 .attribution a:hover {
   color: white;
