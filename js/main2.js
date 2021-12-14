@@ -13,7 +13,7 @@ const arrow = document.querySelector('.arrow');
 
 const URL_QUOTE = 'https://api.quotable.io/random';
 const URL_TIMEZONE = 'https://worldtimeapi.org/api/ip';
-const URL_LOCATION = 'https://telize-v1.p.rapidapi.com/location/%7Bip_address%7D?callback=getlocation';
+const URL_LOCATION = 'https://freegeoip.app/json/';
 
 // Generate quotes
 function generateQuote(){
@@ -108,7 +108,7 @@ function getTimeZone() {
     });
 }
  
-/*function getLocation(){
+function getLocation(){
     fetch(URL_LOCATION)
     .then(function(locationRes) {
         return locationRes.json();
@@ -124,23 +124,9 @@ function getTimeZone() {
     .catch(function(err) {
         console.log(err);
     });
-}*/
-
-function getLocation(){
-    fetch("URL_LOCATION", {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "telize-v1.p.rapidapi.com",
-		"x-rapidapi-key": "a1aa90fb2emsh4d495e234ebbd01p1f16cejsne46953221d9b"
-	}
-})
-.then(response => {
-	console.log(response);
-})
-.catch(err => {
-	console.error(err);
-});
 }
+
+
 
 generateQuote();
 getTime();
